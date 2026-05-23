@@ -60,7 +60,7 @@
     "badge": "About Us",
     "title": "Founded with our love",
     "titleAccent": "for animals",
-    "text": "Founded in 2026, Animare Veterinary Clinic began its journey with the mission of providing the best care to your companions in the heart of Gönyeli / Lefkoşa, North Cyprus (TRNC). Since then, we have helped thousands of pets recover and thrive.",
+    "text": "Dr. Gökay Yeşilovalı and Dr. Hazel Tamakan Yeşilovalı have been serving animals since 2016 through Near East University's Veterinary Faculty. They now bring that decade of clinical and academic expertise to Animare Veterinary Clinic — their own practice in the heart of Gönyeli / Lefkoşa, North Cyprus.",
     "text2": "With our expert team, modern medical equipment, and loving approach, we make every animal feel special.",
     "stat1": "Happy Patients",
     "stat2": "Years of Experience",
@@ -73,7 +73,7 @@
       "vet2": { "name": "Dr. Hazel Tamakan Yeşilovalı", "role": "Microbiology", "bio": "Expert in veterinary microbiology; applies advanced laboratory methods for the diagnosis and treatment of infectious diseases." }
     },
     "storyTitle": "Our Story",
-    "storyText": "Animare was born from a vision that unites veterinary medicine with love for animals. Since our founding, we have followed modern medical technologies while never compromising our understanding of treating each animal as unique. Our clinic offers both medical excellence and a warm environment.",
+    "storyText": "Animare was born from a vision that unites veterinary medicine with love for animals. Dr. Gökay and Dr. Hazel have channelled years of academic and clinical work at Near East University into their own clinic. We follow modern medical technologies while never compromising our belief that every animal is unique.",
     "valuesTitle": "Our Values",
     "values": {
       "v1": { "title": "Compassion", "desc": "We handle every animal with the same care as our own pets." },
@@ -90,6 +90,8 @@
     "name": "Full Name",
     "phone": "Phone Number",
     "email": "Email Address",
+    "service": "Select a Service",
+    "servicePlaceholder": "Which service are you enquiring about?",
     "message": "Your Message",
     "messagePlaceholder": "Please provide brief information about your pet and the issue...",
     "submit": "Send",

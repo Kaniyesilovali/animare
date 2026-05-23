@@ -60,7 +60,7 @@
     "badge": "Hakkımızda",
     "title": "Hayvanlara olan sevgimizle",
     "titleAccent": "kurulduk",
-    "text": "2026 yılında kurulan Animare Veteriner Kliniği, Gönyeli / Lefkoşa, Kuzey Kıbrıs'ın (KKTC) kalbinde dostlarınıza en iyi bakımı sunma misyonuyla yolculuğuna başladı. Deneyimimizle binlerce evcil hayvanın sağlığına kavuşmasına yardımcı olduk.",
+    "text": "Dr. Gökay Yeşilovalı ve Dr. Hazel Tamakan Yeşilovalı, 2016'dan bu yana Yakın Doğu Üniversitesi Veteriner Fakültesi'nde edindikleri derin deneyimi Gönyeli / Lefkoşa'da açtıkları Animare Veteriner Kliniği çatısı altında hayata geçirdi. Yıllar içinde binlerce evcil hayvanın sağlığına kavuşmasına yardımcı oldular.",
     "text2": "Uzman ekibimiz, modern tıbbi ekipmanımız ve sevgi dolu yaklaşımımızla her hayvanı özel hissettiriyoruz.",
     "stat1": "Mutlu Hasta",
     "stat2": "Yıllık Deneyim",
@@ -73,7 +73,7 @@
       "vet2": { "name": "Dr. Hazel Tamakan Yeşilovalı", "role": "Mikrobiyoloji", "bio": "Veteriner mikrobiyolojisi alanında uzman; enfeksiyöz hastalıkların teşhis ve tedavisinde ileri düzey laboratuvar yöntemleri uygular." }
     },
     "storyTitle": "Hikayemiz",
-    "storyText": "Animare, veteriner hekimliği ile hayvan sevgisini birleştiren bir vizyonla doğdu. Kuruluşumuzdan bu yana modern tıbbi teknolojileri takip ederken, her hayvanı biricik olarak görme anlayışımızdan asla taviz vermedik. Kliniğimiz, hem tıbbi mükemmelliği hem de sıcak bir ortamı bir arada sunar.",
+    "storyText": "Animare, veteriner hekimliği ile hayvan sevgisini birleştiren bir vizyonla doğdu. Dr. Gökay ve Dr. Hazel, Yakın Doğu Üniversitesi'ndeki uzun yıllar boyunca sürdürdükleri akademik ve klinik çalışmaların birikimini kendi kliniğinde taçlandırdı. Modern tıbbi teknolojileri takip ederken, her hayvanı biricik olarak görme anlayışımızdan asla taviz vermedik.",
     "valuesTitle": "Değerlerimiz",
     "values": {
       "v1": { "title": "Şefkat", "desc": "Her hayvanı kendi evcil hayvanımız gibi özenle ele alıyoruz." },
@@ -90,6 +90,8 @@
     "name": "Adınız Soyadınız",
     "phone": "Telefon Numaranız",
     "email": "E-posta Adresiniz",
+    "service": "Hizmet Seçin",
+    "servicePlaceholder": "Hangi hizmet için arayacaksınız?",
     "message": "Mesajınız",
     "messagePlaceholder": "Hayvanınız ve sorununuz hakkında kısa bilgi verin...",
     "submit": "Gönder",

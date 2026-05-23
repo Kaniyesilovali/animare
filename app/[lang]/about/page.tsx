@@ -16,8 +16,8 @@ export async function generateMetadata({
     ? 'Hakkımızda — Lefkoşa Veteriner Hekimleri | Animare'
     : 'About Us — Veterinarians in Lefkoşa, North Cyprus | Animare'
   const description = isTr
-    ? '2026\'dan bu yana Gönyeli / Lefkoşa\'da güvenilir veteriner kliniği. Küçük hayvan cerrahisi uzmanı Dr. Gökay Yeşilovalı ve mikrobiyoloji uzmanı Dr. Hazel Tamakan Yeşilovalı ile tanışın.'
-    : 'Trusted veterinary clinic in Gönyeli / Lefkoşa since 2026. Meet Dr. Gökay Yeşilovalı (small animal surgery) and Dr. Hazel Tamakan Yeşilovalı (microbiology) — our dedicated team.'
+    ? '2016\'dan bu yana 10+ yıllık deneyim, Gönyeli / Lefkoşa\'da kendi kliniği. Küçük hayvan cerrahisi uzmanı Dr. Gökay Yeşilovalı ve mikrobiyoloji uzmanı Dr. Hazel Tamakan Yeşilovalı ile tanışın.'
+    : 'Over 10 years of experience since 2016, now at their own clinic in Gönyeli / Lefkoşa. Meet Dr. Gökay Yeşilovalı (small animal surgery) and Dr. Hazel Tamakan Yeşilovalı (microbiology).'
   return {
     title,
     description,
@@ -127,8 +127,8 @@ export default async function AboutPage({
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg flex items-center gap-2">
                 <span className="text-xl">🏥</span>
                 <div>
-                  <p className="text-xs text-[var(--color-muted)]">{lang === 'tr' ? 'Kuruluş' : 'Founded'}</p>
-                  <p className="text-sm font-bold text-[var(--color-primary)]">{lang === 'tr' ? '2026\'dan beri' : 'Since 2026'}</p>
+                  <p className="text-xs text-[var(--color-muted)]">{lang === 'tr' ? 'Deneyim' : 'Experience'}</p>
+                  <p className="text-sm font-bold text-[var(--color-primary)]">{lang === 'tr' ? '2016\'dan beri' : 'Since 2016'}</p>
                 </div>
               </div>
             </div>
