@@ -158,16 +158,15 @@ export default async function AboutPage({
             <h2 className="text-2xl font-bold text-[var(--color-text)]">{about.teamTitle}</h2>
             <p className="text-[var(--color-muted)] mt-2">{about.teamSubtitle}</p>
           </div>
-          <div className="flex flex-col gap-5 max-w-3xl mx-auto">
-            {members.map(({ key }) => (
-              <div
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {members.map(({ key, initials }) => (
+              <TeamCard
                 key={key}
-                className="rounded-2xl border border-[var(--color-border)] bg-white p-6 hover:shadow-lg transition-shadow"
-              >
-                <h3 className="font-semibold text-[var(--color-text)] text-lg">{about.members[key].name}</h3>
-                <p className="text-sm text-[var(--color-primary)] font-medium mb-2">{about.members[key].role}</p>
-                <p className="text-sm text-[var(--color-muted)] leading-relaxed">{about.members[key].bio}</p>
-              </div>
+                name={about.members[key].name}
+                role={about.members[key].role}
+                bio={about.members[key].bio}
+                initials={initials}
+              />
             ))}
           </div>
         </div>
