@@ -1,13 +1,16 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 import ServiceCard from '@/components/ui/ServiceCard'
 import type { Locale } from '@/app/[lang]/dictionaries'
+import { services as serviceData } from '@/app/lib/services'
 
 type Dict = {
   services: {
+    badge: string
     title: string
-    subtitle: string
+    titleAccent: string
     items: {
       exam: { title: string; desc: string }
       vaccine: { title: string; desc: string }
@@ -39,11 +42,13 @@ function AnimatedCard({
   icon,
   title,
   desc,
+  href,
 }: {
   index: number
   icon: string
   title: string
   desc: string
+  href?: string
 }) {
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
@@ -72,12 +77,19 @@ function AnimatedCard({
         visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
-      <ServiceCard icon={icon} title={title} desc={desc} />
+      {href ? (
+        <Link href={href} className="block h-full">
+          <ServiceCard icon={icon} title={title} desc={desc} />
+        </Link>
+      ) : (
+        <ServiceCard icon={icon} title={title} desc={desc} />
+      )}
     </div>
   )
 }
 
-export default function ServicesGrid({ dict }: { lang?: Locale; dict: Dict }) {
+export default function ServicesGrid({ lang, dict }: { lang?: Locale; dict: Dict }) {
+  const locale = lang ?? 'tr'
   const items = Object.entries(dict.services.items) as [
     keyof typeof dict.services.items,
     { title: string; desc: string },
@@ -102,6 +114,12 @@ export default function ServicesGrid({ dict }: { lang?: Locale; dict: Dict }) {
     return () => observer.disconnect()
   }, [])
 
+  // Build slug map for this locale
+  const slugMap: Record<string, string> = {}
+  for (const sd of serviceData) {
+    slugMap[sd.key] = sd.slugs[locale as 'tr' | 'en']
+  }
+
   return (
     <section className="py-16 sm:py-24 bg-[var(--color-surface)]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -112,12 +130,13 @@ export default function ServicesGrid({ dict }: { lang?: Locale; dict: Dict }) {
             headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
+          <span className="inline-block mb-3 rounded-full bg-[var(--color-primary-light)] px-3 py-1 text-sm font-medium text-[var(--color-primary)]">
+            {dict.services.badge}
+          </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-text)]">
-            {dict.services.title}
+            {dict.services.title}{' '}
+            <span className="text-[var(--color-primary)]">{dict.services.titleAccent}</span>
           </h2>
-          <p className="mt-3 text-[var(--color-muted)] max-w-xl mx-auto">
-            {dict.services.subtitle}
-          </p>
         </div>
 
         {/* Grid */}
@@ -129,6 +148,7 @@ export default function ServicesGrid({ dict }: { lang?: Locale; dict: Dict }) {
               icon={serviceIcons[key]}
               title={item.title}
               desc={item.desc}
+              href={slugMap[key] ? `/${locale}/services/${slugMap[key]}` : undefined}
             />
           ))}
         </div>
