@@ -4,7 +4,7 @@ import type { Locale } from '@/app/[lang]/dictionaries'
 
 type Dict = {
   nav: { home: string; services: string; about: string; contact: string }
-  footer: { desc: string; quickLinks: string; contactInfo: string; rights: string; privacy: string }
+  footer: { desc: string; quickLinks: string; contactInfo: string; rights: string; madeBy: string; privacy: string }
   contact: { phoneValue: string; emailValue: string; addressValue: string }
 }
 
