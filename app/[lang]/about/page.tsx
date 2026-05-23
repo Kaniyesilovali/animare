@@ -16,8 +16,8 @@ export async function generateMetadata({
     ? 'Hakkımızda — Lefkoşa Veteriner Hekimleri | Animare'
     : 'About Us — Veterinarians in Lefkoşa, North Cyprus | Animare'
   const description = isTr
-    ? '2016\'dan bu yana 10+ yıllık deneyim, Gönyeli / Lefkoşa\'da kendi kliniği. Küçük hayvan cerrahisi uzmanı Dr. Gökay Yeşilovalı ve mikrobiyoloji uzmanı Dr. Hazel Tamakan Yeşilovalı ile tanışın.'
-    : 'Over 10 years of experience since 2016, now at their own clinic in Gönyeli / Lefkoşa. Meet Dr. Gökay Yeşilovalı (small animal surgery) and Dr. Hazel Tamakan Yeşilovalı (microbiology).'
+    ? '2026\'dan bu yana Gönyeli / Lefkoşa\'da güvenilir veteriner kliniği. Küçük hayvan cerrahisi uzmanı Dr. Gökay Yeşilovalı ve mikrobiyoloji uzmanı Dr. Hazel Tamakan Yeşilovalı ile tanışın.'
+    : 'Trusted veterinary clinic in Gönyeli / Lefkoşa since 2026. Meet Dr. Gökay Yeşilovalı (small animal surgery) and Dr. Hazel Tamakan Yeşilovalı (microbiology) — our dedicated team.'
   return {
     title,
     description,
@@ -106,15 +106,15 @@ export default async function AboutPage({
       {/* Story */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Text */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Story text - left */}
             <div>
               <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">{about.storyTitle}</h2>
               <p className="text-[var(--color-muted)] leading-relaxed mb-4">{about.text}</p>
               <p className="text-[var(--color-muted)] leading-relaxed mb-4">{about.text2}</p>
               <p className="text-[var(--color-muted)] leading-relaxed">{about.storyText}</p>
             </div>
-            {/* Image */}
+            {/* Image - right */}
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
               <Image
                 src="/animare veteriner kilinigi iletisim.jpg.jpeg"
@@ -123,14 +123,6 @@ export default async function AboutPage({
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              {/* Floating badge */}
-              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg flex items-center gap-2">
-                <span className="text-xl">🏥</span>
-                <div>
-                  <p className="text-xs text-[var(--color-muted)]">{lang === 'tr' ? 'Deneyim' : 'Experience'}</p>
-                  <p className="text-sm font-bold text-[var(--color-primary)]">{lang === 'tr' ? '2016\'dan beri' : 'Since 2016'}</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -160,32 +152,22 @@ export default async function AboutPage({
       </section>
 
       {/* Team */}
-      <section className="relative py-16 bg-white overflow-hidden">
-        {/* Decorative pet image */}
-        <div className="absolute right-0 top-0 bottom-0 w-72 opacity-[0.07] pointer-events-none hidden xl:block">
-          <Image
-            src="/veteriner nd-ocean-cat.jpg"
-            alt=""
-            fill
-            className="object-cover object-left"
-            sizes="288px"
-            aria-hidden="true"
-          />
-        </div>
-        <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl font-bold text-[var(--color-text)]">{about.teamTitle}</h2>
             <p className="text-[var(--color-muted)] mt-2">{about.teamSubtitle}</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            {members.map(({ key, initials }) => (
-              <TeamCard
+          <div className="flex flex-col gap-5 max-w-3xl mx-auto">
+            {members.map(({ key }) => (
+              <div
                 key={key}
-                name={about.members[key].name}
-                role={about.members[key].role}
-                bio={about.members[key].bio}
-                initials={initials}
-              />
+                className="rounded-2xl border border-[var(--color-border)] bg-white p-6 hover:shadow-lg transition-shadow"
+              >
+                <h3 className="font-semibold text-[var(--color-text)] text-lg">{about.members[key].name}</h3>
+                <p className="text-sm text-[var(--color-primary)] font-medium mb-2">{about.members[key].role}</p>
+                <p className="text-sm text-[var(--color-muted)] leading-relaxed">{about.members[key].bio}</p>
+              </div>
             ))}
           </div>
         </div>

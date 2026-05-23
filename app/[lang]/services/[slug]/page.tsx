@@ -106,30 +106,21 @@ export default async function ServiceDetailPage({
 
       {/* Hero */}
       <div className="bg-[var(--color-primary)] py-14">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          {/* Breadcrumb */}
-          <nav className="flex items-center gap-1.5 text-white/70 text-sm mb-6">
-            <Link href={`/${lang}`} className="hover:text-white transition-colors">
-              {isTr ? 'Ana Sayfa' : 'Home'}
-            </Link>
-            <span>/</span>
-            <Link href={`/${lang}/services`} className="hover:text-white transition-colors">
-              {isTr ? 'Hizmetler' : 'Services'}
-            </Link>
-            <span>/</span>
-            <span className="text-white">{t.title}</span>
-          </nav>
-          <div className="text-center">
-            <div className="text-5xl mb-4" aria-hidden="true">{service.icon}</div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">{t.title}</h1>
-            <p className="text-white/80 max-w-xl mx-auto text-lg">{t.desc}</p>
-          </div>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 text-center">
+          <span className="inline-block mb-3 rounded-full bg-white/20 px-3 py-1 text-sm font-medium text-white">
+            {isTr ? 'Hizmetler' : 'Services'}
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white">{t.title}</h1>
         </div>
       </div>
 
       {/* Body */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-4xl" aria-hidden="true">{service.icon}</span>
+            <p className="text-[var(--color-muted)] text-sm">{t.desc}</p>
+          </div>
           <p className="text-[var(--color-muted)] leading-relaxed text-lg mb-10">{t.body}</p>
 
           {/* Included items */}
