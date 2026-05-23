@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veteriner Kliniği Gönyeli, Lefkoşa | Köpek & Kedi Doktoru — Animare</title>
+  <meta name="description" content="Animare Veteriner Kliniği — Gönyeli / Lefkoşa, KKTC. Köpek, kedi, tavşan ve küçük hayvan muayenesi, aşılama, cerrahi, diş bakımı, röntgen, laboratuvar. 7/24 acil veteriner. Hemen randevu alın." />
+  <meta name="keywords" content="veteriner Gönyeli, veteriner Lefkoşa, veteriner KKTC, köpek doktoru, kedi doktoru, acil veteriner, Animare" />
+  <meta property="og:title" content="Veteriner Kliniği Gönyeli, Lefkoşa | Animare" />
+  <meta property="og:description" content="Animare Veteriner Kliniği — Gönyeli / Lefkoşa, KKTC. 7/24 acil veteriner." />
+  <meta property="og:image" content="logo.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://animare.vet/tr" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["VeterinaryCare", "LocalBusiness"],
+    "@id": "https://animare.vet/#organization",
+    "name": "Animare Veteriner Kliniği",
+    "description": "Gönyeli / Lefkoşa'da profesyonel veteriner hizmetleri. Genel muayene, aşılama, cerrahi, diş bakımı, radyoloji ve 7/24 acil.",
+    "url": "https://animare.vet",
+    "telephone": "+905338449192",
+    "email": "info@animare.vet",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ŞHT Hüseyin Amca Cad Mar 101 Dük : 1",
+      "addressLocality": "Gönyeli",
+      "addressRegion": "Lefkoşa",
+      "addressCountry": "CY"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:        #1776ff;
+      --primary-dark:   #1261d4;
+      --primary-light:  #eff6ff;
+      --accent:         #f0a500;
+      --accent-light:   #fff7ed;
+      --text:           #1a2332;
+      --muted:          #6b7280;
+      --border:         #e5e7eb;
+      --surface:        #f8fafc;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    button { cursor: pointer; font-family: inherit; }
+
+    /* ── PAGES ── */
+    .page { display: none; flex: 1; flex-direction: column; }
+    .page.active { display: flex; flex-direction: column; }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 1152px; margin: 0 auto; padding: 0 1rem; }
+    @media (min-width: 640px) { .container { padding: 0 1.5rem; } }
+
+    /* ── NAVBAR ── */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 80px;
+    }
+    .nav-logo img { height: 70px; width: auto; object-fit: contain; }
+    .nav-links { display: none; align-items: center; gap: 1.5rem; }
+    @media (min-width: 768px) { .nav-links { display: flex; } }
+    .nav-links a {
+      font-size: .875rem; font-weight: 500; color: var(--muted);
+      transition: color .15s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+    .nav-actions { display: none; align-items: center; gap: .75rem; }
+    @media (min-width: 768px) { .nav-actions { display: flex; } }
+    .btn-primary {
+      background: var(--primary); color: #fff;
+      border: none; border-radius: 9999px;
+      padding: .5rem 1.25rem; font-size: .875rem; font-weight: 600;
+      transition: background .15s;
+    }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-outline {
+      background: #fff; color: var(--text);
+      border: 1px solid var(--border); border-radius: 9999px;
+      padding: .75rem 2rem; font-size: 1rem; font-weight: 600;
+      transition: border-color .15s, color .15s;
+      display: inline-block;
+    }
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+    .hamburger { display: flex; flex-direction: column; gap: 4px; background: none; border: none; padding: .5rem; }
+    @media (min-width: 768px) { .hamburger { display: none; } }
+    .hamburger span { display: block; width: 20px; height: 2px; background: var(--muted); border-radius: 2px; }
+    .mobile-menu {
+      display: none; flex-direction: column; gap: .75rem;
+      border-top: 1px solid var(--border); padding: 1rem 0;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: .875rem; font-weight: 500; color: var(--muted);
+      padding: .375rem .5rem; border-radius: .5rem;
+    }
+    .mobile-menu a.active { background: var(--primary-light); color: var(--primary); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, var(--primary-light) 0%, #fff 50%, var(--accent-light) 100%);
+      padding: 5rem 1rem;
+    }
+    @media (min-width: 640px) { .hero { padding: 7rem 1.5rem; } }
+    .hero-deco {
+      position: absolute; border-radius: 50%; pointer-events: none;
+    }
+    .hero-deco-1 { top: -6rem; right: -6rem; width: 24rem; height: 24rem; background: var(--primary); opacity: .05; }
+    .hero-deco-2 { bottom: -8rem; left: -4rem; width: 20rem; height: 20rem; background: var(--accent); opacity: .05; }
+    .hero-inner {
+      position: relative; max-width: 720px; margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--primary-light); border: 1px solid rgba(23,118,255,.2);
+      border-radius: 9999px; padding: .375rem 1rem;
+      font-size: .875rem; font-weight: 500; color: var(--primary);
+    }
+    .hero-badge-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--primary);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .5; transform: scale(1.3); }
+    }
+    .hero h1 {
+      font-size: 2.5rem; font-weight: 800; line-height: 1.2; color: var(--text);
+    }
+    @media (min-width: 640px) { .hero h1 { font-size: 3.25rem; } }
+    @media (min-width: 1024px) { .hero h1 { font-size: 3.75rem; } }
+    .hero h1 .accent { color: var(--primary); }
+    .hero p { font-size: 1.125rem; color: var(--muted); line-height: 1.7; max-width: 640px; }
+    .hero-ctas { display: flex; flex-direction: column; gap: .75rem; margin-top: .5rem; }
+    @media (min-width: 640px) { .hero-ctas { flex-direction: row; } }
+    .hero-ctas .btn-primary { padding: .875rem 2rem; font-size: 1rem; display: inline-block; }
+
+    /* ── SECTION HEADER ── */
+    .section-header { text-align: center; margin-bottom: 3rem; }
+    .section-header h2 { font-size: 2rem; font-weight: 800; color: var(--text); }
+    .section-header p { color: var(--muted); margin-top: .5rem; }
+
+    /* ── SERVICES GRID ── */
+    .services-section { padding: 4rem 0; background: var(--surface); }
+    .grid-3 {
+      display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+    }
+    @media (min-width: 640px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+    .service-card {
+      background: #fff; border: 1px solid var(--border); border-radius: 1rem;
+      padding: 1.5rem; transition: border-color .2s, box-shadow .2s;
+    }
+    .service-card:hover {
+      border-color: var(--primary); box-shadow: 0 8px 24px rgba(23,118,255,.1);
+    }
+    .service-icon {
+      width: 3rem; height: 3rem; border-radius: .75rem;
+      background: var(--primary-light); font-size: 1.5rem;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem; transition: background .2s;
+    }
+    .service-card:hover .service-icon { background: var(--primary); }
+    .service-card h3 { font-weight: 600; color: var(--text); margin-bottom: .5rem; }
+    .service-card p { font-size: .875rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── ABOUT PREVIEW ── */
+    .about-preview { padding: 4rem 0; background: #fff; }
+    .grid-2 { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+    @media (min-width: 1024px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .about-badge {
+      display: inline-block; margin-bottom: .75rem;
+      background: var(--primary-light); border-radius: 9999px;
+      padding: .25rem .75rem; font-size: .875rem; font-weight: 500; color: var(--primary);
+    }
+    .about-preview h2 { font-size: 2rem; font-weight: 800; color: var(--text); line-height: 1.25; margin-bottom: 1.5rem; }
+    .about-preview h2 .accent { color: var(--primary); }
+    .about-preview p { color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
+    .about-preview a.btn-primary { display: inline-flex; align-items: center; gap: .5rem; padding: .75rem 1.5rem; font-size: .875rem; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .stat-card {
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 1rem; padding: 1.5rem;
+    }
+    .stat-num { font-size: 2.25rem; font-weight: 800; color: var(--primary); }
+    .stat-label { font-size: .875rem; color: var(--muted); margin-top: .25rem; }
+
+    /* ── PAGE HERO (inner pages) ── */
+    .page-hero { background: var(--primary); padding: 3.5rem 1rem; text-align: center; }
+    .page-hero-badge {
+      display: inline-block; background: rgba(255,255,255,.2);
+      border-radius: 9999px; padding: .25rem .75rem; font-size: .875rem;
+      font-weight: 500; color: #fff; margin-bottom: .75rem;
+    }
+    .page-hero h1 { font-size: 2rem; font-weight: 800; color: #fff; }
+    @media (min-width: 640px) { .page-hero h1 { font-size: 2.5rem; } }
+    .page-hero h1 .accent { color: var(--accent); }
+    .page-hero p { color: rgba(255,255,255,.8); margin-top: .5rem; max-width: 560px; margin-left: auto; margin-right: auto; }
+
+    /* ── ABOUT PAGE ── */
+    .story-section { padding: 4rem 0; background: #fff; }
+    .story-section .inner { max-width: 768px; margin: 0 auto; }
+    .story-section h2 { font-size: 1.5rem; font-weight: 700; color: var(--text); margin-bottom: 1.5rem; }
+    .story-section p { color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
+
+    .values-section { padding: 4rem 0; background: var(--surface); }
+    .values-section h2 { text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--text); margin-bottom: 2rem; }
+    .value-card {
+      background: #fff; border: 1px solid var(--border); border-radius: 1rem;
+      padding: 1.5rem; text-align: center;
+    }
+    .value-icon { font-size: 2.25rem; margin-bottom: .75rem; }
+    .value-card h3 { font-weight: 600; color: var(--text); margin-bottom: .5rem; }
+    .value-card p { font-size: .875rem; color: var(--muted); }
+
+    .team-section { padding: 4rem 0; background: #fff; }
+    .team-section .header { text-align: center; margin-bottom: 2.5rem; }
+    .team-section h2 { font-size: 1.5rem; font-weight: 700; color: var(--text); }
+    .team-section .subtitle { color: var(--muted); margin-top: .5rem; }
+    .team-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; max-width: 640px; margin: 0 auto; }
+    @media (min-width: 640px) { .team-grid { grid-template-columns: 1fr 1fr; } }
+    .team-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 1rem; padding: 1.5rem; text-align: center;
+    }
+    .team-avatar {
+      width: 4rem; height: 4rem; border-radius: 50%;
+      background: var(--primary); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.125rem;
+      margin: 0 auto 1rem;
+    }
+    .team-card h3 { font-weight: 700; color: var(--text); }
+    .team-card .role { font-size: .875rem; color: var(--primary); font-weight: 500; margin: .25rem 0 .75rem; }
+    .team-card p { font-size: .875rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── SERVICES PAGE ── */
+    .services-page { padding: 4rem 0; background: var(--surface); }
+
+    /* ── CONTACT PAGE ── */
+    .contact-section { padding: 4rem 0; background: var(--surface); }
+    .contact-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
+    @media (min-width: 1024px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+    .contact-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 1rem; padding: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    }
+    .contact-card h2 { font-weight: 700; color: var(--text); margin-bottom: 1.25rem; }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label { display: block; font-size: .875rem; font-weight: 500; color: var(--text); margin-bottom: .375rem; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: .625rem .875rem;
+      border: 1px solid var(--border); border-radius: .5rem;
+      font-size: .9375rem; font-family: inherit; color: var(--text);
+      background: #fff; outline: none; transition: border-color .15s;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--primary); box-shadow: 0 0 0 3px rgba(23,118,255,.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .gdpr-row { display: flex; align-items: flex-start; gap: .5rem; margin-bottom: 1.25rem; }
+    .gdpr-row input[type="checkbox"] { margin-top: .2rem; flex-shrink: 0; }
+    .gdpr-row label { font-size: .8125rem; color: var(--muted); line-height: 1.5; }
+    .gdpr-row a { color: var(--primary); }
+    .form-success {
+      display: none; background: #ecfdf5; border: 1px solid #6ee7b7;
+      border-radius: .5rem; padding: 1rem; color: #065f46; font-size: .9375rem; margin-top: 1rem;
+    }
+    .info-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+    .info-item { display: flex; gap: .75rem; align-items: flex-start; }
+    .info-icon { font-size: 1.25rem; flex-shrink: 0; }
+    .info-label { font-size: .75rem; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: .125rem; }
+    .info-value { font-size: .9375rem; color: var(--text); }
+    .hours-list { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+    .hours-item { display: flex; align-items: center; gap: .5rem; font-size: .9375rem; color: var(--muted); }
+    .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .dot-green { background: #22c55e; }
+    .dot-yellow { background: #eab308; }
+    .dot-red { background: #ef4444; }
+    .info-cards { display: flex; flex-direction: column; gap: 1.25rem; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--text); color: #fff; padding: 3rem 0; margin-top: auto; }
+    .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(3, 1fr); } }
+    footer img { height: 3rem; width: auto; object-fit: contain; margin-bottom: 1rem; }
+    footer p { font-size: .875rem; color: rgba(255,255,255,.7); line-height: 1.6; }
+    .footer-col h3 {
+      font-weight: 600; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em;
+      color: rgba(255,255,255,.5); margin-bottom: 1rem;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+    .footer-links a { font-size: .875rem; color: rgba(255,255,255,.7); transition: color .15s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-contact { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+    .footer-contact li { font-size: .875rem; color: rgba(255,255,255,.7); line-height: 1.6; }
+    .footer-bottom {
+      margin-top: 2.5rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,.1);
+      display: flex; flex-direction: column; gap: .5rem; align-items: center; justify-content: space-between;
+      font-size: .75rem; color: rgba(255,255,255,.4);
+    }
+    @media (min-width: 640px) { .footer-bottom { flex-direction: row; } }
+    .footer-bottom a { color: rgba(255,255,255,.4); text-decoration: underline; transition: color .15s; }
+    .footer-bottom a:hover { color: rgba(255,255,255,.7); }
+
+    /* ── COOKIE ── */
+    #cookie-banner {
+      position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+      width: calc(100% - 2rem); max-width: 680px; z-index: 999;
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 1rem; padding: 1.25rem 1.5rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,.12);
+      display: flex; flex-direction: column; gap: 1rem;
+    }
+    @media (min-width: 640px) { #cookie-banner { flex-direction: row; align-items: center; } }
+    #cookie-banner h4 { font-weight: 700; color: var(--text); font-size: .9375rem; }
+    #cookie-banner p { font-size: .8125rem; color: var(--muted); margin-top: .25rem; line-height: 1.5; }
+    #cookie-banner a { color: var(--primary); }
+    #cookie-banner button {
+      background: var(--primary); color: #fff; border: none; border-radius: .625rem;
+      padding: .625rem 1.25rem; font-size: .875rem; font-weight: 600;
+      white-space: nowrap; transition: background .15s;
+    }
+    #cookie-banner button:hover { background: var(--primary-dark); }
+  </style>
+</head>
+<body>
+
+<!-- ══════════ HEADER ══════════ -->
+<header>
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#" onclick="showPage('home'); return false;">
+        <img src="public/logo.jpg" alt="Animare Veteriner" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=&quot;font-weight:800;font-size:1.25rem;color:var(--primary)&quot;>Animare</span>';" />
+      </a>
+
+      <nav class="nav-links">
+        <a href="#" onclick="showPage('home');return false;" data-page="home" class="active">Ana Sayfa</a>
+        <a href="#" onclick="showPage('services');return false;" data-page="services">Hizmetler</a>
+        <a href="#" onclick="showPage('about');return false;" data-page="about">Hakkımızda</a>
+        <a href="#" onclick="showPage('contact');return false;" data-page="contact">İletişim</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-primary" onclick="showPage('contact')">İletişim</button>
+      </div>
+
+      <button class="hamburger" onclick="toggleMobile()" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu">
+      <a href="#" onclick="showPage('home');closeMobile();return false;" data-page="home">Ana Sayfa</a>
+      <a href="#" onclick="showPage('services');closeMobile();return false;" data-page="services">Hizmetler</a>
+      <a href="#" onclick="showPage('about');closeMobile();return false;" data-page="about">Hakkımızda</a>
+      <a href="#" onclick="showPage('contact');closeMobile();return false;" data-page="contact">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ══════════ HOME PAGE ══════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-deco hero-deco-1"></div>
+    <div class="hero-deco hero-deco-2"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Güvenilir Veteriner Bakımı
+        </span>
+        <h1>Dostlarınızın Sağlığı Bizim <span class="accent">Önceliğimiz</span></h1>
+        <p>Animare Veteriner Kliniği olarak sevdiklerinize uzman ellerin sıcaklığıyla bakıyoruz. Modern ekipman, deneyimli ekip, sevgi dolu yaklaşım.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn-primary" onclick="showPage('contact');return false;">Randevu Al</a>
+          <a href="#" class="btn-outline" onclick="showPage('services');return false;">Hizmetlerimiz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-section">
+    <div class="container">
+      <div class="grid-3">
+
+        <div class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>Genel Muayene</h3>
+          <p>Kapsamlı sağlık taraması ve fiziksel muayene ile erken teşhis.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💉</div>
+          <h3>Aşılama</h3>
+          <p>Eksiksiz aşı programları ile dostunuzu hastalıklardan koruyun.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔬</div>
+          <h3>Cerrahi</h3>
+          <p>Modern cerrahi ekipmanla gerçekleştirilen güvenli operasyonlar.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🦷</div>
+          <h3>Diş Bakımı</h3>
+          <p>Diş taşı temizliği ve ağız sağlığı kontrolleri.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📡</div>
+          <h3>Radyoloji</h3>
+          <p>Dijital röntgen ve ultrason ile hızlı ve doğru tanı.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🚨</div>
+          <h3>Acil Hizmet</h3>
+          <p>7/24 acil veteriner hizmeti ile her an yanınızdayız.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧪</div>
+          <h3>Laboratuvar</h3>
+          <p>Kan tahlili, idrar analizi ve mikrobiyolojik testlerle hızlı ve doğru teşhis.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✂️</div>
+          <h3>Pet Kuaförü</h3>
+          <p>Tıraş, yıkama, tırnak kesimi ve bakım hizmetleriyle dostunuz her zaman şık ve temiz.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🥗</div>
+          <h3>Beslenme Danışmanlığı</h3>
+          <p>Evcil hayvanınızın yaşına, cinsine ve sağlık durumuna özel beslenme programları.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <span class="about-badge">Hakkımızda</span>
+          <h2>Hayvanlara olan sevgimizle <span class="accent">kurulduk</span></h2>
+          <p>2010 yılında kurulan Animare Veteriner Kliniği, Gönyeli / Lefkoşa'nın kalbinde dostlarınıza en iyi bakımı sunma misyonuyla yolculuğuna başladı. On yılı aşkın deneyimimizle binlerce evcil hayvanın sağlığına kavuşmasına yardımcı olduk.</p>
+          <p>Uzman ekibimiz, modern tıbbi ekipmanımız ve sevgi dolu yaklaşımımızla her hayvanı özel hissettiriyoruz.</p>
+          <a href="#" class="btn-primary" onclick="showPage('about');return false;">Daha Fazla Bilgi →</a>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-num">5000+</span>
+            <span class="stat-label">Mutlu Hasta</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Yıllık Deneyim</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Uzman Veteriner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+<!-- ══════════ SERVICES PAGE ══════════ -->
+<div id="page-services" class="page">
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Hizmetlerimiz</h1>
+      <p>Dostunuz için kapsamlı veteriner hizmetleri sunuyoruz</p>
+    </div>
+  </div>
+
+  <section class="services-page">
+    <div class="container">
+      <div class="grid-3">
+
+        <div class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>Genel Muayene</h3>
+          <p>Kapsamlı sağlık taraması ve fiziksel muayene ile erken teşhis.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💉</div>
+          <h3>Aşılama</h3>
+          <p>Eksiksiz aşı programları ile dostunuzu hastalıklardan koruyun.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔬</div>
+          <h3>Cerrahi</h3>
+          <p>Modern cerrahi ekipmanla gerçekleştirilen güvenli operasyonlar.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🦷</div>
+          <h3>Diş Bakımı</h3>
+          <p>Diş taşı temizliği ve ağız sağlığı kontrolleri.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📡</div>
+          <h3>Radyoloji</h3>
+          <p>Dijital röntgen ve ultrason ile hızlı ve doğru tanı.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🚨</div>
+          <h3>Acil Hizmet</h3>
+          <p>7/24 acil veteriner hizmeti ile her an yanınızdayız.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧪</div>
+          <h3>Laboratuvar</h3>
+          <p>Kan tahlili, idrar analizi ve mikrobiyolojik testlerle hızlı ve doğru teşhis.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✂️</div>
+          <h3>Pet Kuaförü</h3>
+          <p>Tıraş, yıkama, tırnak kesimi ve bakım hizmetleriyle dostunuz her zaman şık ve temiz.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🥗</div>
+          <h3>Beslenme Danışmanlığı</h3>
+          <p>Evcil hayvanınızın yaşına, cinsine ve sağlık durumuna özel beslenme programları.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-services -->
+
+<!-- ══════════ ABOUT PAGE ══════════ -->
+<div id="page-about" class="page">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="page-hero-badge">Hakkımızda</span>
+      <h1>Hayvanlara olan sevgimizle <span class="accent">kurulduk</span></h1>
+    </div>
+  </div>
+
+  <!-- Story -->
+  <section class="story-section">
+    <div class="container">
+      <div class="inner">
+        <h2>Hikayemiz</h2>
+        <p>2010 yılında kurulan Animare Veteriner Kliniği, Gönyeli / Lefkoşa'nın kalbinde dostlarınıza en iyi bakımı sunma misyonuyla yolculuğuna başladı. On yılı aşkın deneyimimizle binlerce evcil hayvanın sağlığına kavuşmasına yardımcı olduk.</p>
+        <p>Uzman ekibimiz, modern tıbbi ekipmanımız ve sevgi dolu yaklaşımımızla her hayvanı özel hissettiriyoruz.</p>
+        <p>Animare, veteriner hekimliği ile hayvan sevgisini birleştiren bir vizyonla doğdu. Kuruluşumuzdan bu yana modern tıbbi teknolojileri takip ederken, her hayvanı biricik olarak görme anlayışımızdan asla taviz vermedik. Kliniğimiz, hem tıbbi mükemmelliği hem de sıcak bir ortamı bir arada sunar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="values-section">
+    <div class="container">
+      <h2>Değerlerimiz</h2>
+      <div class="grid-3">
+        <div class="value-card">
+          <div class="value-icon">💙</div>
+          <h3>Şefkat</h3>
+          <p>Her hayvanı kendi evcil hayvanımız gibi özenle ele alıyoruz.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🎓</div>
+          <h3>Uzmanlık</h3>
+          <p>Sürekli eğitim ve güncel tıbbi bilgiyle hizmet veriyoruz.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Şeffaflık</h3>
+          <p>Tedavi süreçleri hakkında sahiplerle açık iletişim kuruyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team-section">
+    <div class="container">
+      <div class="header">
+        <h2>Ekibimiz</h2>
+        <p class="subtitle">Deneyimli ve tutkulu ekibimizle tanışın</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">GY</div>
+          <h3>Dr. Gökay Yeşilovalı</h3>
+          <p class="role">Küçük Hayvan Cerrahisi</p>
+          <p>Küçük hayvan cerrahisi alanında uzmanlaşmış, modern cerrahi tekniklerle güvenli ve etkili operasyonlar gerçekleştirir.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">HY</div>
+          <h3>Dr. Hazel Tamakan Yeşilovalı</h3>
+          <p class="role">Mikrobiyoloji</p>
+          <p>Veteriner mikrobiyolojisi alanında uzman; enfeksiyöz hastalıkların teşhis ve tedavisinde ileri düzey laboratuvar yöntemleri uygular.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-about -->
+
+<!-- ══════════ CONTACT PAGE ══════════ -->
+<div id="page-contact" class="page">
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>İletişim &amp; Randevu</h1>
+      <p>Dostunuz için randevu alın veya bize ulaşın</p>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="contact-card">
+          <h2>Randevu / Mesaj Formu</h2>
+          <form id="contact-form" onsubmit="submitForm(event)">
+
+            <div class="form-group">
+              <label for="name">Adınız Soyadınız</label>
+              <input type="text" id="name" name="name" placeholder="Ad Soyad" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefon Numaranız</label>
+              <input type="tel" id="phone" name="phone" placeholder="+90 5xx xxx xx xx" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-posta Adresiniz</label>
+              <input type="email" id="email" name="email" placeholder="ornek@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Hizmet Seçin</label>
+              <select id="service" name="service">
+                <option value="">-- Hizmet Seçin --</option>
+                <option>Genel Muayene</option>
+                <option>Aşılama</option>
+                <option>Cerrahi</option>
+                <option>Diş Bakımı</option>
+                <option>Radyoloji</option>
+                <option>Acil Hizmet</option>
+                <option>Laboratuvar</option>
+                <option>Pet Kuaförü</option>
+                <option>Beslenme Danışmanlığı</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mesajınız</label>
+              <textarea id="message" name="message" placeholder="Hayvanınız ve sorununuz hakkında kısa bilgi verin..."></textarea>
+            </div>
+
+            <div class="gdpr-row">
+              <input type="checkbox" id="gdpr" name="gdpr" required />
+              <label for="gdpr">
+                Kişisel verilerimin Animare Veteriner Kliniği tarafından randevu ve iletişim amacıyla işlenmesine ilişkin
+                <a href="#" onclick="return false;">Aydınlatma Metni</a>'ni okudum ve onaylıyorum.
+              </label>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%;padding:.875rem;font-size:1rem;">
+              Gönder
+            </button>
+
+            <div class="form-success" id="form-success">
+              Mesajınız alındı! En kısa sürede sizi arayacağız.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="info-cards">
+          <div class="contact-card">
+            <h2>Klinik Bilgileri</h2>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <p class="info-label">Adres</p>
+                  <p class="info-value">ŞHT Hüseyin Amca Cad Mar 101 Dük : 1<br/>Gönyeli / Lefkoşa</p>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                  <p class="info-label">Telefon</p>
+                  <p class="info-value"><a href="tel:+905338449192" style="color:var(--primary)">+90 533 844 91 92</a></p>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-icon">✉️</span>
+                <div>
+                  <p class="info-label">E-posta</p>
+                  <p class="info-value"><a href="mailto:info@animare.vet" style="color:var(--primary)">info@animare.vet</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h2>Çalışma Saatleri</h2>
+            <ul class="hours-list">
+              <li class="hours-item">
+                <span class="dot dot-green"></span>
+                Pazartesi – Cuma: 09:00 – 19:00
+              </li>
+              <li class="hours-item">
+                <span class="dot dot-yellow"></span>
+                Cumartesi: 09:00 – 17:00
+              </li>
+              <li class="hours-item">
+                <span class="dot dot-red"></span>
+                Pazar: Acil Hizmet
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-contact -->
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <img src="public/logo.jpg" alt="Animare Veteriner" onerror="this.style.display='none';" />
+        <p>Dostlarınıza uzman ellerin sıcaklığıyla bakıyoruz.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Hızlı Bağlantılar</h3>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('home');return false;">Ana Sayfa</a></li>
+          <li><a href="#" onclick="showPage('services');return false;">Hizmetler</a></li>
+          <li><a href="#" onclick="showPage('about');return false;">Hakkımızda</a></li>
+          <li><a href="#" onclick="showPage('contact');return false;">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>İletişim</h3>
+        <ul class="footer-contact">
+          <li>+90 533 844 91 92</li>
+          <li>info@animare.vet</li>
+          <li>ŞHT Hüseyin Amca Cad Mar 101 Dük : 1<br/>Gönyeli / Lefkoşa, KKTC</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Animare Veteriner Kliniği. Tüm hakları saklıdır. 🐾 Sevgiyle <a href="https://raptordigital.net/" target="_blank" rel="noopener noreferrer">Raptor Digital</a> tarafından hazırlanmıştır.</span>
+      <a href="#" onclick="return false;">Gizlilik Politikası</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════ COOKIE BANNER ══════════ -->
+<div id="cookie-banner">
+  <div>
+    <h4>Çerez Bildirimi</h4>
+    <p>Web sitemiz yalnızca temel işlevsellik için zorunlu çerezler kullanmaktadır.
+      Daha fazla bilgi için <a href="#" onclick="return false;">Gizlilik Politikası</a>'nı inceleyin.</p>
+  </div>
+  <button onclick="acceptCookie()">Anladım</button>
+</div>
+
+<script>
+  // ── year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ── cookie
+  if (localStorage.getItem('cookieAccepted')) {
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+  function acceptCookie() {
+    localStorage.setItem('cookieAccepted', '1');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+
+  // ── page routing
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+
+    document.querySelectorAll('[data-page]').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === id);
+    });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── mobile menu
+  function toggleMobile() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+  function closeMobile() {
+    document.getElementById('mobile-menu').classList.remove('open');
+  }
+
+  // ── contact form
+  function submitForm(e) {
+    e.preventDefault();
+    const gdpr = document.getElementById('gdpr');
+    if (!gdpr.checked) { alert('Lütfen aydınlatma metnini okuyup onaylayın.'); return; }
+
+    const btn = e.target.querySelector('button[type=submit]');
+    btn.textContent = 'Gönderiliyor...';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      document.getElementById('contact-form').reset();
+      document.getElementById('form-success').style.display = 'block';
+      btn.textContent = 'Gönder';
+      btn.disabled = false;
+    }, 1000);
+  }
+</script>
+
+</body>
+</html>

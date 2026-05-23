@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "North Cyprus Trusted Veterinary Care",
+    "title": "Your Pet's Health Is Our",
+    "titleAccent": "Priority",
+    "subtitle": "At Animare Veterinary Clinic, we care for your beloved companions with expert hands and warm hearts. Modern equipment, experienced team, loving approach.",
+    "cta": "Contact Us",
+    "ctaSecondary": "Our Services"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Comprehensive veterinary services",
+    "titleAccent": "for your companion",
+    "items": {
+      "exam": {
+        "title": "General Check-up",
+        "desc": "Comprehensive health screening and physical examination for early diagnosis."
+      },
+      "vaccine": {
+        "title": "Vaccination",
+        "desc": "Complete vaccination programs to protect your pet from diseases."
+      },
+      "surgery": {
+        "title": "Surgery",
+        "desc": "Safe surgical procedures performed with modern equipment."
+      },
+      "dental": {
+        "title": "Dental Care",
+        "desc": "Tartar cleaning and oral health check-ups."
+      },
+      "radiology": {
+        "title": "Radiology",
+        "desc": "Digital X-ray and ultrasound for fast and accurate diagnosis."
+      },
+      "emergency": {
+        "title": "Emergency Service",
+        "desc": "24/7 emergency veterinary service — we are always here for you."
+      },
+      "lab": {
+        "title": "Laboratory",
+        "desc": "Fast and accurate diagnosis with blood tests, urinalysis, and microbiological tests."
+      },
+      "grooming": {
+        "title": "Pet Grooming",
+        "desc": "Trimming, bathing, nail clipping, and styling services to keep your pet looking and feeling great."
+      },
+      "nutrition": {
+        "title": "Nutrition Consulting",
+        "desc": "Personalised nutrition plans tailored to your pet's age, breed, and health condition."
+      }
+    }
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Founded with our love",
+    "titleAccent": "for animals",
+    "text": "Founded in 2026, Animare Veterinary Clinic began its journey with the mission of providing the best care to your companions in the heart of Gönyeli / Lefkoşa, North Cyprus (TRNC). Since then, we have helped thousands of pets recover and thrive.",
+    "text2": "With our expert team, modern medical equipment, and loving approach, we make every animal feel special.",
+    "stat1": "Happy Patients",
+    "stat2": "Years of Experience",
+    "stat3": "Expert Vets",
+    "learnMore": "Learn More",
+    "teamTitle": "Our Team",
+    "teamSubtitle": "Meet our experienced and passionate team",
+    "members": {
+      "vet1": { "name": "Dr. Gökay Yeşilovalı", "role": "Small Animal Surgery", "bio": "Specialized in small animal surgery, performing safe and effective procedures with modern surgical techniques." },
+      "vet2": { "name": "Dr. Hazel Tamakan Yeşilovalı", "role": "Microbiology", "bio": "Expert in veterinary microbiology; applies advanced laboratory methods for the diagnosis and treatment of infectious diseases." }
+    },
+    "storyTitle": "Our Story",
+    "storyText": "Animare was born from a vision that unites veterinary medicine with love for animals. Since our founding, we have followed modern medical technologies while never compromising our understanding of treating each animal as unique. Our clinic offers both medical excellence and a warm environment.",
+    "valuesTitle": "Our Values",
+    "values": {
+      "v1": { "title": "Compassion", "desc": "We handle every animal with the same care as our own pets." },
+      "v2": { "title": "Expertise", "desc": "We serve with continuous education and up-to-date medical knowledge." },
+      "v3": { "title": "Transparency", "desc": "We maintain open communication with owners about treatment processes." }
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Get in touch with us —",
+    "titleAccent": "we are here to help",
+    "subtitle": "Get in touch with us — we are here to help",
+    "formTitle": "Message Form",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "message": "Your Message",
+    "messagePlaceholder": "Please provide brief information about your pet and the issue...",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Your message has been received! We will call you as soon as possible.",
+    "infoTitle": "Clinic Information",
+    "address": "Address",
+    "addressValue": "ŞHT Hüseyin Amca Cad Mar 101 Dük : 1, Gönyeli / Lefkoşa, North Cyprus (TRNC)",
+    "phoneLabel": "Phone",
+    "phoneValue": "+90 533 844 91 92",
+    "emailLabel": "Email",
+    "emailValue": "info@animare.vet",
+    "hours": "Working Hours",
+    "hoursWeekday": "Monday – Friday: 09:00 – 19:00",
+    "hoursSat": "Saturday: 09:00 – 15:00",
+    "hoursSun": "Sunday: Emergency Service",
+    "services": []
+  },
+  "footer": {
+    "desc": "We care for your companions with expert hands and warm hearts.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact",
+    "rights": "All rights reserved.",
+    "madeBy": "Made with love by",
+    "privacy": "Privacy Policy"
+  },
+  "cookie": {
+    "title": "Cookie Notice",
+    "text": "This website uses only strictly necessary cookies for basic functionality. Please review our Privacy Policy to learn how your personal data is processed.",
+    "accept": "Got it",
+    "privacyLink": "Privacy Policy"
+  },
+  "gdpr": {
+    "consentText": "I have read and agree to the",
+    "consentLinkText": "Privacy Policy",
+    "consentSuffix": "regarding the processing of my personal data by Animare Veterinary Clinic for communication purposes.",
+    "consentRequired": "Please read and accept the privacy policy."
+  }
+}

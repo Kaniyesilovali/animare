@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "badge": "Kuzey Kıbrıs'ın Güvenilir Veterineri",
+    "title": "Dostlarınızın Sağlığı Bizim",
+    "titleAccent": "Önceliğimiz",
+    "subtitle": "Animare Veteriner Kliniği olarak sevdiklerinize uzman ellerin sıcaklığıyla bakıyoruz. Modern ekipman, deneyimli ekip, sevgi dolu yaklaşım.",
+    "cta": "Bize Ulaşın",
+    "ctaSecondary": "Hizmetlerimiz"
+  },
+  "services": {
+    "badge": "Hizmetlerimiz",
+    "title": "Dostunuz için kapsamlı",
+    "titleAccent": "veteriner hizmetleri",
+    "items": {
+      "exam": {
+        "title": "Genel Muayene",
+        "desc": "Kapsamlı sağlık taraması ve fiziksel muayene ile erken teşhis."
+      },
+      "vaccine": {
+        "title": "Aşılama",
+        "desc": "Eksiksiz aşı programları ile dostunuzu hastalıklardan koruyun."
+      },
+      "surgery": {
+        "title": "Cerrahi",
+        "desc": "Modern cerrahi ekipmanla gerçekleştirilen güvenli operasyonlar."
+      },
+      "dental": {
+        "title": "Diş Bakımı",
+        "desc": "Diş taşı temizliği ve ağız sağlığı kontrolleri."
+      },
+      "radiology": {
+        "title": "Radyoloji",
+        "desc": "Dijital röntgen ve ultrason ile hızlı ve doğru tanı."
+      },
+      "emergency": {
+        "title": "Acil Hizmet",
+        "desc": "7/24 acil veteriner hizmeti ile her an yanınızdayız."
+      },
+      "lab": {
+        "title": "Laboratuvar",
+        "desc": "Kan tahlili, idrar analizi ve mikrobiyolojik testlerle hızlı ve doğru teşhis."
+      },
+      "grooming": {
+        "title": "Pet Kuaförü",
+        "desc": "Tıraş, yıkama, tırnak kesimi ve bakım hizmetleriyle dostunuz her zaman şık ve temiz."
+      },
+      "nutrition": {
+        "title": "Beslenme Danışmanlığı",
+        "desc": "Evcil hayvanınızın yaşına, cinsine ve sağlık durumuna özel beslenme programları."
+      }
+    }
+  },
+  "about": {
+    "badge": "Hakkımızda",
+    "title": "Hayvanlara olan sevgimizle",
+    "titleAccent": "kurulduk",
+    "text": "2026 yılında kurulan Animare Veteriner Kliniği, Gönyeli / Lefkoşa, Kuzey Kıbrıs'ın (KKTC) kalbinde dostlarınıza en iyi bakımı sunma misyonuyla yolculuğuna başladı. Deneyimimizle binlerce evcil hayvanın sağlığına kavuşmasına yardımcı olduk.",
+    "text2": "Uzman ekibimiz, modern tıbbi ekipmanımız ve sevgi dolu yaklaşımımızla her hayvanı özel hissettiriyoruz.",
+    "stat1": "Mutlu Hasta",
+    "stat2": "Yıllık Deneyim",
+    "stat3": "Uzman Veteriner",
+    "learnMore": "Daha Fazla Bilgi",
+    "teamTitle": "Ekibimiz",
+    "teamSubtitle": "Deneyimli ve tutkulu ekibimizle tanışın",
+    "members": {
+      "vet1": { "name": "Dr. Gökay Yeşilovalı", "role": "Küçük Hayvan Cerrahisi", "bio": "Küçük hayvan cerrahisi alanında uzmanlaşmış, modern cerrahi tekniklerle güvenli ve etkili operasyonlar gerçekleştirir." },
+      "vet2": { "name": "Dr. Hazel Tamakan Yeşilovalı", "role": "Mikrobiyoloji", "bio": "Veteriner mikrobiyolojisi alanında uzman; enfeksiyöz hastalıkların teşhis ve tedavisinde ileri düzey laboratuvar yöntemleri uygular." }
+    },
+    "storyTitle": "Hikayemiz",
+    "storyText": "Animare, veteriner hekimliği ile hayvan sevgisini birleştiren bir vizyonla doğdu. Kuruluşumuzdan bu yana modern tıbbi teknolojileri takip ederken, her hayvanı biricik olarak görme anlayışımızdan asla taviz vermedik. Kliniğimiz, hem tıbbi mükemmelliği hem de sıcak bir ortamı bir arada sunar.",
+    "valuesTitle": "Değerlerimiz",
+    "values": {
+      "v1": { "title": "Şefkat", "desc": "Her hayvanı kendi evcil hayvanımız gibi özenle ele alıyoruz." },
+      "v2": { "title": "Uzmanlık", "desc": "Sürekli eğitim ve güncel tıbbi bilgiyle hizmet veriyoruz." },
+      "v3": { "title": "Şeffaflık", "desc": "Tedavi süreçleri hakkında sahiplerle açık iletişim kuruyoruz." }
+    }
+  },
+  "contact": {
+    "badge": "İletişim",
+    "title": "Bize ulaşın,",
+    "titleAccent": "size yardımcı olalım",
+    "subtitle": "Bize ulaşın, size yardımcı olalım",
+    "formTitle": "Mesaj Formu",
+    "name": "Adınız Soyadınız",
+    "phone": "Telefon Numaranız",
+    "email": "E-posta Adresiniz",
+    "message": "Mesajınız",
+    "messagePlaceholder": "Hayvanınız ve sorununuz hakkında kısa bilgi verin...",
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız alındı! En kısa sürede sizi arayacağız.",
+    "infoTitle": "Klinik Bilgileri",
+    "address": "Adres",
+    "addressValue": "ŞHT Hüseyin Amca Cad Mar 101 Dük : 1, Gönyeli / Lefkoşa, Kuzey Kıbrıs (KKTC)",
+    "phoneLabel": "Telefon",
+    "phoneValue": "+90 533 844 91 92",
+    "emailLabel": "E-posta",
+    "emailValue": "info@animare.vet",
+    "hours": "Çalışma Saatleri",
+    "hoursWeekday": "Pazartesi – Cuma: 09:00 – 19:00",
+    "hoursSat": "Cumartesi: 09:00 – 15:00",
+    "hoursSun": "Pazar: Acil Hizmet",
+    "services": []
+  },
+  "footer": {
+    "desc": "Dostlarınıza uzman ellerin sıcaklığıyla bakıyoruz.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactInfo": "İletişim",
+    "rights": "Tüm hakları saklıdır.",
+    "madeBy": "Sevgiyle",
+    "privacy": "Gizlilik Politikası"
+  },
+  "cookie": {
+    "title": "Çerez Bildirimi",
+    "text": "Web sitemiz yalnızca temel işlevsellik için zorunlu çerezler kullanmaktadır. Kişisel verilerinizin nasıl işlendiği hakkında daha fazla bilgi almak için Gizlilik Politikamızı inceleyebilirsiniz.",
+    "accept": "Anladım",
+    "privacyLink": "Gizlilik Politikası"
+  },
+  "gdpr": {
+    "consentText": "Kişisel verilerimin Animare Veteriner Kliniği tarafından iletişim amacıyla işlenmesine ilişkin",
+    "consentLinkText": "Aydınlatma Metni",
+    "consentSuffix": "'ni okudum ve onaylıyorum.",
+    "consentRequired": "Lütfen aydınlatma metnini okuyup onaylayın."
+  }
+}
