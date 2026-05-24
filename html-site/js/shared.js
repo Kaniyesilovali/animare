@@ -78,6 +78,7 @@ function renderNav(lang) {
             ${L.services}
             <svg id="sarr" class="h-3.5 w-3.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </a>
+          <div class="absolute inset-x-0 top-full h-3"></div>
           <div id="sdd" class="absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50 transition-all duration-200 opacity-0 -translate-y-1 pointer-events-none" style="width:380px">
             <div class="flex justify-center -mb-px"><div class="w-3 h-3 bg-white border-l border-t border-[var(--color-border)] rotate-45 shadow-sm"></div></div>
             <div class="rounded-2xl border border-[var(--color-border)] bg-white shadow-xl overflow-hidden">
