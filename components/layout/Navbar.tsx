@@ -84,6 +84,9 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
                     </svg>
                   </Link>
 
+                  {/* invisible bridge: covers the gap between trigger and dropdown */}
+                  <div className="absolute inset-x-0 top-full h-3" />
+
                   {/* Dropdown panel */}
                   <div
                     className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50 transition-all duration-200 ${
