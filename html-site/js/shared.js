@@ -246,6 +246,31 @@ function renderWhatsApp() {
   document.body.appendChild(btn);
 }
 
+function renderOtherServices(lang, currentSlug) {
+  const isTr = lang === 'tr';
+  const services = ANIMARE_SERVICES[lang];
+  const others = services.filter(s => s.slug !== currentSlug);
+  const title = isTr ? 'Diğer Hizmetlerimiz' : 'Our Other Services';
+
+  const links = others.map(s =>
+    `<a href="/${lang}/services/${s.slug}/" class="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white px-4 py-2 text-sm text-[var(--color-text)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors">
+      <span>${s.icon}</span>
+      <span>${s.title}</span>
+    </a>`
+  ).join('');
+
+  const html = `
+<section class="py-12 bg-[var(--color-surface)]">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <h2 class="text-lg font-bold text-[var(--color-text)] mb-6 text-center">${title}</h2>
+    <div class="flex flex-wrap justify-center gap-3">${links}</div>
+  </div>
+</section>`;
+
+  const el = document.getElementById('other-services-placeholder');
+  if (el) el.outerHTML = html;
+}
+
 function initContactForm(lang) {
   const isTr = lang === 'tr';
   const form = document.getElementById('contact-form');
