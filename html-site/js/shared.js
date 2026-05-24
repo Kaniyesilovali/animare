@@ -93,10 +93,9 @@ function renderNav(lang) {
         <a href="${contactPath}" class="text-sm font-medium transition-colors ${ac(contactPath)}">${L.contact}</a>
       </nav>
       <div class="hidden md:flex items-center gap-3">
-        <div class="flex items-center gap-1 text-sm font-medium">
-          <span class="text-[var(--color-primary)] font-semibold"><a href="/${lang}/">${lang.toUpperCase()}</a></span>
-          <span class="text-[var(--color-muted)]">/</span>
-          <a href="${otherUrl}" class="text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors">${otherLang.toUpperCase()}</a>
+        <div class="flex items-center gap-1 rounded-full border border-[var(--color-border)] p-0.5 text-sm font-medium">
+          <a href="/${lang}/" class="${isTr ? 'rounded-full bg-[var(--color-primary)] px-3 py-1 text-white' : 'rounded-full px-3 py-1 text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">TR</a>
+          <a href="${otherUrl}" class="${!isTr ? 'rounded-full bg-[var(--color-primary)] px-3 py-1 text-white' : 'rounded-full px-3 py-1 text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">EN</a>
         </div>
         <a href="${contactPath}" class="rounded-full bg-[var(--color-primary)] px-4 py-2 text-sm font-semibold text-white hover:bg-[var(--color-primary-dark)] transition-colors">${L.contact}</a>
       </div>
@@ -119,10 +118,11 @@ function renderNav(lang) {
       </div>
       <a href="${aboutPath}" class="px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${acMob(aboutPath)}">${L.about}</a>
       <a href="${contactPath}" class="px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${acMob(contactPath)}">${L.contact}</a>
-      <div class="pt-2 px-3 flex items-center gap-2 text-sm font-medium">
-        <a href="${isTr ? `/${lang}/` : otherUrl}" class="${isTr ? 'text-[var(--color-primary)] font-semibold' : 'text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">TR</a>
-        <span class="text-[var(--color-muted)]">/</span>
-        <a href="${!isTr ? `/${lang}/` : otherUrl}" class="${!isTr ? 'text-[var(--color-primary)] font-semibold' : 'text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">EN</a>
+      <div class="pt-2 px-3">
+        <div class="flex items-center gap-1 rounded-full border border-[var(--color-border)] p-0.5 text-sm font-medium w-fit">
+          <a href="${isTr ? `/${lang}/` : otherUrl}" class="${isTr ? 'rounded-full bg-[var(--color-primary)] px-3 py-1 text-white' : 'rounded-full px-3 py-1 text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">TR</a>
+          <a href="${!isTr ? `/${lang}/` : otherUrl}" class="${!isTr ? 'rounded-full bg-[var(--color-primary)] px-3 py-1 text-white' : 'rounded-full px-3 py-1 text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">EN</a>
+        </div>
       </div>
     </div>
   </div>
