@@ -17,12 +17,6 @@ type Dict = {
 }
 
 export default function AboutPreview({ lang, dict }: { lang: Locale; dict: Dict }) {
-  const stats = [
-    { num: '5000+', label: dict.about.stat1 },
-    { num: '10+', label: dict.about.stat2 },
-    { num: '2', label: dict.about.stat3 },
-  ]
-
   return (
     <section className="py-16 sm:py-24 bg-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -57,18 +51,6 @@ export default function AboutPreview({ lang, dict }: { lang: Locale; dict: Dict 
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-            </div>
-            {/* Stats row */}
-            <div className="grid grid-cols-3 gap-4">
-              {stats.map((s) => (
-                <div
-                  key={s.label}
-                  className="flex flex-col items-center text-center rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4"
-                >
-                  <span className="text-3xl font-bold text-[var(--color-primary)] mb-1">{s.num}</span>
-                  <span className="text-xs text-[var(--color-muted)]">{s.label}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

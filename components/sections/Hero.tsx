@@ -70,14 +70,6 @@ export default function Hero({ lang, dict }: { lang: Locale; dict: Dict }) {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            {/* Floating badge */}
-            <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2 border border-[var(--color-border)]">
-              <span className="text-2xl">🐾</span>
-              <div>
-                <p className="text-xs text-[var(--color-muted)]">{lang === 'tr' ? 'Mutlu hasta' : 'Happy patients'}</p>
-                <p className="text-sm font-bold text-[var(--color-primary)]">5000+</p>
-              </div>
-            </div>
           </div>
 
         </div>
