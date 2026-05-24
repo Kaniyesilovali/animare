@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getDictionary, hasLocale, type Locale } from '../dictionaries'
-import ContactForm from '@/components/sections/ContactForm'
 import JsonLd from '@/components/JsonLd'
 
 export async function generateMetadata({
@@ -15,8 +14,8 @@ export async function generateMetadata({
     ? 'Veteriner Randevu Gönyeli & Lefkoşa | İletişim — Animare'
     : 'Book a Vet Appointment Gönyeli & Lefkoşa | Contact — Animare'
   const description = isTr
-    ? 'Animare Veteriner Kliniği randevu ve iletişim. Gönyeli / Lefkoşa, KKTC. ☎ +90 533 844 91 92 • Pzt–Cum 09:00–19:00, Cmt 09:00–15:00, Pazar acil. Online form ile hemen randevu alın.'
-    : 'Book an appointment at Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus. ☎ +90 533 844 91 92 • Mon–Fri 09:00–19:00, Sat 09:00–15:00, Sun emergency. Online booking available.'
+    ? 'Animare Veteriner Kliniği iletişim bilgileri. Gönyeli / Lefkoşa, KKTC. ☎ +90 533 844 91 92 • Pzt–Cum 09:00–19:00, Cmt 09:00–15:00, Pazar acil.'
+    : 'Contact Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus. ☎ +90 533 844 91 92 • Mon–Fri 09:00–19:00, Sat 09:00–15:00, Sun emergency.'
   return {
     title,
     description,
@@ -72,65 +71,57 @@ export default async function ContactPage({
       </div>
 
       <section className="py-16 bg-[var(--color-surface)]">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* Form */}
-            <div className="bg-white rounded-2xl border border-[var(--color-border)] p-8 shadow-sm">
-              <ContactForm dict={dict} lang={lang} />
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <div className="flex flex-col gap-6">
+            <div className="bg-white rounded-2xl border border-[var(--color-border)] p-6 shadow-sm">
+              <h2 className="font-bold text-[var(--color-text)] mb-5">{contact.infoTitle}</h2>
+              <ul className="space-y-4">
+                <li className="flex gap-3">
+                  <span className="text-xl">📍</span>
+                  <div>
+                    <p className="text-xs font-medium text-[var(--color-muted)] uppercase tracking-wide mb-0.5">
+                      {contact.address}
+                    </p>
+                    <p className="text-sm text-[var(--color-text)]">{contact.addressValue}</p>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-xl">📞</span>
+                  <div>
+                    <p className="text-xs font-medium text-[var(--color-muted)] uppercase tracking-wide mb-0.5">
+                      {contact.phoneLabel}
+                    </p>
+                    <p className="text-sm text-[var(--color-text)]">{contact.phoneValue}</p>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-xl">✉️</span>
+                  <div>
+                    <p className="text-xs font-medium text-[var(--color-muted)] uppercase tracking-wide mb-0.5">
+                      {contact.emailLabel}
+                    </p>
+                    <p className="text-sm text-[var(--color-text)]">{contact.emailValue}</p>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            {/* Info */}
-            <div className="flex flex-col gap-6">
-              <div className="bg-white rounded-2xl border border-[var(--color-border)] p-6 shadow-sm">
-                <h2 className="font-bold text-[var(--color-text)] mb-5">{contact.infoTitle}</h2>
-                <ul className="space-y-4">
-                  <li className="flex gap-3">
-                    <span className="text-xl">📍</span>
-                    <div>
-                      <p className="text-xs font-medium text-[var(--color-muted)] uppercase tracking-wide mb-0.5">
-                        {contact.address}
-                      </p>
-                      <p className="text-sm text-[var(--color-text)]">{contact.addressValue}</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-xl">📞</span>
-                    <div>
-                      <p className="text-xs font-medium text-[var(--color-muted)] uppercase tracking-wide mb-0.5">
-                        {contact.phoneLabel}
-                      </p>
-                      <p className="text-sm text-[var(--color-text)]">{contact.phoneValue}</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-xl">✉️</span>
-                    <div>
-                      <p className="text-xs font-medium text-[var(--color-muted)] uppercase tracking-wide mb-0.5">
-                        {contact.emailLabel}
-                      </p>
-                      <p className="text-sm text-[var(--color-text)]">{contact.emailValue}</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-2xl border border-[var(--color-border)] p-6 shadow-sm">
-                <h3 className="font-bold text-[var(--color-text)] mb-4">{contact.hours}</h3>
-                <ul className="space-y-2 text-sm text-[var(--color-muted)]">
-                  <li className="flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-green-500" />
-                    {contact.hoursWeekday}
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-yellow-400" />
-                    {contact.hoursSat}
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-red-500" />
-                    {contact.hoursSun}
-                  </li>
-                </ul>
-              </div>
+            <div className="bg-white rounded-2xl border border-[var(--color-border)] p-6 shadow-sm">
+              <h3 className="font-bold text-[var(--color-text)] mb-4">{contact.hours}</h3>
+              <ul className="space-y-2 text-sm text-[var(--color-muted)]">
+                <li className="flex items-center gap-2">
+                  <span className="h-2 w-2 rounded-full bg-green-500" />
+                  {contact.hoursWeekday}
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-2 w-2 rounded-full bg-yellow-400" />
+                  {contact.hoursSat}
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-2 w-2 rounded-full bg-red-500" />
+                  {contact.hoursSun}
+                </li>
+              </ul>
             </div>
           </div>
         </div>
