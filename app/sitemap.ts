@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { getAllServiceSlugs } from '@/app/lib/services'
 
+export const dynamic = 'force-static'
+
 const BASE = 'https://animare.vet'
 const LOCALES = ['tr', 'en'] as const
 
