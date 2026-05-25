@@ -1,3 +1,5 @@
+(function(){var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href='/animare_veteriner_logo.png';document.head.appendChild(l);})();
+
 const ANIMARE_SERVICES = {
   tr: [
     { icon: '🩺', title: 'Genel Muayene',          slug: 'genel-muayene' },
