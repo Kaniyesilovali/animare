@@ -65,7 +65,7 @@ export async function generateMetadata({
       description,
       url: `/${lang}`,
       siteName: 'Animare Veteriner Kliniği',
-      images: [{ url: '/animare_veteriner_logo.png', width: 1200, height: 630, alt: 'Animare Veteriner Kliniği' }],
+      images: [{ url: '/animare_veteriner_kilinik_iletisim.jpg', width: 1200, height: 630, alt: 'Animare Veteriner Kliniği' }],
       locale: isTr ? 'tr_TR' : 'en_US',
       type: 'website',
     },
@@ -73,7 +73,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: ['/animare_veteriner_logo.png'],
+      images: ['/animare_veteriner_kilinik_iletisim.jpg'],
     },
     alternates: {
       canonical: `/${lang}`,
