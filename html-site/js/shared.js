@@ -143,7 +143,11 @@ function renderNav(lang) {
     if (sp && sdd) {
       let t;
       const show = () => { clearTimeout(t); sdd.classList.remove('opacity-0', '-translate-y-1', 'pointer-events-none'); sdd.classList.add('opacity-100', 'translate-y-0'); if (sarr) sarr.classList.add('rotate-180'); };
-      const hide = () => { t = setTimeout(() => { sdd.classList.add('opacity-0', '-translate-y-1', 'pointer-events-none'); sdd.classList.remove('opacity-100', 'translate-y-0'); if (sarr) sarr.classList.remove('rotate-180'); }, 180); };
+      const hide = (e) => {
+        const to = e && e.relatedTarget;
+        if (to && (to === sp || sp.contains(to))) return;
+        t = setTimeout(() => { sdd.classList.add('opacity-0', '-translate-y-1', 'pointer-events-none'); sdd.classList.remove('opacity-100', 'translate-y-0'); if (sarr) sarr.classList.remove('rotate-180'); }, 150);
+      };
       sp.addEventListener('mouseenter', show);
       sp.addEventListener('mouseleave', hide);
       sdd.addEventListener('mouseenter', show);
