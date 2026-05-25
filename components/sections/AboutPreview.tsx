@@ -45,7 +45,7 @@ export default function AboutPreview({ lang, dict }: { lang: Locale; dict: Dict 
             {/* Clinic image */}
             <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
               <Image
-                src="/gönyeli veteriner animare.jpg"
+                src="/gonyeli_veteriner_animare.jpg"
                 alt="Animare Veteriner Kliniği"
                 fill
                 className="object-cover"

@@ -62,7 +62,7 @@ export default function Hero({ lang, dict }: { lang: Locale; dict: Dict }) {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md lg:max-w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/veteriner nd-ocean-dog.jpg"
+                src="/veteriner-nd-ocean-dog.jpg"
                 alt="Mutlu köpek ve Animare Veteriner Kliniği"
                 fill
                 className="object-cover"

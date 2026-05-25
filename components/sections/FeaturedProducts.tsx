@@ -52,7 +52,7 @@ export default function FeaturedProducts({ lang }: { lang: Locale }) {
           <div className="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
             <div className="aspect-[16/9] relative">
               <Image
-                src="/animare veteriner.jpg"
+                src="/animare_veteriner.jpg"
                 alt={t.cat}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -72,7 +72,7 @@ export default function FeaturedProducts({ lang }: { lang: Locale }) {
           <div className="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
             <div className="aspect-[16/9] relative">
               <Image
-                src="/veteriner nd-ocean-dog.jpg"
+                src="/veteriner-nd-ocean-dog.jpg"
                 alt={t.dog}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
