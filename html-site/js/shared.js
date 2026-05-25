@@ -95,8 +95,8 @@ function renderNav(lang) {
       </nav>
       <div class="hidden md:flex items-center gap-3">
         <div class="flex items-center gap-1 rounded-full border border-[var(--color-border)] p-0.5 text-sm font-medium">
-          <a href="/${lang}/" class="${isTr ? 'rounded-full bg-[var(--color-primary)] px-3 py-1 text-white' : 'rounded-full px-3 py-1 text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">TR</a>
-          <a href="${otherUrl}" class="${!isTr ? 'rounded-full bg-[var(--color-primary)] px-3 py-1 text-white' : 'rounded-full px-3 py-1 text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">EN</a>
+          <a href="${isTr ? `/${lang}/` : otherUrl}" class="${isTr ? 'rounded-full bg-[var(--color-primary)] px-3 py-1 text-white' : 'rounded-full px-3 py-1 text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">TR</a>
+          <a href="${!isTr ? `/${lang}/` : otherUrl}" class="${!isTr ? 'rounded-full bg-[var(--color-primary)] px-3 py-1 text-white' : 'rounded-full px-3 py-1 text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors'}">EN</a>
         </div>
         <a href="${contactPath}" class="rounded-full bg-[var(--color-primary)] px-4 py-2 text-sm font-semibold text-white hover:bg-[var(--color-primary-dark)] transition-colors">${L.contact}</a>
       </div>
