@@ -24,7 +24,7 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dict }) {
           <div>
             <div className="mb-4">
               <Image
-                src="/animare_veteriner_logo.png"
+                src="/AniMare.png"
                 alt="Animare Veteriner"
                 width={140}
                 height={48}

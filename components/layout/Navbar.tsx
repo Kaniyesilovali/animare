@@ -44,7 +44,7 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
           {/* Logo */}
           <Link href={`/${lang}`}>
             <Image
-              src="/animare_veteriner_logo.png"
+              src="/AniMare.png"
               alt="Animare Veteriner"
               width={140}
               height={48}
