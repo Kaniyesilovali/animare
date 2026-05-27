@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Host: https://animare.vet
+Sitemap: https://animare.vet/sitemap.xml
