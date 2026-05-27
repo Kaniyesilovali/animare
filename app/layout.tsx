@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     default: 'Animare Veteriner Kliniği',
     template: '%s | Animare Veteriner Kliniği',
   },
+  verification: {
+    google: 'qJoDuO3x6a1DWCCdc8CKi7xcLZXHYLWmM1PRrIqcAVU',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
