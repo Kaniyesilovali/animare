@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Locale } from '@/app/[lang]/dictionaries'
+import { lp } from '@/app/lib/paths'
 
 type Dict = {
   hero: {
@@ -44,13 +45,13 @@ export default function Hero({ lang, dict }: { lang: Locale; dict: Dict }) {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
               <Link
-                href={`/${lang}/contact`}
+                href={lp(lang, 'contact')}
                 className="rounded-full bg-[var(--color-primary)] px-8 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-[var(--color-primary-dark)] transition-colors text-center"
               >
                 {dict.hero.cta}
               </Link>
               <Link
-                href={`/${lang}/services`}
+                href={lp(lang, 'services')}
                 className="rounded-full border border-[var(--color-border)] bg-white px-8 py-3.5 text-base font-semibold text-[var(--color-text)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors text-center"
               >
                 {dict.hero.ctaSecondary}

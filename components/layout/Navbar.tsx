@@ -7,6 +7,7 @@ import { useState, useRef } from 'react'
 import LanguageSwitcher from './LanguageSwitcher'
 import type { Locale } from '@/app/[lang]/dictionaries'
 import { services } from '@/app/lib/services'
+import { lp, lpService } from '@/app/lib/paths'
 
 type Dict = {
   nav: { home: string; services: string; about: string; contact: string }
@@ -20,9 +21,9 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
 
   const links = [
     { href: `/${lang}`, label: dict.nav.home },
-    { href: `/${lang}/services`, label: dict.nav.services, hasDropdown: true },
-    { href: `/${lang}/about`, label: dict.nav.about },
-    { href: `/${lang}/contact`, label: dict.nav.contact },
+    { href: lp(lang, 'services'), label: dict.nav.services, hasDropdown: true },
+    { href: lp(lang, 'about'), label: dict.nav.about },
+    { href: lp(lang, 'contact'), label: dict.nav.contact },
   ]
 
   const isActive = (href: string) =>
@@ -105,7 +106,7 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
                         {services.map((s) => {
                           const st = s[lang as 'tr' | 'en']
                           const slug = s.slugs[lang as 'tr' | 'en']
-                          const href = `/${lang}/services/${slug}`
+                          const href = lpService(lang, slug)
                           const active = pathname === href
                           return (
                             <Link
@@ -137,7 +138,7 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
                           {lang === 'tr' ? `${services.length} hizmet` : `${services.length} services`}
                         </span>
                         <Link
-                          href={`/${lang}/services`}
+                          href={lp(lang, 'services')}
                           onClick={() => setServicesOpen(false)}
                           className="text-xs font-medium text-[var(--color-primary)] hover:underline transition-colors"
                         >
@@ -166,7 +167,7 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
           <div className="hidden md:flex items-center gap-3">
             <LanguageSwitcher lang={lang} />
             <Link
-              href={`/${lang}/contact`}
+              href={lp(lang, 'contact')}
               className="rounded-full bg-[var(--color-primary)] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[var(--color-primary-dark)]"
             >
               {dict.nav.contact}
@@ -217,7 +218,7 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
                         {services.map((s) => {
                           const st = s[lang as 'tr' | 'en']
                           const slug = s.slugs[lang as 'tr' | 'en']
-                          const href = `/${lang}/services/${slug}`
+                          const href = lpService(lang, slug)
                           const active = pathname === href
                           return (
                             <Link

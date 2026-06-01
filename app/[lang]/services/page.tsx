@@ -35,7 +35,10 @@ export async function generateMetadata({
           'emergency vet Lefkoşa', '24/7 vet North Cyprus', 'vet lab Gönyeli',
         ],
     openGraph: { title, description, url: `/${lang}/services` },
-    alternates: { canonical: `/${lang}/services` },
+    alternates: {
+      canonical: `/${lang}/services`,
+      languages: { tr: '/tr/hizmetler', en: '/en/services' },
+    },
   }
 }
 

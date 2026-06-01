@@ -6,7 +6,7 @@ import Footer from '@/components/layout/Footer'
 import CookieConsent from '@/components/ui/CookieConsent'
 
 export async function generateStaticParams() {
-  return [{ lang: 'tr' }, { lang: 'en' }]
+  return [{ lang: 'en' }]
 }
 
 export async function generateMetadata({

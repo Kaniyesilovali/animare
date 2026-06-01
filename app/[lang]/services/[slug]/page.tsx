@@ -10,13 +10,7 @@ import {
 } from '@/app/lib/services'
 
 export async function generateStaticParams() {
-  const params: { lang: string; slug: string }[] = []
-  for (const lang of ['tr', 'en'] as const) {
-    for (const slug of getAllServiceSlugs(lang)) {
-      params.push({ lang, slug })
-    }
-  }
-  return params
+  return getAllServiceSlugs('en').map((slug) => ({ lang: 'en', slug }))
 }
 
 export async function generateMetadata({
@@ -41,7 +35,7 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${lang}/services/${slug}`,
       languages: {
-        tr: `/tr/services/${service.slugs.tr}`,
+        tr: `/tr/hizmetler/${service.slugs.tr}`,
         en: `/en/services/${service.slugs.en}`,
       },
     },

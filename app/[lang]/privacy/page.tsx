@@ -16,7 +16,10 @@ export async function generateMetadata({
       ? 'Animare Veteriner Kliniği gizlilik politikası ve KVKK aydınlatma metni. Kişisel verilerinizin nasıl işlendiğini öğrenin.'
       : 'Animare Veterinary Clinic privacy policy and GDPR information. Learn how your personal data is processed.',
     robots: { index: false, follow: false },
-    alternates: { canonical: `/${lang}/privacy` },
+    alternates: {
+      canonical: `/${lang}/privacy`,
+      languages: { tr: '/tr/gizlilik', en: '/en/privacy' },
+    },
   }
 }
 

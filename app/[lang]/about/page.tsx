@@ -34,7 +34,10 @@ export async function generateMetadata({
           'trusted vet Gönyeli', 'experienced vet North Cyprus', 'animal clinic since 2026',
         ],
     openGraph: { title, description, url: `/${lang}/about` },
-    alternates: { canonical: `/${lang}/about` },
+    alternates: {
+      canonical: `/${lang}/about`,
+      languages: { tr: '/tr/hakkimizda', en: '/en/about' },
+    },
   }
 }
 

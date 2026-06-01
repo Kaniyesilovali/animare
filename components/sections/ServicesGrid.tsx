@@ -5,6 +5,7 @@ import Link from 'next/link'
 import ServiceCard from '@/components/ui/ServiceCard'
 import type { Locale } from '@/app/[lang]/dictionaries'
 import { services as serviceData } from '@/app/lib/services'
+import { lpService } from '@/app/lib/paths'
 
 type Dict = {
   services: {
@@ -148,7 +149,7 @@ export default function ServicesGrid({ lang, dict }: { lang?: Locale; dict: Dict
               icon={serviceIcons[key]}
               title={item.title}
               desc={item.desc}
-              href={slugMap[key] ? `/${locale}/services/${slugMap[key]}` : undefined}
+              href={slugMap[key] ? lpService(locale as Locale, slugMap[key]) : undefined}
             />
           ))}
         </div>

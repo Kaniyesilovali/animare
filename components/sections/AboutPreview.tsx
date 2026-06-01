@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Locale } from '@/app/[lang]/dictionaries'
+import { lp } from '@/app/lib/paths'
 
 type Dict = {
   about: {
@@ -33,7 +34,7 @@ export default function AboutPreview({ lang, dict }: { lang: Locale; dict: Dict 
             <p className="text-[var(--color-muted)] leading-relaxed mb-4">{dict.about.text}</p>
             <p className="text-[var(--color-muted)] leading-relaxed mb-8">{dict.about.text2}</p>
             <Link
-              href={`/${lang}/about`}
+              href={lp(lang, 'about')}
               className="inline-flex items-center gap-2 rounded-full bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-primary-dark)] transition-colors"
             >
               {dict.about.learnMore} →

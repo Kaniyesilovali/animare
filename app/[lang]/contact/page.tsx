@@ -32,7 +32,10 @@ export async function generateMetadata({
           'dog appointment vet North Cyprus', 'cat appointment vet TRNC',
         ],
     openGraph: { title, description, url: `/${lang}/contact` },
-    alternates: { canonical: `/${lang}/contact` },
+    alternates: {
+      canonical: `/${lang}/contact`,
+      languages: { tr: '/tr/iletisim', en: '/en/contact' },
+    },
   }
 }
 

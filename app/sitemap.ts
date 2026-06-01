@@ -4,33 +4,61 @@ import { getAllServiceSlugs } from '@/app/lib/services'
 export const dynamic = 'force-static'
 
 const BASE = 'https://animare.vet'
-const LOCALES = ['tr', 'en'] as const
+
+// Language-specific path segments
+const PATHS = {
+  tr: { services: 'hizmetler', about: 'hakkimizda', contact: 'iletisim' },
+  en: { services: 'services', about: 'about', contact: 'contact' },
+}
 
 const staticPages = [
-  { path: '', priority: 1.0, changeFrequency: 'weekly' as const },
-  { path: '/services', priority: 0.9, changeFrequency: 'monthly' as const },
-  { path: '/about', priority: 0.8, changeFrequency: 'monthly' as const },
-  { path: '/contact', priority: 0.8, changeFrequency: 'monthly' as const },
+  {
+    tr: '',
+    en: '',
+    priority: 1.0,
+    changeFrequency: 'weekly' as const,
+  },
+  {
+    tr: `/${PATHS.tr.services}`,
+    en: `/${PATHS.en.services}`,
+    priority: 0.9,
+    changeFrequency: 'monthly' as const,
+  },
+  {
+    tr: `/${PATHS.tr.about}`,
+    en: `/${PATHS.en.about}`,
+    priority: 0.8,
+    changeFrequency: 'monthly' as const,
+  },
+  {
+    tr: `/${PATHS.tr.contact}`,
+    en: `/${PATHS.en.contact}`,
+    priority: 0.8,
+    changeFrequency: 'monthly' as const,
+  },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages
-  for (const locale of LOCALES) {
-    for (const { path, priority, changeFrequency } of staticPages) {
-      entries.push({
-        url: `${BASE}/${locale}${path}`,
-        lastModified: new Date(),
-        changeFrequency,
-        priority,
-        alternates: {
-          languages: Object.fromEntries(
-            LOCALES.map((l) => [l, `${BASE}/${l}${path}`])
-          ),
-        },
-      })
-    }
+  for (const page of staticPages) {
+    const trUrl = `${BASE}/tr${page.tr}`
+    const enUrl = `${BASE}/en${page.en}`
+    entries.push({
+      url: trUrl,
+      lastModified: new Date(),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+      alternates: { languages: { tr: trUrl, en: enUrl } },
+    })
+    entries.push({
+      url: enUrl,
+      lastModified: new Date(),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+      alternates: { languages: { tr: trUrl, en: enUrl } },
+    })
   }
 
   // Individual service pages
@@ -38,29 +66,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const enSlugs = getAllServiceSlugs('en')
 
   for (let i = 0; i < trSlugs.length; i++) {
+    const trUrl = `${BASE}/tr/${PATHS.tr.services}/${trSlugs[i]}`
+    const enUrl = `${BASE}/en/${PATHS.en.services}/${enSlugs[i]}`
     entries.push({
-      url: `${BASE}/tr/services/${trSlugs[i]}`,
+      url: trUrl,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
-      alternates: {
-        languages: {
-          tr: `${BASE}/tr/services/${trSlugs[i]}`,
-          en: `${BASE}/en/services/${enSlugs[i]}`,
-        },
-      },
+      alternates: { languages: { tr: trUrl, en: enUrl } },
     })
     entries.push({
-      url: `${BASE}/en/services/${enSlugs[i]}`,
+      url: enUrl,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
-      alternates: {
-        languages: {
-          tr: `${BASE}/tr/services/${trSlugs[i]}`,
-          en: `${BASE}/en/services/${enSlugs[i]}`,
-        },
-      },
+      alternates: { languages: { tr: trUrl, en: enUrl } },
     })
   }
 

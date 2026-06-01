@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Locale } from '@/app/[lang]/dictionaries'
+import { lp } from '@/app/lib/paths'
 
 type Dict = {
   nav: { home: string; services: string; about: string; contact: string }
@@ -11,9 +12,9 @@ type Dict = {
 export default function Footer({ lang, dict }: { lang: Locale; dict: Dict }) {
   const links = [
     { href: `/${lang}`, label: dict.nav.home },
-    { href: `/${lang}/services`, label: dict.nav.services },
-    { href: `/${lang}/about`, label: dict.nav.about },
-    { href: `/${lang}/contact`, label: dict.nav.contact },
+    { href: lp(lang, 'services'), label: dict.nav.services },
+    { href: lp(lang, 'about'), label: dict.nav.about },
+    { href: lp(lang, 'contact'), label: dict.nav.contact },
   ]
 
   return (
@@ -93,7 +94,7 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dict }) {
         <div className="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40">
           <span>© {new Date().getFullYear()} Animare Veteriner Kliniği. {dict.footer.rights} 🐾 {dict.footer.madeBy} <a href="https://raptordigital.net/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white/70 transition-colors">Raptor Digital</a></span>
           <Link
-            href={`/${lang}/privacy`}
+            href={lp(lang, 'privacy')}
             className="hover:text-white/70 transition-colors underline"
           >
             {dict.footer.privacy}

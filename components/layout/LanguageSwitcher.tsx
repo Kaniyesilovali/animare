@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { services } from '@/app/lib/services'
 import type { Locale } from '@/app/[lang]/dictionaries'
+import { translateSegment, lpService } from '@/app/lib/paths'
 
 export default function LanguageSwitcher({ lang }: { lang: Locale }) {
   const pathname = usePathname()
@@ -13,14 +14,22 @@ export default function LanguageSwitcher({ lang }: { lang: Locale }) {
   function getLocalizedPath(targetLang: Locale): string {
     const pathWithoutLocale = pathname.replace(/^\/(?:tr|en)/, '')
 
-    // Service detail pages have locale-specific slugs — translate them
-    const serviceMatch = pathWithoutLocale.match(/^\/services\/(.+)$/)
+    // Service detail: match both /hizmetler/{slug} and /services/{slug}
+    const serviceMatch = pathWithoutLocale.match(/^\/(hizmetler|services)\/(.+)$/)
     if (serviceMatch) {
-      const currentSlug = serviceMatch[1]
+      const currentSlug = serviceMatch[2]
       const service = services.find(s => s.slugs[activeLang] === currentSlug)
       if (service) {
-        return `/${targetLang}/services/${service.slugs[targetLang]}`
+        return lpService(targetLang, service.slugs[targetLang])
       }
+    }
+
+    // Translate the first path segment (hizmetler↔services, hakkimizda↔about, etc.)
+    const parts = pathWithoutLocale.split('/').filter(Boolean)
+    if (parts.length > 0) {
+      const translated = translateSegment(parts[0], targetLang)
+      const rest = parts.slice(1).join('/')
+      return `/${targetLang}/${translated}${rest ? `/${rest}` : ''}`
     }
 
     return `/${targetLang}${pathWithoutLocale}`
