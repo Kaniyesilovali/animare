@@ -45,6 +45,12 @@ const vetClinicSchema = {
       opens: '09:00',
       closes: '15:00',
     },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Sunday',
+      opens: '00:00',
+      closes: '00:00',
+    },
   ],
   medicalSpecialty: [
     'Small Animal Surgery',
@@ -71,7 +77,18 @@ const vetClinicSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'MedicalProcedure', name: 'Acil Hizmet' } },
     ],
   },
-  sameAs: ['https://animare.vet'],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  sameAs: [
+    'https://animare.vet',
+    'https://www.instagram.com/animare.vet/',
+    'https://www.facebook.com/animare.vet',
+  ],
 }
 
 export default async function HomePage({

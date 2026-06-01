@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import JsonLd from '@/components/JsonLd'
 import type { Locale } from '@/app/[lang]/dictionaries'
 
 const translations = {
@@ -24,11 +25,50 @@ const translations = {
   },
 }
 
+const productsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'N&D Farmina Pet Food',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      item: {
+        '@type': 'Product',
+        name: 'N&D Premium for Cats',
+        brand: { '@type': 'Brand', name: 'Farmina' },
+        description: 'Premium grain-free cat food recommended by veterinarians at Animare Clinic.',
+        offers: {
+          '@type': 'Offer',
+          availability: 'https://schema.org/InStock',
+          seller: { '@type': 'VeterinaryCare', name: 'Animare Veteriner Kliniği' },
+        },
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      item: {
+        '@type': 'Product',
+        name: 'N&D Ocean for Dogs',
+        brand: { '@type': 'Brand', name: 'Farmina' },
+        description: 'Premium ocean formula dog food recommended by veterinarians at Animare Clinic.',
+        offers: {
+          '@type': 'Offer',
+          availability: 'https://schema.org/InStock',
+          seller: { '@type': 'VeterinaryCare', name: 'Animare Veteriner Kliniği' },
+        },
+      },
+    },
+  ],
+}
+
 export default function FeaturedProducts({ lang }: { lang: Locale }) {
   const t = translations[lang] ?? translations.tr
 
   return (
     <section className="py-16 sm:py-24 bg-gradient-to-br from-[var(--color-primary-light)] via-white to-[var(--color-accent-light)]">
+      <JsonLd data={productsSchema} />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
         {/* Header */}

@@ -100,9 +100,19 @@ export default async function ServiceDetailPage({
     },
   }
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: t.faqs.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  }
+
   return (
     <div>
-      <JsonLd data={[breadcrumb, serviceSchema]} />
+      <JsonLd data={[breadcrumb, serviceSchema, faqSchema]} />
 
       {/* Hero */}
       <div className="bg-[var(--color-primary)] py-14">
@@ -138,6 +148,29 @@ export default async function ServiceDetailPage({
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* FAQ */}
+          <div className="mb-10">
+            <h2 className="font-semibold text-[var(--color-text)] mb-4 text-lg">
+              {isTr ? 'Sık Sorulan Sorular' : 'Frequently Asked Questions'}
+            </h2>
+            <div className="space-y-3">
+              {t.faqs.map(({ q, a }) => (
+                <details
+                  key={q}
+                  className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] open:bg-white"
+                >
+                  <summary className="flex cursor-pointer items-center justify-between px-5 py-4 font-medium text-[var(--color-text)] list-none">
+                    <span>{q}</span>
+                    <span className="ml-4 flex-shrink-0 text-[var(--color-primary)] transition-transform group-open:rotate-45">
+                      +
+                    </span>
+                  </summary>
+                  <p className="px-5 pb-4 text-sm leading-relaxed text-[var(--color-muted)]">{a}</p>
+                </details>
+              ))}
+            </div>
           </div>
 
           {/* CTA */}

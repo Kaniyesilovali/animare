@@ -15,6 +15,7 @@ export type ServiceLang = {
   meta: { title: string; description: string; keywords: string[] }
   body: string
   bullets: string[]
+  faqs: { q: string; a: string }[]
 }
 
 export type ServiceData = {
@@ -53,6 +54,20 @@ export const services: ServiceData[] = [
         'Beslenme ve yaşam tarzı önerileri',
         'Sonuçların sahiple detaylı paylaşımı',
       ],
+      faqs: [
+        {
+          q: 'Evcil hayvanımı ne sıklıkla muayeneye getirmeliyim?',
+          a: 'Sağlıklı yetişkin hayvanlar için yılda bir, yaşlı ya da kronik hastalığı olanlar için 6 ayda bir muayene önerilir. Yavru köpek ve kediler ilk yıllarında daha sık kontrole ihtiyaç duyar.',
+        },
+        {
+          q: 'Genel muayene neleri kapsar?',
+          a: 'Kalp, akciğer, eklemler, deri, göz, kulak ve dişlerin kapsamlı fiziksel muayenesini kapsar. Gerekirse kan tahlili veya radyoloji hizmetlerine yönlendirilirsiniz.',
+        },
+        {
+          q: 'Randevu almam gerekiyor mu?',
+          a: 'Evet. +90 533 844 91 92 numaralı hattı arayarak veya iletişim sayfamızdan uygun bir saatte randevu alabilirsiniz.',
+        },
+      ],
     },
     en: {
       title: 'General Check-up',
@@ -76,6 +91,20 @@ export const services: ServiceData[] = [
         'Vaccination and care scheduling',
         'Nutrition and lifestyle advice',
         'Detailed results shared with owner',
+      ],
+      faqs: [
+        {
+          q: 'How often should I bring my pet for a check-up?',
+          a: 'Annual check-ups for healthy adults, every 6 months for seniors or pets with ongoing conditions. Puppies and kittens need more frequent visits in their first year.',
+        },
+        {
+          q: 'What does a general check-up include?',
+          a: 'A comprehensive physical examination of the heart, lungs, joints, skin, eyes, ears, and teeth. Blood tests or radiology are arranged where needed.',
+        },
+        {
+          q: 'Do I need an appointment?',
+          a: 'Yes. Call us on +90 533 844 91 92 or use our contact page to book at a convenient time.',
+        },
       ],
     },
   },
@@ -107,6 +136,20 @@ export const services: ServiceData[] = [
         'Parvovirus ve distemper koruması',
         'Yıllık hatırlatma takibi',
       ],
+      faqs: [
+        {
+          q: 'Köpeğim veya kedim ne zaman aşılanmalı?',
+          a: 'Yavru hayvanlar 6–8 haftalıktan itibaren aşı programına başlamalıdır. Yetişkin hayvanlarda yıllık hatırlatma aşıları bağışıklığı korur.',
+        },
+        {
+          q: 'Hangi aşılar zorunlu?',
+          a: 'Köpekler için karma aşı (DHPPi+L) ve kuduz, kediler için FVRCP ve FeLV temel aşı programını oluşturur.',
+        },
+        {
+          q: 'Aşı sonrası yan etki olur mu?',
+          a: 'Hafif ağrı veya geçici yorgunluk normaldir. Şiddetli bir reaksiyon gözlemlerseniz derhal kliniğimizi arayın.',
+        },
+      ],
     },
     en: {
       title: 'Vaccination',
@@ -130,6 +173,20 @@ export const services: ServiceData[] = [
         'Rabies vaccine',
         'Parvovirus and distemper protection',
         'Annual booster tracking',
+      ],
+      faqs: [
+        {
+          q: 'When should I vaccinate my puppy or kitten?',
+          a: 'Vaccination programmes typically begin at 6–8 weeks of age. Adult pets receive annual booster doses to maintain immunity.',
+        },
+        {
+          q: 'Which vaccines are essential?',
+          a: 'Core vaccines for dogs include DHPPi+L and rabies; for cats, FVRCP and FeLV form the core programme.',
+        },
+        {
+          q: 'Are there side effects after vaccination?',
+          a: 'Mild soreness or temporary lethargy is normal. If you notice a severe reaction, contact our clinic immediately.',
+        },
       ],
     },
   },
@@ -160,6 +217,20 @@ export const services: ServiceData[] = [
         'Tümör eksizyonu',
         'Operasyon sonrası takip',
       ],
+      faqs: [
+        {
+          q: 'Kısırlaştırma için en uygun yaş nedir?',
+          a: 'Köpek ve kediler için genellikle 5–6 aylıktan itibaren kısırlaştırma yapılabilir. Kesin zamanlama ırka ve sağlık durumuna göre belirlenir.',
+        },
+        {
+          q: 'Operasyon öncesinde ne yapmalıyım?',
+          a: 'Operasyondan en az 8 saat önce yiyecek ve su verilmemesi gerekir. Tüm hazırlık talimatları ameliyat randevusu sırasında detaylı olarak aktarılır.',
+        },
+        {
+          q: 'İyileşme süreci ne kadar sürer?',
+          a: 'Rutin kısırlaştırma için genellikle 7–10 gün yeterlidir. Daha kapsamlı operasyonlarda süre uzayabilir; her hasta için takip randevusu planlanır.',
+        },
+      ],
     },
     en: {
       title: 'Surgery',
@@ -183,6 +254,20 @@ export const services: ServiceData[] = [
         'Foreign body removal',
         'Tumour excision',
         'Post-operative follow-up',
+      ],
+      faqs: [
+        {
+          q: 'What is the best age for neutering?',
+          a: 'Neutering is typically performed from 5–6 months of age for dogs and cats. The exact timing depends on breed and health status.',
+        },
+        {
+          q: 'How should I prepare my pet for surgery?',
+          a: 'Food and water must be withheld for at least 8 hours before the operation. Full pre-operative instructions are provided at the time of booking.',
+        },
+        {
+          q: 'How long is the recovery period?',
+          a: 'Routine neutering usually requires 7–10 days. More complex procedures may take longer; a follow-up appointment is scheduled for every patient.',
+        },
       ],
     },
   },
@@ -212,6 +297,20 @@ export const services: ServiceData[] = [
         'Diş çekimi (gerektiren durumlarda)',
         'Ev bakımı için öneriler',
       ],
+      faqs: [
+        {
+          q: 'Evcil hayvanımın dişlerini ne sıklıkla temizletmeliyim?',
+          a: 'Yılda en az bir kez profesyonel diş temizliği önerilir. Diş taşı eğilimi yüksek ırklarda bu sıklık artabilir.',
+        },
+        {
+          q: 'Diş taşı temizliği anestezi gerektiriyor mu?',
+          a: 'Evet, hayvanın stressiz ve hareketsiz kalması için kısa süreli anestezi uygulanır. Bu işlem klinik ortamında güvenle gerçekleştirilir.',
+        },
+        {
+          q: 'Evde diş bakımı için ne yapabilirim?',
+          a: 'Veteriner hekimimiz size özel diş fırçası ve macun önerecektir. Düzenli ev bakımı profesyonel temizlik sıklığını önemli ölçüde azaltır.',
+        },
+      ],
     },
     en: {
       title: 'Dental Care',
@@ -234,6 +333,20 @@ export const services: ServiceData[] = [
         'Gum health assessment',
         'Tooth extraction (where required)',
         'Home care recommendations',
+      ],
+      faqs: [
+        {
+          q: 'How often should my pet have dental cleaning?',
+          a: 'Professional cleaning at least once a year is recommended. Breeds prone to tartar build-up may benefit from more frequent appointments.',
+        },
+        {
+          q: 'Does dental cleaning require anaesthesia?',
+          a: 'Yes, a short-acting anaesthetic is used so the procedure is stress-free and safe. It is performed under full clinical supervision.',
+        },
+        {
+          q: 'What can I do at home?',
+          a: 'Our vet will recommend a suitable pet toothbrush and paste. Regular home brushing significantly reduces the rate of tartar accumulation.',
+        },
       ],
     },
   },
@@ -264,6 +377,20 @@ export const services: ServiceData[] = [
         'Yabancı cisim tespiti',
         'Dijital arşivleme',
       ],
+      faqs: [
+        {
+          q: 'Röntgen veya ultrason için randevu gerekiyor mu?',
+          a: 'Öncelikle genel muayene randevusu alınması önerilir. Acil durumlarda görüntüleme derhal yapılabilir.',
+        },
+        {
+          q: 'Radyoloji işlemi güvenli mi?',
+          a: 'Dijital röntgen cihazlarımız minimum radyasyon dozu kullanır. Ultrasonografi ise tamamen radyasyon içermeyen, güvenli bir görüntüleme yöntemidir.',
+        },
+        {
+          q: 'Ultrasonla hamilelik kontrolü yapılabilir mi?',
+          a: 'Evet. Ultrasonografi ile köpek ve kedilerde gebelik tespiti ve yavru sayısı belirlenmesi güvenilir biçimde yapılabilmektedir.',
+        },
+      ],
     },
     en: {
       title: 'Radiology',
@@ -287,6 +414,20 @@ export const services: ServiceData[] = [
         'Pregnancy monitoring',
         'Foreign body detection',
         'Digital archiving',
+      ],
+      faqs: [
+        {
+          q: 'Do I need an appointment for X-ray or ultrasound?',
+          a: 'A general check-up appointment is recommended first. In emergencies, imaging can be arranged immediately.',
+        },
+        {
+          q: 'Is the radiology procedure safe?',
+          a: 'Our digital X-ray equipment uses minimal radiation doses. Ultrasonography is entirely radiation-free and safe for all patients.',
+        },
+        {
+          q: 'Can you check pregnancy with ultrasound?',
+          a: 'Yes. Ultrasound reliably confirms pregnancy and estimates litter size in dogs and cats.',
+        },
       ],
     },
   },
@@ -318,6 +459,20 @@ export const services: ServiceData[] = [
         'Ciddi yaralanmalar',
         'Doğum komplikasyonları',
       ],
+      faqs: [
+        {
+          q: 'Acil durumlarda haftanın her günü ulaşabilir miyim?',
+          a: 'Evet, kliniğimiz 7 gün 24 saat acil vakalar için erişilebilir durumdadır. Hemen arayın: +90 533 844 91 92.',
+        },
+        {
+          q: 'Hangi durumlar acil sayılır?',
+          a: 'Zehirlenme, trafik kazası, nefes güçlüğü, bilinç kaybı, şiddetli yaralanma ve doğum komplikasyonları acil durumlara girer.',
+        },
+        {
+          q: 'Kliniğe gelmeden önce ne yapmalıyım?',
+          a: 'Hayvanı sakin bir yere alın ve bizi arayın. Telefonda durumu tarif edin; kliniğe ulaşmadan önce ilk yardım yönlendirmesi yapabiliriz.',
+        },
+      ],
     },
     en: {
       title: 'Emergency Service',
@@ -342,6 +497,20 @@ export const services: ServiceData[] = [
         'Breathing & circulatory emergencies',
         'Severe injuries',
         'Birth complications',
+      ],
+      faqs: [
+        {
+          q: 'Can I reach you 24/7 for emergencies?',
+          a: 'Yes, our clinic is accessible around the clock for emergency cases. Call immediately: +90 533 844 91 92.',
+        },
+        {
+          q: 'What counts as an emergency?',
+          a: 'Poisoning, traffic accidents, breathing difficulties, loss of consciousness, severe injuries, and birth complications are all emergencies.',
+        },
+        {
+          q: 'What should I do before bringing my pet in?',
+          a: 'Keep your pet calm and call us first. Describe the situation over the phone — we can provide initial guidance before you arrive.',
+        },
       ],
     },
   },
@@ -372,6 +541,20 @@ export const services: ServiceData[] = [
         'Parazit (dışkı) taraması',
         'Enfeksiyöz hastalık hızlı testleri',
       ],
+      faqs: [
+        {
+          q: 'Test sonuçları ne kadar sürede çıkar?',
+          a: 'Kliniğimizde yapılan hızlı testlerin büyük çoğunluğu aynı gün sonuçlanır. Mikrobiyoloji kültürleri için ek süre gerekebilir.',
+        },
+        {
+          q: 'Kan tahlili için aç gelinmesi gerekiyor mu?',
+          a: 'Bazı biyokimya testleri için 8–12 saatlik açlık önerilir. Veteriner hekimimiz hangi testlerin açlık gerektirdiğini randevu sırasında bildirecektir.',
+        },
+        {
+          q: 'Hangi hastalıklar laboratuvar testleriyle tespit edilebilir?',
+          a: 'Böbrek ve karaciğer yetmezliği, anemi, enfeksiyonlar, parazitler, tiroid sorunları ve pek çok enfeksiyöz hastalık laboratuvar testleriyle teşhis edilebilir.',
+        },
+      ],
     },
     en: {
       title: 'Laboratory',
@@ -395,6 +578,20 @@ export const services: ServiceData[] = [
         'Urinalysis',
         'Parasite (faecal) screening',
         'Rapid infectious disease tests',
+      ],
+      faqs: [
+        {
+          q: 'How quickly are test results available?',
+          a: 'Most rapid in-house tests are completed the same day. Microbiological cultures may require additional time.',
+        },
+        {
+          q: 'Should my pet be fasting before a blood test?',
+          a: 'Fasting for 8–12 hours is recommended for certain biochemistry panels. Our vet will inform you in advance which tests require it.',
+        },
+        {
+          q: 'What conditions can laboratory tests detect?',
+          a: 'Kidney and liver disease, anaemia, infections, parasites, thyroid disorders, and many infectious diseases can all be identified through laboratory testing.',
+        },
       ],
     },
   },
@@ -425,6 +622,20 @@ export const services: ServiceData[] = [
         'Kulak temizliği',
         'Parazit kontrolü',
       ],
+      faqs: [
+        {
+          q: 'Pet kuaförü için randevu gerekiyor mu?',
+          a: 'Evet, randevu alarak gelmenizi tavsiye ederiz. +90 533 844 91 92 numarasını arayarak uygun bir saat belirleyebilirsiniz.',
+        },
+        {
+          q: 'Her ırka bakım hizmeti veriliyor mu?',
+          a: 'Evet, farklı ırklara özgü tıraş ve şekillendirme teknikleri uygulanmaktadır. Uzun ve kısa tüylü ırklara özel işlemler mevcuttur.',
+        },
+        {
+          q: 'Bakım sırasında bir sağlık sorunu fark edilirse ne olur?',
+          a: 'Grooming ekibimiz cilt, kulak veya parazit sorununu fark ettiğinde doğrudan veteriner hekimimize bildirir; gerekirse aynı gün muayene planlanabilir.',
+        },
+      ],
     },
     en: {
       title: 'Pet Grooming',
@@ -448,6 +659,20 @@ export const services: ServiceData[] = [
         'Nail clipping',
         'Ear cleaning',
         'Parasite check',
+      ],
+      faqs: [
+        {
+          q: 'Do I need an appointment for grooming?',
+          a: 'Yes, we recommend booking in advance. Call us on +90 533 844 91 92 to arrange a convenient time.',
+        },
+        {
+          q: 'Is grooming available for all breeds?',
+          a: 'Yes, our team is experienced in breed-specific trimming and styling for both long- and short-coated breeds.',
+        },
+        {
+          q: 'What happens if a health issue is spotted during grooming?',
+          a: 'Our grooming team reports any skin, ear, or parasite concerns directly to our vet. An examination can often be arranged the same day.',
+        },
       ],
     },
   },
@@ -478,6 +703,20 @@ export const services: ServiceData[] = [
         'Böbrek, eklem ve deri destekli diyetler',
         'N&D Farmina premium mama danışmanlığı',
       ],
+      faqs: [
+        {
+          q: 'Beslenme danışmanlığı için nasıl randevu alırım?',
+          a: 'Kliniğimizi +90 533 844 91 92 numarasından arayarak veya iletişim sayfamızdan randevu alabilirsiniz. Veteriner hekimimiz hayvanınızı değerlendirerek kişiselleştirilmiş bir beslenme planı hazırlar.',
+        },
+        {
+          q: 'N&D Farmina ürünleri klinikte satışa sunuluyor mu?',
+          a: 'Evet, veteriner hekimlerimizin önerdiği N&D Farmina premium mama serisi kliniğimizde mevcuttur.',
+        },
+        {
+          q: 'Şişman hayvanım için diyet programı hazırlanabilir mi?',
+          a: 'Evet. Veteriner hekimimiz kilo yönetimi ve kontrollü diyet programları hazırlamakta, ilerleme takibi için düzenli kontrol randevuları planlamaktadır.',
+        },
+      ],
     },
     en: {
       title: 'Nutrition Consulting',
@@ -501,6 +740,20 @@ export const services: ServiceData[] = [
         'Weight management & diet programme',
         'Kidney, joint, and skin support diets',
         'N&D Farmina premium food consulting',
+      ],
+      faqs: [
+        {
+          q: 'How do I get nutrition advice for my pet?',
+          a: "Our vet will assess your pet's age, breed, weight, and health status and prepare a personalised nutrition plan during a consultation.",
+        },
+        {
+          q: 'Are N&D Farmina products available at your clinic?',
+          a: 'Yes, the premium N&D Farmina range recommended by our veterinarians is stocked at our clinic.',
+        },
+        {
+          q: 'Can you create a weight management plan?',
+          a: 'Yes. Our vet designs controlled diet programmes for overweight pets and schedules regular weigh-ins to monitor progress.',
+        },
       ],
     },
   },
