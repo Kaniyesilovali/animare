@@ -1,5 +1,22 @@
 (function(){var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href='/AniMare.png';document.head.appendChild(l);})();
 
+const PATHS = {
+  tr: {
+    services:    '/tr/hizmetler/',
+    about:       '/tr/hakkimizda/',
+    contact:     '/tr/iletisim/',
+    privacy:     '/tr/gizlilik/',
+    serviceSlug: (s) => `/tr/hizmetler/${s}/`
+  },
+  en: {
+    services:    '/en/services/',
+    about:       '/en/about/',
+    contact:     '/en/contact/',
+    privacy:     '/en/privacy/',
+    serviceSlug: (s) => `/en/services/${s}/`
+  }
+};
+
 const ANIMARE_SERVICES = {
   tr: [
     { icon: '🩺', title: 'Genel Muayene',          slug: 'genel-muayene' },
@@ -50,7 +67,7 @@ function renderNav(lang) {
     : 'text-[var(--color-muted)] hover:bg-[var(--color-surface)]';
 
   const dropItems = services.map(s => {
-    const href = `/${lang}/services/${s.slug}/`;
+    const href = PATHS[lang].serviceSlug(s.slug);
     const a = active(href);
     return `<a href="${href}" class="group flex items-center gap-2.5 rounded-xl px-3 py-2 transition-colors ${a ? 'bg-[var(--color-primary-light)]' : 'hover:bg-[var(--color-surface)]'}">
       <span class="text-base flex-shrink-0">${s.icon}</span>
@@ -59,14 +76,15 @@ function renderNav(lang) {
   }).join('');
 
   const mobItems = services.map(s =>
-    `<a href="/${lang}/services/${s.slug}/" class="flex items-center gap-3 px-4 py-2.5 text-sm bg-white text-[var(--color-text)] hover:bg-[var(--color-surface)] transition-colors">
+    `<a href="${PATHS[lang].serviceSlug(s.slug)}" class="flex items-center gap-3 px-4 py-2.5 text-sm bg-white text-[var(--color-text)] hover:bg-[var(--color-surface)] transition-colors">
       <span class="text-base w-6 text-center flex-shrink-0">${s.icon}</span>
       <span class="font-medium">${s.title}</span>
     </a>`
   ).join('');
 
-  const aboutPath = `/${lang}/about/`;
-  const contactPath = `/${lang}/contact/`;
+  const servicesPath = PATHS[lang].services;
+  const aboutPath = PATHS[lang].about;
+  const contactPath = PATHS[lang].contact;
 
   const html = `
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[var(--color-border)] shadow-sm">
@@ -76,7 +94,7 @@ function renderNav(lang) {
       <nav class="hidden md:flex items-center gap-6">
         <a href="/${lang}/" class="text-sm font-medium transition-colors ${ac(`/${lang}/`)}">${L.home}</a>
         <div class="relative" id="sp">
-          <a href="/${lang}/services/" id="sbtn" class="flex items-center gap-1 text-sm font-medium transition-colors ${ac(`/${lang}/services/`)}">
+          <a href="${servicesPath}" id="sbtn" class="flex items-center gap-1 text-sm font-medium transition-colors ${ac(servicesPath)}">
             ${L.services}
             <svg id="sarr" class="h-3.5 w-3.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </a>
@@ -87,7 +105,7 @@ function renderNav(lang) {
               <div class="p-2 grid grid-cols-2 gap-0.5">${dropItems}</div>
               <div class="px-5 py-3 border-t border-[var(--color-border)] bg-[var(--color-surface)] flex items-center justify-between">
                 <span class="text-xs text-[var(--color-muted)]">${L.count}</span>
-                <a href="/${lang}/services/" class="text-xs font-medium text-[var(--color-primary)] hover:underline">${L.viewAll}</a>
+                <a href="${servicesPath}" class="text-xs font-medium text-[var(--color-primary)] hover:underline">${L.viewAll}</a>
               </div>
             </div>
           </div>
@@ -111,7 +129,7 @@ function renderNav(lang) {
     <div id="mm" class="hidden md:hidden border-t border-[var(--color-border)] py-3 flex flex-col gap-0.5">
       <a href="/${lang}/" class="px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${acMob(`/${lang}/`)}">${L.home}</a>
       <div>
-        <button id="msbtn" class="w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${acMob(`/${lang}/services/`)}">
+        <button id="msbtn" class="w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${acMob(servicesPath)}">
           <span>${L.services}</span>
           <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
         </button>
@@ -184,9 +202,9 @@ function renderFooter(lang) {
         <h3 class="font-semibold mb-4 text-sm uppercase tracking-wide text-white/50">${T('Hızlı Bağlantılar', 'Quick Links')}</h3>
         <ul class="space-y-2">
           <li><a href="/${lang}/" class="text-sm text-white/70 hover:text-white transition-colors">${T('Ana Sayfa', 'Home')}</a></li>
-          <li><a href="/${lang}/services/" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hizmetler', 'Services')}</a></li>
-          <li><a href="/${lang}/about/" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hakkımızda', 'About')}</a></li>
-          <li><a href="/${lang}/contact/" class="text-sm text-white/70 hover:text-white transition-colors">${T('İletişim', 'Contact')}</a></li>
+          <li><a href="${PATHS[lang].services}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hizmetler', 'Services')}</a></li>
+          <li><a href="${PATHS[lang].about}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hakkımızda', 'About')}</a></li>
+          <li><a href="${PATHS[lang].contact}" class="text-sm text-white/70 hover:text-white transition-colors">${T('İletişim', 'Contact')}</a></li>
         </ul>
       </div>
       <div>
@@ -200,7 +218,7 @@ function renderFooter(lang) {
     </div>
     <div class="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40">
       <span>© 2026 Animare Veteriner Kliniği. ${T('Tüm hakları saklıdır.', 'All rights reserved.')} 🐾 ${T('Sevgiyle', 'Made with love by')} <a href="https://raptordigital.net/" target="_blank" rel="noopener noreferrer" class="underline hover:text-white/70">Raptor Digital</a></span>
-      <a href="/${lang}/privacy/" class="hover:text-white/70 transition-colors underline">${T('Gizlilik Politikası', 'Privacy Policy')}</a>
+      <a href="${PATHS[lang].privacy}" class="hover:text-white/70 transition-colors underline">${T('Gizlilik Politikası', 'Privacy Policy')}</a>
     </div>
   </div>
 </footer>`;
@@ -219,7 +237,7 @@ function renderCookie(lang) {
   <div class="mx-auto max-w-2xl bg-[var(--color-text)] text-white rounded-2xl shadow-2xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
     <div class="flex-1">
       <p class="text-sm font-semibold mb-1">${T('Çerez Bildirimi', 'Cookie Notice')}</p>
-      <p class="text-xs text-white/70">${T('Web sitemiz yalnızca temel işlevsellik için zorunlu çerezler kullanmaktadır.', 'This website uses only strictly necessary cookies for basic functionality.')} <a href="/${lang}/privacy/" class="underline hover:text-white">${T('Gizlilik Politikası', 'Privacy Policy')}</a></p>
+      <p class="text-xs text-white/70">${T('Web sitemiz yalnızca temel işlevsellik için zorunlu çerezler kullanmaktadır.', 'This website uses only strictly necessary cookies for basic functionality.')} <a href="${PATHS[lang].privacy}" class="underline hover:text-white">${T('Gizlilik Politikası', 'Privacy Policy')}</a></p>
     </div>
     <button id="cookie-accept" class="flex-shrink-0 rounded-full bg-[var(--color-primary)] px-5 py-2 text-sm font-semibold text-white hover:bg-[var(--color-primary-dark)] transition-colors">${T('Anladım', 'Got it')}</button>
   </div>
@@ -258,7 +276,7 @@ function renderOtherServices(lang, currentSlug) {
   const title = isTr ? 'Diğer Hizmetlerimiz' : 'Our Other Services';
 
   const links = others.map(s =>
-    `<a href="/${lang}/services/${s.slug}/" class="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white px-4 py-2 text-sm text-[var(--color-text)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors">
+    `<a href="${PATHS[lang].serviceSlug(s.slug)}" class="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white px-4 py-2 text-sm text-[var(--color-text)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors">
       <span>${s.icon}</span>
       <span>${s.title}</span>
     </a>`
