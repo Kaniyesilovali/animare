@@ -1,210 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
-<loc>https://animare.vet/tr</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://animare.vet/tr/about</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/about" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/about" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://animare.vet/tr/contact</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/contact" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/contact" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://animare.vet/en</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/hizmetler/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/about</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/about" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/about" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/" />
+<lastmod>2026-06-08</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://animare.vet/tr/hakkimizda/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hakkimizda/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/about/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/contact</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/contact" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/contact" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/about/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hakkimizda/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/about/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/genel-muayene</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/genel-muayene" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/general-checkup" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/iletisim/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/iletisim/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/contact/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/general-checkup</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/genel-muayene" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/general-checkup" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/contact/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/iletisim/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/contact/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/asilama</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/asilama" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/vaccination" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/gizlilik/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/gizlilik/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/privacy/" />
+<lastmod>2026-06-08</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.4</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/privacy/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/gizlilik/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/privacy/" />
+<lastmod>2026-06-08</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.4</priority>
+</url>
+<url>
+<loc>https://animare.vet/tr/hizmetler/genel-muayene/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/genel-muayene/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/general-checkup/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/vaccination</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/asilama" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/vaccination" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/general-checkup/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/genel-muayene/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/general-checkup/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/cerrahi</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/cerrahi" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/surgery" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/hizmetler/asilama/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/asilama/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/vaccination/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/surgery</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/cerrahi" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/surgery" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/vaccination/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/asilama/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/vaccination/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/dis-bakimi</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/dis-bakimi" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/dental-care" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/hizmetler/cerrahi/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/cerrahi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/surgery/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/dental-care</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/dis-bakimi" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/dental-care" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/surgery/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/cerrahi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/surgery/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/radyoloji</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/radyoloji" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/radiology" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/hizmetler/dis-bakimi/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/dis-bakimi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/dental-care/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/radiology</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/radyoloji" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/radiology" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/dental-care/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/dis-bakimi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/dental-care/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/acil-hizmet</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/acil-hizmet" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/emergency" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/hizmetler/radyoloji/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/radyoloji/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/radiology/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/emergency</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/acil-hizmet" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/emergency" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/radiology/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/radyoloji/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/radiology/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/laboratuvar</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/laboratuvar" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/laboratory" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/hizmetler/acil-hizmet/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/acil-hizmet/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/emergency/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/laboratory</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/laboratuvar" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/laboratory" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/emergency/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/acil-hizmet/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/emergency/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/pet-kuafor</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/pet-kuafor" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/pet-grooming" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/hizmetler/laboratuvar/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/laboratuvar/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/laboratory/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/pet-grooming</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/pet-kuafor" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/pet-grooming" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/laboratory/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/laboratuvar/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/laboratory/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/tr/services/beslenme-danismanligi</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/beslenme-danismanligi" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/nutrition-consulting" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/tr/hizmetler/pet-kuafor/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/pet-kuafor/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/pet-grooming/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://animare.vet/en/services/nutrition-consulting</loc>
-<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/services/beslenme-danismanligi" />
-<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/nutrition-consulting" />
-<lastmod>2026-05-24T12:53:50.650Z</lastmod>
+<loc>https://animare.vet/en/services/pet-grooming/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/pet-kuafor/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/pet-grooming/" />
+<lastmod>2026-06-08</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://animare.vet/tr/hizmetler/beslenme-danismanligi/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/beslenme-danismanligi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/nutrition-consulting/" />
+<lastmod>2026-06-08</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/services/nutrition-consulting/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/hizmetler/beslenme-danismanligi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/services/nutrition-consulting/" />
+<lastmod>2026-06-08</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
