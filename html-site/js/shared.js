@@ -6,14 +6,18 @@ const PATHS = {
     about:       '/tr/hakkimizda/',
     contact:     '/tr/iletisim/',
     privacy:     '/tr/gizlilik/',
-    serviceSlug: (s) => `/tr/hizmetler/${s}/`
+    blog:        '/tr/blog/',
+    serviceSlug: (s) => `/tr/hizmetler/${s}/`,
+    blogSlug:    (s) => `/tr/blog/${s}/`
   },
   en: {
     services:    '/en/services/',
     about:       '/en/about/',
     contact:     '/en/contact/',
     privacy:     '/en/privacy/',
-    serviceSlug: (s) => `/en/services/${s}/`
+    blog:        '/en/blog/',
+    serviceSlug: (s) => `/en/services/${s}/`,
+    blogSlug:    (s) => `/en/blog/${s}/`
   }
 };
 
@@ -50,8 +54,8 @@ function renderNav(lang) {
   const otherUrl = window.LANG_SWITCH_URL || `/${otherLang}/`;
 
   const L = {
-    tr: { home: 'Ana Sayfa', services: 'Hizmetler', about: 'Hakkımızda', contact: 'İletişim', openMenu: 'Menüyü aç', viewAll: 'Tümünü gör →', count: `${services.length} hizmet` },
-    en: { home: 'Home', services: 'Services', about: 'About', contact: 'Contact', openMenu: 'Open menu', viewAll: 'View all →', count: `${services.length} services` }
+    tr: { home: 'Ana Sayfa', services: 'Hizmetler', about: 'Hakkımızda', blog: 'Blog', contact: 'İletişim', openMenu: 'Menüyü aç', viewAll: 'Tümünü gör →', count: `${services.length} hizmet` },
+    en: { home: 'Home', services: 'Services', about: 'About', blog: 'Blog', contact: 'Contact', openMenu: 'Open menu', viewAll: 'View all →', count: `${services.length} services` }
   }[lang];
 
   const active = (href) => {
@@ -84,6 +88,7 @@ function renderNav(lang) {
 
   const servicesPath = PATHS[lang].services;
   const aboutPath = PATHS[lang].about;
+  const blogPath = PATHS[lang].blog;
   const contactPath = PATHS[lang].contact;
 
   const html = `
@@ -111,6 +116,7 @@ function renderNav(lang) {
           </div>
         </div>
         <a href="${aboutPath}" class="text-sm font-medium transition-colors ${ac(aboutPath)}">${L.about}</a>
+        <a href="${blogPath}" class="text-sm font-medium transition-colors ${ac(blogPath)}">${L.blog}</a>
         <a href="${contactPath}" class="text-sm font-medium transition-colors ${ac(contactPath)}">${L.contact}</a>
       </nav>
       <div class="hidden md:flex items-center gap-3">
@@ -138,6 +144,7 @@ function renderNav(lang) {
         </div>
       </div>
       <a href="${aboutPath}" class="px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${acMob(aboutPath)}">${L.about}</a>
+      <a href="${blogPath}" class="px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${acMob(blogPath)}">${L.blog}</a>
       <a href="${contactPath}" class="px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${acMob(contactPath)}">${L.contact}</a>
       <div class="pt-2 px-3">
         <div class="flex items-center gap-1 rounded-full border border-[var(--color-border)] p-0.5 text-sm font-medium w-fit">
@@ -204,6 +211,7 @@ function renderFooter(lang) {
           <li><a href="/${lang}/" class="text-sm text-white/70 hover:text-white transition-colors">${T('Ana Sayfa', 'Home')}</a></li>
           <li><a href="${PATHS[lang].services}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hizmetler', 'Services')}</a></li>
           <li><a href="${PATHS[lang].about}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hakkımızda', 'About')}</a></li>
+          <li><a href="${PATHS[lang].blog}" class="text-sm text-white/70 hover:text-white transition-colors">Blog</a></li>
           <li><a href="${PATHS[lang].contact}" class="text-sm text-white/70 hover:text-white transition-colors">${T('İletişim', 'Contact')}</a></li>
         </ul>
       </div>

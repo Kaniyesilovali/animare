@@ -5,6 +5,7 @@ const SEGMENTS = {
   about:    { tr: 'hakkimizda', en: 'about' },
   contact:  { tr: 'iletisim', en: 'contact' },
   privacy:  { tr: 'gizlilik', en: 'privacy' },
+  blog:     { tr: 'blog', en: 'blog' },
 } as const
 
 type Page = keyof typeof SEGMENTS

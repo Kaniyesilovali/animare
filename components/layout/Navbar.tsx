@@ -10,7 +10,7 @@ import { services } from '@/app/lib/services'
 import { lp, lpService } from '@/app/lib/paths'
 
 type Dict = {
-  nav: { home: string; services: string; about: string; contact: string }
+  nav: { home: string; services: string; about: string; contact: string; blog: string }
 }
 
 export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
@@ -23,6 +23,7 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: Dict }) {
     { href: `/${lang}`, label: dict.nav.home },
     { href: lp(lang, 'services'), label: dict.nav.services, hasDropdown: true },
     { href: lp(lang, 'about'), label: dict.nav.about },
+    { href: lp(lang, 'blog'), label: dict.nav.blog },
     { href: lp(lang, 'contact'), label: dict.nav.contact },
   ]
 

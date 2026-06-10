@@ -224,4 +224,68 @@
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
+<url>
+<loc>https://animare.vet/tr/blog/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/" />
+<lastmod>2026-06-10</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/" />
+<lastmod>2026-06-10</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://animare.vet/tr/blog/kopek-asi-takvimi/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kopek-asi-takvimi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/dog-vaccination-schedule/" />
+<lastmod>2026-05-20</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/dog-vaccination-schedule/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kopek-asi-takvimi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/dog-vaccination-schedule/" />
+<lastmod>2026-05-20</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/tr/blog/kedilerde-dis-bakimi/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kedilerde-dis-bakimi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/cat-dental-care/" />
+<lastmod>2026-05-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/cat-dental-care/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kedilerde-dis-bakimi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/cat-dental-care/" />
+<lastmod>2026-05-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/tr/blog/yaz-sicaginda-evcil-hayvan/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/yaz-sicaginda-evcil-hayvan/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/summer-heat-pet-safety/" />
+<lastmod>2026-06-05</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/summer-heat-pet-safety/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/yaz-sicaginda-evcil-hayvan/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/summer-heat-pet-safety/" />
+<lastmod>2026-06-05</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
