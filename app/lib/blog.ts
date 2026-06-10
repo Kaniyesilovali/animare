@@ -302,6 +302,96 @@ Flat-faced breeds such as French Bulldogs, Pugs, and Persian cats can struggle t
       },
     },
   },
+  {
+    slug: { tr: 'yaz-aylarinda-ektoparazit-koruma', en: 'ectoparasite-protection-summer' },
+    date: '2026-06-10',
+    category: { tr: 'Parazit Koruması', en: 'Parasite Protection' },
+    icon: '🦟',
+    tr: {
+      title: 'Yaz Aylarında Ektoparazitlere Karşı Koruma Neden Hayati Önem Taşır?',
+      summary: 'Pire, kene, sivrisinek ve kum sineğinin taşıdığı hastalıklar ve yaz aylarında ektoparazit korumasının önemi.',
+      body: `## Neden Yaz Aylarında Ektoparazit Riski Artar?
+
+Yüksek sıcaklık ve artan nem, pire, kene, sivrisinek ve kum sineği gibi ektoparazitlerin çoğalması için ideal koşulları oluşturur. Bu parazitler yalnızca kaşıntı ve deri problemlerine neden olmakla kalmaz, aynı zamanda ciddi hastalık etkenlerini de taşıyabilir.
+
+## Hangi Parazitler Hangi Hastalıkları Taşır?
+
+**Keneler**, babesiosis, ehrlichiosis ve anaplasmosis gibi yaşamı tehdit edebilen hastalıkların bulaşmasında rol oynayabilir.
+
+**Pireler**, alerjik dermatit, yoğun kaşıntı ve deri enfeksiyonlarına neden olabilir; ayrıca bazı bağırsak parazitlerinin bulaşmasında ara konak görevi görür.
+
+**Sivrisinekler**, köpeklerde kalp ve akciğer damarlarını etkileyen kalp kurdu hastalığının (Dirofilaria immitis) bulaşmasında önemli vektörlerdir.
+
+**Kum sinekleri (tatarcıklar)** ise özellikle köpeklerde görülen Leishmaniosis hastalığını bulaştırabilir. Leishmaniosis; deri lezyonları, kilo kaybı, göz problemleri ve iç organlarda çeşitli hasarlara neden olabilen ciddi bir hastalıktır.
+
+## Peki Ne Yapmalıyız?
+
+- Veteriner hekiminizin önerdiği koruma programını düzenli olarak uygulayın.
+- Koruyucu ürünlerin kullanım süresini takip edin.
+- Yürüyüş sonrası tüy ve deri kontrolü yapın.
+- Şüpheli bir durumda veteriner hekiminize danışın.
+
+Düzenli ektoparazit koruması, yalnızca parazitleri uzaklaştırmak için değil, bu parazitlerin taşıdığı hastalıklara karşı da en etkili koruyucu sağlık uygulamalarından biridir.
+
+Unutmayın, parazitlerle mücadelede en etkili yöntem tedavi değil, korumadır.
+
+Koruma programı hakkında bilgi almak için [bize ulaşın](/tr/iletisim).`,
+      meta: {
+        title: 'Yaz Aylarında Ektoparazit Koruması — Pire, Kene, Leishmaniosis | Animare',
+        description:
+          'Yaz aylarında pire, kene, sivrisinek ve kum sineğinin taşıdığı hastalıklar ve ektoparazit korumasının önemi — Animare Veteriner Kliniği, Gönyeli / Lefkoşa, KKTC.',
+        keywords: [
+          'ektoparazit koruma köpek kedi',
+          'kene babesiosis KKTC',
+          'Leishmaniosis kum sineği Kuzey Kıbrıs',
+          'kalp kurdu sivrisinek köpek',
+          'veteriner parazit koruması Lefkoşa',
+        ],
+      },
+    },
+    en: {
+      title: 'Why Ectoparasite Protection in Summer Is Vital for Your Pet',
+      summary: 'The diseases carried by fleas, ticks, mosquitoes, and sand flies — and why summer ectoparasite prevention matters.',
+      body: `## Why Does Ectoparasite Risk Increase in Summer?
+
+High temperatures and rising humidity create ideal conditions for the proliferation of ectoparasites such as fleas, ticks, mosquitoes, and sand flies. These parasites do not only cause itching and skin problems — they also carry pathogens that can lead to serious diseases.
+
+## Which Parasites Carry Which Diseases?
+
+**Ticks** can transmit life-threatening conditions including babesiosis, ehrlichiosis, and anaplasmosis.
+
+**Fleas** can cause allergic dermatitis, intense itching, and skin infections, and also act as intermediate hosts for certain intestinal parasites.
+
+**Mosquitoes** are important vectors for heartworm disease (Dirofilaria immitis), which affects the heart and pulmonary vessels in dogs.
+
+**Sand flies** can transmit Leishmaniosis, a disease seen mainly in dogs. Leishmaniosis is a serious condition that can cause skin lesions, weight loss, eye problems, and damage to internal organs.
+
+## What Should We Do?
+
+- Apply the protection programme recommended by your veterinarian regularly.
+- Keep track of the duration of protective products.
+- Check your pet's coat and skin after walks.
+- Consult your veterinarian if you notice anything suspicious.
+
+Regular ectoparasite protection is not only effective at repelling parasites — it is one of the most important preventive health measures against the diseases they carry.
+
+Remember: the most effective way to fight parasites is prevention, not treatment.
+
+[Contact us](/en/contact) to learn more about parasite prevention programmes.`,
+      meta: {
+        title: 'Summer Ectoparasite Protection — Fleas, Ticks & Leishmaniosis | Animare',
+        description:
+          'Diseases carried by fleas, ticks, mosquitoes, and sand flies in summer — and why ectoparasite prevention is essential. Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus.',
+        keywords: [
+          'ectoparasite protection dog cat',
+          'tick babesiosis North Cyprus',
+          'Leishmaniosis sand fly TRNC',
+          'heartworm mosquito dog',
+          'vet parasite prevention Lefkoşa',
+        ],
+      },
+    },
+  },
 ]
 
 export function getBlogPost(slug: string, lang: 'tr' | 'en'): BlogPost | undefined {
