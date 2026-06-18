@@ -1,4 +1,4 @@
-(function(){var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href='/AniMare.png';document.head.appendChild(l);})();
+(function(){var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href='/images/AniMare.png';document.head.appendChild(l);})();
 
 const PATHS = {
   tr: {
@@ -96,7 +96,7 @@ function renderNav(lang) {
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[var(--color-border)] shadow-sm">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
     <div class="flex h-16 items-center justify-between">
-      <a href="/${lang}/"><img src="/AniMare.png" alt="Animare Veteriner" class="h-16 w-auto object-contain" style="max-height:64px"></a>
+      <a href="/${lang}/"><img src="/images/AniMare.png" alt="Animare Veteriner" class="h-16 w-auto object-contain" style="max-height:64px"></a>
       <nav class="hidden md:flex items-center gap-6">
         <a href="/${lang}/" class="text-sm font-medium transition-colors ${ac(`/${lang}/`)}">${L.home}</a>
         <div class="relative" id="sp">
@@ -195,7 +195,7 @@ function renderFooter(lang) {
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
-        <div class="mb-4"><img src="/AniMare.png" alt="Animare Veteriner" class="h-12 w-auto object-contain"></div>
+        <div class="mb-4"><img src="/images/AniMare.png" alt="Animare Veteriner" class="h-12 w-auto object-contain"></div>
         <p class="text-sm text-white/70 leading-relaxed">${T('Dostlarınıza uzman ellerin sıcaklığıyla bakıyoruz.', 'We care for your companions with expert hands and warm hearts.')}</p>
         <div class="flex gap-3 mt-4">
           <a href="https://www.instagram.com/animare.vet/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
