@@ -222,7 +222,10 @@ function renderFooter(lang) {
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
 
       <div class="sm:col-span-2 lg:col-span-1">
-        <div class="mb-3"><img src="/images/AniMare.png" alt="Animare Veteriner" class="h-12 w-auto object-contain"></div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-white/15 text-white font-semibold text-lg">A</div>
+          <span class="font-semibold text-white leading-tight text-base">Animare<br>Veteriner Kliniği</span>
+        </div>
         <p class="text-sm text-white/70 leading-relaxed mb-4">${T('Kuzey Kıbrıs, Gönyeli\'de profesyonel veteriner hizmetleri.', 'Professional veterinary care in Gönyeli, North Cyprus.')}</p>
         <div class="flex items-center gap-1.5 text-sm text-white/50 mb-4">
           <a href="/tr/" class="${isTr ? 'text-white font-medium' : 'hover:text-white transition-colors'}">Türkçe</a>
@@ -240,12 +243,12 @@ function renderFooter(lang) {
       </div>
 
       <div>
-        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white/50">${T('Hizmetler', 'Services')}</h3>
+        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white">${T('Hizmetler', 'Services')}</h3>
         <ul class="space-y-2">${serviceLinks}</ul>
       </div>
 
       <div>
-        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white/50">${T('Kurumsal', 'About')}</h3>
+        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white">${T('Kurumsal', 'About')}</h3>
         <ul class="space-y-2">
           <li><a href="/${lang}/" class="text-sm text-white/70 hover:text-white transition-colors">${T('Ana Sayfa', 'Home')}</a></li>
           <li><a href="${PATHS[lang].about}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hakkımızda', 'About Us')}</a></li>
@@ -257,12 +260,12 @@ function renderFooter(lang) {
       </div>
 
       <div>
-        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white/50">${T('Bilgi Merkezi', 'Knowledge Hub')}</h3>
+        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white">${T('Bilgi Merkezi', 'Knowledge Hub')}</h3>
         <ul class="space-y-2">${blogLinks}</ul>
       </div>
 
       <div>
-        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white/50">${T('İletişim', 'Contact')}</h3>
+        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white">${T('İletişim', 'Contact')}</h3>
         <ul class="space-y-3 text-sm text-white/70">
           <li class="flex items-start gap-2">
             <svg class="flex-shrink-0 mt-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
