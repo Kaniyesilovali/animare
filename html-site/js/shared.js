@@ -47,6 +47,7 @@ const ANIMARE_SERVICES = {
 };
 
 function renderNav(lang) {
+  (function(){var m=document.createElement('meta');m.httpEquiv='content-language';m.content=lang;document.head.appendChild(m);})();
   const isTr = lang === 'tr';
   const services = ANIMARE_SERVICES[lang];
   const rawPath = window.location.pathname.replace(/\/$/, '') || `/${lang}`;
