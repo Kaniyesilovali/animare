@@ -119,10 +119,10 @@ Keeping vaccinations up to date protects your dog's health as well as other anim
         description:
           'Comprehensive guide to your dog\'s vaccination schedule. Parvovirus, distemper, rabies vaccines and annual boosters — Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus.',
         keywords: [
-          'dog vaccination schedule',
-          'puppy vaccine programme',
-          'dog parvovirus vaccine',
-          'rabies vaccine dog North Cyprus',
+          'dog vaccination schedule Lefkoşa',
+          'puppy vaccine Nicosia',
+          'dog parvovirus vaccine Lefkoşa',
+          'rabies vaccine dog Gönyeli',
           'vet vaccination Lefkoşa',
         ],
       },
@@ -249,9 +249,9 @@ Professional cleaning at least once a year is recommended. Breeds prone to tarta
         keywords: [
           'cat dental care',
           'cat tartar cleaning Lefkoşa',
-          'cat oral health North Cyprus',
+          'cat oral health Lefkoşa',
           'cat gum disease',
-          'vet dental care TRNC',
+          'vet dental care Nicosia',
         ],
       },
       faqs: [
@@ -324,7 +324,7 @@ Sorularınız için [bize ulaşın](/tr/iletisim) ya da kliniğimizi arayın.`,
           'köpek sıcak çarpması',
           'kedi yaz bakımı KKTC',
           'evcil hayvan sıcak koruma Lefkoşa',
-          'brakisefal ırk yaz Kuzey Kıbrıs',
+          'brakisefal ırk yaz Lefkoşa',
         ],
       },
       faqs: [
@@ -387,9 +387,9 @@ Flat-faced breeds such as French Bulldogs, Pugs, and Persian cats can struggle t
         description:
           "Guide to protecting your dog and cat during North Cyprus summers. Heatstroke signs, prevention tips, and emergency response — Animare Veterinary Clinic, Lefkoşa.",
         keywords: [
-          'summer pet safety North Cyprus',
-          'dog heatstroke',
-          'cat summer care TRNC',
+          'summer pet safety Lefkoşa',
+          'dog heatstroke Nicosia',
+          'cat summer care Lefkoşa',
           'pet heat protection Lefkoşa',
           'brachycephalic breed summer',
         ],
@@ -455,7 +455,7 @@ Koruma programı hakkında bilgi almak için [bize ulaşın](/tr/iletisim).`,
         keywords: [
           'ektoparazit koruma köpek kedi',
           'kene babesiosis KKTC',
-          'Leishmaniosis kum sineği Kuzey Kıbrıs',
+          'Leishmaniosis kum sineği KKTC Lefkoşa',
           'kalp kurdu sivrisinek köpek',
           'veteriner parazit koruması Lefkoşa',
         ],
@@ -514,8 +514,8 @@ Remember: the most effective way to fight parasites is prevention, not treatment
           'Diseases carried by fleas, ticks, mosquitoes, and sand flies in summer — and why ectoparasite prevention is essential. Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus.',
         keywords: [
           'ectoparasite protection dog cat',
-          'tick babesiosis North Cyprus',
-          'Leishmaniosis sand fly TRNC',
+          'tick babesiosis Lefkoşa',
+          'Leishmaniosis sand fly Nicosia',
           'heartworm mosquito dog',
           'vet parasite prevention Lefkoşa',
         ],
