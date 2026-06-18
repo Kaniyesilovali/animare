@@ -342,4 +342,40 @@
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
+  <url>
+<loc>https://animare.vet/tr/blog/acil-veteriner-belirtileri/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/acil-veteriner-belirtileri/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/pet-emergency-signs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/acil-veteriner-belirtileri/" />
+<lastmod>2026-06-18</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/pet-emergency-signs/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/acil-veteriner-belirtileri/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/pet-emergency-signs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/acil-veteriner-belirtileri/" />
+<lastmod>2026-06-18</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/tr/blog/yavru-kedi-asi-takvimi/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/yavru-kedi-asi-takvimi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/kitten-vaccination-schedule/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/yavru-kedi-asi-takvimi/" />
+<lastmod>2026-06-18</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/kitten-vaccination-schedule/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/yavru-kedi-asi-takvimi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/kitten-vaccination-schedule/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/yavru-kedi-asi-takvimi/" />
+<lastmod>2026-06-18</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
