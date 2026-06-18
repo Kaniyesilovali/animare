@@ -13,7 +13,7 @@ export type ServiceLang = {
   title: string
   desc: string
   meta: { title: string; description: string; keywords: string[] }
-  body: string
+  body: string[]
   bullets: string[]
   faqs: { q: string; a: string }[]
 }
@@ -46,7 +46,12 @@ export const services: ServiceData[] = [
           'erken teşhis veteriner',
         ],
       },
-      body: 'Genel muayene, evcil hayvanınızın genel sağlık durumunu değerlendirmek için yapılan sistematik fiziksel incelemedir. Düzenli kontrol randevuları, pek çok hastalığı erken evrede tespit ederek tedavi sürecini kolaylaştırır. Veteriner hekimimiz kalp, akciğer, eklemler, deri, göz, kulak ve diş yapısını kapsamlı biçimde inceler; gerekli durumlarda kan tahlili veya radyoloji hizmetlerimize yönlendirir.',
+      body: [
+        'Genel muayene, evcil hayvanınızın genel sağlık durumunu değerlendirmek için yapılan sistematik fiziksel incelemedir. Yılda bir kez gerçekleştirilen rutin kontrolde veteriner hekimimiz kalp ve akciğer dinlemesi, karın palpasyonu, eklem muayenesi, deri ve tüy değerlendirmesi, göz, kulak ve ağız kontrolü ile nörolojik gözlemi kapsamlı biçimde uygular.',
+        'Düzenli muayeneler sayesinde diyabet, böbrek yetmezliği, kalp hastalığı ve kanser gibi ciddi durumların erken evrede tespit edilmesi mümkün olur. Erken teşhis; tedavi sürecini kısaltır, maliyeti düşürür ve evcil hayvanınızın yaşam kalitesini doğrudan artırır. Belirtiler henüz ortaya çıkmadan önce saptanan bir hastalık, çoğu zaman tam anlamıyla tedavi edilebilir.',
+        'Animare Veteriner Kliniği olarak Gönyeli / Lefkoşa\'da sunduğumuz genel muayene hizmetinde her hastaya özel sağlık kaydı tutulur. Aşı takvimi, antiparaziter tedavi planı ve beslenme önerileri de muayene sırasında güncellenir. Hayvanınızın kronik bir rahatsızlığı varsa, izleme sıklığı birlikte belirlenir.',
+        'KKTC\'de evcil hayvan sahiplerinin kolayca ulaşabileceği konumumuzla kliniğimiz, Kuzey Kıbrıs\'ta güvenilir veteriner hizmeti arayanlar için tercih edilen adreslerden biridir. Randevu almak için +90 533 844 91 92 numaralı hattı arayabilir ya da iletişim sayfamızı kullanabilirsiniz.',
+      ],
       bullets: [
         'Sistematik fiziksel muayene',
         'Erken hastalık tespiti',
@@ -67,6 +72,14 @@ export const services: ServiceData[] = [
           q: 'Randevu almam gerekiyor mu?',
           a: 'Evet. +90 533 844 91 92 numaralı hattı arayarak veya iletişim sayfamızdan uygun bir saatte randevu alabilirsiniz.',
         },
+        {
+          q: 'İlk muayenede neler beklemelisiniz?',
+          a: 'İlk muayenede veteriner hekimimiz hayvanınızın doğum ve aşı geçmişini, diyetini ve genel davranışını sorar; ardından kapsamlı fiziksel muayeneyi gerçekleştirir. Gerekirse aynı seansta temel kan tahlili veya dışkı taraması istenebilir.',
+        },
+        {
+          q: 'Muayene öncesi hazırlık gerekiyor mu?',
+          a: 'Hayvanınızı aç bırakmanız gerekmez (kan tahlili planlanmışsa istisna). Varsa önceki aşı kartı veya tıbbi kayıtları yanınızda getirmeniz süreci hızlandırır.',
+        },
       ],
     },
     en: {
@@ -84,7 +97,12 @@ export const services: ServiceData[] = [
           'early diagnosis vet',
         ],
       },
-      body: "A general check-up is a systematic physical examination to assess your pet's overall health. Regular appointments help detect many conditions at an early stage, making treatment simpler and more effective. Our veterinarian comprehensively examines the heart, lungs, joints, skin, eyes, ears, and teeth, and refers to blood tests or radiology when needed.",
+      body: [
+        "A general check-up is a systematic physical examination designed to assess your pet's overall health status. During an annual wellness visit, our veterinarian carries out heart and lung auscultation, abdominal palpation, joint assessment, skin and coat evaluation, and a thorough check of the eyes, ears, and mouth.",
+        "Regular check-ups make it possible to detect serious conditions such as diabetes, kidney disease, heart disease, and cancer at an early stage. Early diagnosis shortens treatment, reduces costs, and directly improves your pet's quality of life. A condition identified before symptoms appear is, in many cases, fully treatable.",
+        "At Animare Veterinary Clinic in Gönyeli / Lefkoşa, every patient has a dedicated health record updated at each visit. Vaccination schedules, antiparasitic treatment plans, and nutrition advice are all reviewed during the check-up. If your pet has an ongoing condition, monitoring frequency is agreed with you at the appointment.",
+        "Conveniently located in North Cyprus, our clinic is a trusted choice for pet owners in Lefkoşa and across the TRNC. To book an appointment, call us on +90 533 844 91 92 or use our contact page.",
+      ],
       bullets: [
         'Systematic physical examination',
         'Early disease detection',
@@ -104,6 +122,14 @@ export const services: ServiceData[] = [
         {
           q: 'Do I need an appointment?',
           a: 'Yes. Call us on +90 533 844 91 92 or use our contact page to book at a convenient time.',
+        },
+        {
+          q: 'What should I expect at the first visit?',
+          a: "Our vet will ask about your pet's birth and vaccination history, diet, and general behaviour, then carry out a full physical examination. Basic blood tests or a faecal check may be requested in the same session if needed.",
+        },
+        {
+          q: 'Do I need to prepare my pet before the appointment?',
+          a: 'Fasting is not required unless a blood test is planned. Bringing any previous vaccination records or medical history speeds up the process.',
         },
       ],
     },
@@ -128,7 +154,12 @@ export const services: ServiceData[] = [
           'karma aşı köpek',
         ],
       },
-      body: 'Düzenli aşılama, evcil hayvanınızı ölümcül ve bulaşıcı hastalıklardan korumanın en etkili yoludur. Kliniğimizde köpek ve kediler için tüm temel ve destekleyici aşılar uygulanmakta; hayvanınızın yaşına, yaşam koşullarına ve sağlık geçmişine göre kişiselleştirilmiş bir aşı takvimi hazırlanmaktadır. Her aşı uygulaması sonrası aşı kartı güncellenir.',
+      body: [
+        'Düzenli aşılama, evcil hayvanınızı ölümcül ve bulaşıcı hastalıklardan korumanın en etkili ve kanıtlanmış yoludur. Kuduz, parvovirus, distemper ve kedi solunum yolu hastalıkları gibi ciddi enfeksiyonlara karşı bağışıklık oluşturmak için hayatın ilk haftalarından itibaren aşı programına başlanması gerekmektedir.',
+        'Kliniğimizde köpek ve kediler için tüm temel ve destekleyici aşılar uygulanmaktadır. Veteriner hekimimiz hayvanınızın yaşını, yaşam koşullarını (iç mekân / dış mekân), sağlık geçmişini ve KKTC\'deki bölgesel hastalık risklerini göz önüne alarak kişiselleştirilmiş bir aşı takvimi hazırlar. Her aşı uygulamasının ardından aşı kartı güncellenir.',
+        'Yavru köpek ve kediler, maternal bağışıklıkları azaldıkça ilk aşı serilerini 6–8 haftalıktan itibaren alır. Yetişkin hayvanlarda yıllık hatırlatma aşıları bağışıklığın sürdürülmesi açısından kritiktir. Bazı aşıların geçerliliği seyahat belgelerinde ve resmi işlemlerde de doğrudan etkili olduğundan takibin düzenli tutulması önerilir.',
+        'Animare Veteriner Kliniği olarak Gönyeli / Lefkoşa\'da eksiksiz aşı hizmetleri sunuyoruz. Hayvanınızın aşı takimiyle ilgili bilgi almak veya randevu oluşturmak için +90 533 844 91 92 numaralı hattı arayabilirsiniz.',
+      ],
       bullets: [
         'Köpek karma aşısı (DHPPi + L)',
         'Kedi karma aşısı (FVRCP + FeLV)',
@@ -149,6 +180,14 @@ export const services: ServiceData[] = [
           q: 'Aşı sonrası yan etki olur mu?',
           a: 'Hafif ağrı veya geçici yorgunluk normaldir. Şiddetli bir reaksiyon gözlemlerseniz derhal kliniğimizi arayın.',
         },
+        {
+          q: 'Aşı öncesinde hazırlık gerekiyor mu?',
+          a: 'Hayvanınızın randevu günü genel sağlık durumunun iyi olması önerilir. Ateş veya belirgin hastalık belirtisi varsa aşı ertelenebilir. Mevcut aşı kartını yanınızda getirmeniz takip açısından önemlidir.',
+        },
+        {
+          q: 'Kuduz aşısı zorunlu mu?',
+          a: 'Evet, KKTC\'de kuduz aşısı yasal olarak zorunludur. Aynı zamanda yurt dışı seyahatlerde ve köpek lisanslama işlemlerinde zorunlu belge kapsamındadır.',
+        },
       ],
     },
     en: {
@@ -166,7 +205,12 @@ export const services: ServiceData[] = [
           'parvovirus vaccine TRNC',
         ],
       },
-      body: "Regular vaccination is the most effective way to protect your pet from deadly and contagious diseases. Our clinic offers all core and supplementary vaccines for dogs and cats, with a personalised schedule based on your pet's age, lifestyle, and health history. Vaccination cards are updated after every appointment.",
+      body: [
+        "Regular vaccination is the most effective and evidence-based way to protect your pet from deadly and contagious diseases. Building immunity against serious infections such as rabies, parvovirus, distemper, and feline respiratory disease requires starting a vaccination programme from the earliest weeks of life.",
+        "Our clinic provides all core and supplementary vaccines for dogs and cats. Our veterinarian designs a personalised schedule based on your pet's age, lifestyle (indoor/outdoor), health history, and regional disease risks in North Cyprus. Vaccination cards are updated after every appointment.",
+        "Puppies and kittens begin their primary vaccination series from 6–8 weeks of age, as maternal immunity wanes. Annual booster doses are critical for maintaining immunity in adult pets. Keeping vaccinations current is also important for travel documentation and official licensing requirements.",
+        "Animare Veterinary Clinic provides complete vaccination services in Gönyeli / Lefkoşa. For information about your pet's vaccine schedule or to book an appointment, call us on +90 533 844 91 92.",
+      ],
       bullets: [
         'Dog core vaccine (DHPPi + L)',
         'Cat core vaccine (FVRCP + FeLV)',
@@ -186,6 +230,14 @@ export const services: ServiceData[] = [
         {
           q: 'Are there side effects after vaccination?',
           a: 'Mild soreness or temporary lethargy is normal. If you notice a severe reaction, contact our clinic immediately.',
+        },
+        {
+          q: 'How should I prepare for the vaccination visit?',
+          a: 'Your pet should be in good general health on the day of the appointment. If fever or obvious illness is present, the vaccine may be postponed. Bring any existing vaccination records to help us maintain continuity.',
+        },
+        {
+          q: 'Is rabies vaccination compulsory?',
+          a: 'Yes, rabies vaccination is a legal requirement in North Cyprus. It is also mandatory for international travel and dog licensing documentation.',
         },
       ],
     },
@@ -209,7 +261,12 @@ export const services: ServiceData[] = [
           'küçük hayvan cerrahisi KKTC',
         ],
       },
-      body: 'Kliniğimizde küçük hayvan cerrahisi alanında uzmanlaşmış Dr. Gökay Yeşilovalı tarafından yürütülen cerrahi hizmetler sunulmaktadır. Operasyon öncesi anestezi protokolü ve vital bulgular dikkatle izlenir; operasyon sonrası ağrı yönetimi ve iyileşme sürecine özel bakım planı oluşturulur.',
+      body: [
+        'Kliniğimizde küçük hayvan cerrahisi alanında uzmanlaşmış Dr. Gökay Yeşilovalı önderliğinde gerçekleştirilen cerrahi hizmetler sunulmaktadır. Modern cerrahi ekipman ve titizlikle uygulanan anestezi protokolleriyle her operasyon, hasta güvenliği önceliklendirilerek planlanır.',
+        'Operasyon öncesinde hastanın genel sağlık durumu, kan değerleri ve anestezi toleransı değerlendirilir. Operasyon sırasında vital bulgular kesintisiz izlenir; ağrı kontrolü hem anestezi sürecinde hem de iyileşme döneminde sağlanır. Operasyon sonrası her hastaya özel bakım planı hazırlanır ve sahiple detaylı şekilde paylaşılır.',
+        'Kısırlaştırma (kastrasyon ve ovaryohisterektomi), KKTC\'deki evcil hayvan popülasyonu açısından hem bireysel sağlık hem de hayvan refahı için önem taşıyan rutin bir cerrahi prosedürdür. Erken kısırlaştırma; rahim iltihabı (pyometra), meme kanseri ve testis tümörü gibi ciddi hastalık risklerini önemli ölçüde azaltır.',
+        'Animare Veteriner Kliniği olarak Gönyeli / Lefkoşa\'da sunduğumuz cerrahi hizmetlere ilişkin bilgi almak için +90 533 844 91 92 numaralı hattımızı arayabilir ya da iletişim sayfamızdan bize ulaşabilirsiniz. Operasyon tarihi planlaması ve ameliyat öncesi hazırlık talimatları randevu sırasında aktarılır.',
+      ],
       bullets: [
         'Kısırlaştırma (kastrasyon / ovaryohisterektomi)',
         'Yumuşak doku cerrahisi',
@@ -230,6 +287,14 @@ export const services: ServiceData[] = [
           q: 'İyileşme süreci ne kadar sürer?',
           a: 'Rutin kısırlaştırma için genellikle 7–10 gün yeterlidir. Daha kapsamlı operasyonlarda süre uzayabilir; her hasta için takip randevusu planlanır.',
         },
+        {
+          q: 'Operasyon için hangi kan testleri gerekiyor?',
+          a: 'Rutin cerrahi öncesinde tam kan sayımı ve temel biyokimya paneli istenir. Bu testler anestezi riskini değerlendirmemize ve doğru protokolü seçmemize yardımcı olur.',
+        },
+        {
+          q: 'Dikiş alımı için tekrar gelmem gerekiyor mu?',
+          a: 'Evet, dikişler genellikle 7–10 gün sonra alınır. Bu randevuda iyileşme süreci de değerlendirilir; gerekirse ek tedavi planlanır.',
+        },
       ],
     },
     en: {
@@ -247,7 +312,12 @@ export const services: ServiceData[] = [
           'small animal surgery North Cyprus',
         ],
       },
-      body: "Our surgical services are led by Dr. Gökay Yeşilovalı, a specialist in small animal surgery. Pre-operative anaesthesia protocols and vital signs are carefully monitored; a personalised post-operative pain management and recovery plan is prepared for every patient.",
+      body: [
+        "Our surgical services are led by Dr. Gökay Yeşilovalı, a specialist in small animal surgery. Every procedure is planned with patient safety as the priority, using modern surgical equipment and carefully managed anaesthesia protocols.",
+        "Before any operation, we assess the patient's general health, blood values, and anaesthesia tolerance. During surgery, vital signs are continuously monitored, and pain is controlled throughout both the anaesthetic and recovery phases. A personalised post-operative care plan is prepared for every patient and discussed in detail with the owner.",
+        "Neutering (castration and ovariohysterectomy) is a routine surgical procedure that carries significant health and welfare benefits for pets in North Cyprus. Early neutering substantially reduces the risk of serious conditions such as pyometra, mammary tumours, and testicular cancer.",
+        "For information about our surgical services at Animare Veterinary Clinic in Gönyeli / Lefkoşa, call us on +90 533 844 91 92 or use our contact page. Pre-operative instructions and scheduling are provided at the time of booking.",
+      ],
       bullets: [
         'Neutering (castration / ovariohysterectomy)',
         'Soft tissue surgery',
@@ -267,6 +337,14 @@ export const services: ServiceData[] = [
         {
           q: 'How long is the recovery period?',
           a: 'Routine neutering usually requires 7–10 days. More complex procedures may take longer; a follow-up appointment is scheduled for every patient.',
+        },
+        {
+          q: 'Which blood tests are needed before surgery?',
+          a: 'A complete blood count and basic biochemistry panel are requested before routine surgery. These results help us assess anaesthetic risk and select the correct protocol.',
+        },
+        {
+          q: 'Do I need to come back to have stitches removed?',
+          a: 'Yes, sutures are typically removed 7–10 days after the procedure. The healing process is also reviewed at this appointment, and any further treatment is arranged if needed.',
         },
       ],
     },
@@ -290,7 +368,12 @@ export const services: ServiceData[] = [
           'veteriner diş çekimi KKTC',
         ],
       },
-      body: 'Ağız sağlığı, evcil hayvanınızın genel sağlığıyla doğrudan ilişkilidir. Tedavi edilmeyen diş taşı ve diş eti iltihabı kalp, böbrek ve karaciğer sorunlarına yol açabilir. Kliniğimizde ultrasonik diş taşı temizliği, ağız içi muayene ve gerektiğinde diş çekimi hizmetleri sunulmaktadır.',
+      body: [
+        'Ağız sağlığı, evcil hayvanınızın genel sağlığıyla doğrudan ilişkilidir. Tedavi edilmeyen diş taşı ve diş eti iltihabı; ağrı ve beslenme güçlüğüne yol açmakla kalmaz, bakterilerin kan dolaşımına karışarak kalp, böbrek ve karaciğer hasarına neden olmasına da zemin hazırlayabilir.',
+        'Kliniğimizde ultrasonik diş taşı temizliği, kapsamlı ağız içi muayene ve gerektiğinde diş çekimi hizmetleri sunulmaktadır. Diş taşı temizliği işlemi kısa süreli anestezi altında yapılır; bu sayede hayvanınız stres yaşamadan, güvenli bir ortamda eksiksiz bakım alır. İşlem sonrasında bir sonraki temizlik için önerilen süre ve ev bakım talimatları sizinle paylaşılır.',
+        'Yetişkin köpek ve kedilerin büyük çoğunluğunda yaşın ilerlemesiyle birlikte diş taşı birikimi gözlemlenir. Yılda en az bir kez gerçekleştirilen profesyonel diş temizliği, diş kayıplarını ve ağız kaynaklı sistemik hastalıkları büyük ölçüde önler. Özellikle küçük ırk köpekler ve bazı kedi ırkları diş taşına genetik yatkınlık gösterdiğinden daha sık kontrol gerektirebilir.',
+        'Gönyeli / Lefkoşa\'daki Animare Veteriner Kliniği\'nde evcil hayvanınızın ağız sağlığı için profesyonel destek alabilirsiniz. Randevu almak veya soru sormak için +90 533 844 91 92 numaralı hattımızı arayın.',
+      ],
       bullets: [
         'Ultrasonik diş taşı temizliği',
         'Diş eti sağlığı değerlendirmesi',
@@ -310,6 +393,14 @@ export const services: ServiceData[] = [
           q: 'Evde diş bakımı için ne yapabilirim?',
           a: 'Veteriner hekimimiz size özel diş fırçası ve macun önerecektir. Düzenli ev bakımı profesyonel temizlik sıklığını önemli ölçüde azaltır.',
         },
+        {
+          q: 'Diş eti kanaması veya ağız kokusu ne zaman veterinere gidilmesi gerektiğinin işareti?',
+          a: 'Sürekli ağız kokusu, iştah kaybı, çiğneme güçlüğü veya diş eti kanaması diş probleminin ilerlediğine işaret eder. Bu belirtileri fark ettiğinizde en kısa sürede randevu almanız önerilir.',
+        },
+        {
+          q: 'Ev bakımı gerçekten fark yaratıyor mu?',
+          a: 'Evet. Haftada en az 3 kez köpek ve kedi için özel diş fırçasıyla yapılan fırçalama, diş taşı oluşumunu yavaşlatır ve profesyonel temizlik ihtiyacını önemli ölçüde azaltır.',
+        },
       ],
     },
     en: {
@@ -327,7 +418,12 @@ export const services: ServiceData[] = [
           'vet tooth extraction North Cyprus',
         ],
       },
-      body: "Oral health is directly linked to your pet's overall wellbeing. Untreated tartar and gum disease can lead to heart, kidney, and liver problems. Our clinic offers ultrasonic tartar cleaning, intra-oral examination, and tooth extraction where necessary.",
+      body: [
+        "Oral health is directly linked to your pet's overall wellbeing. Untreated tartar and gum disease don't just cause pain and difficulty eating — bacteria entering the bloodstream can lead to heart, kidney, and liver damage.",
+        "Our clinic offers ultrasonic tartar cleaning, comprehensive intra-oral examination, and tooth extraction where necessary. Dental cleaning is performed under short-acting anaesthesia, ensuring your pet receives thorough, stress-free care in a safe environment. After the procedure, you'll receive guidance on the recommended interval before the next cleaning and tips for home care.",
+        "Tartar accumulation affects the majority of adult dogs and cats as they age. Annual professional dental cleaning significantly prevents tooth loss and oral-source systemic disease. Certain small-breed dogs and cat breeds have a genetic predisposition to tartar build-up and may benefit from more frequent checks.",
+        "For professional dental care for your pet at Animare Veterinary Clinic in Gönyeli / Lefkoşa, call us on +90 533 844 91 92 to book an appointment.",
+      ],
       bullets: [
         'Ultrasonic tartar cleaning',
         'Gum health assessment',
@@ -346,6 +442,14 @@ export const services: ServiceData[] = [
         {
           q: 'What can I do at home?',
           a: 'Our vet will recommend a suitable pet toothbrush and paste. Regular home brushing significantly reduces the rate of tartar accumulation.',
+        },
+        {
+          q: 'When does gum bleeding or bad breath mean I should see a vet?',
+          a: 'Persistent bad breath, loss of appetite, difficulty chewing, or gum bleeding are signs of advancing dental disease. If you notice these symptoms, book an appointment as soon as possible.',
+        },
+        {
+          q: 'Does home care really make a difference?',
+          a: 'Yes. Brushing with a pet-specific toothbrush at least three times a week slows tartar formation and significantly reduces the need for professional cleaning.',
         },
       ],
     },
@@ -369,7 +473,12 @@ export const services: ServiceData[] = [
           'kedi röntgen Lefkoşa',
         ],
       },
-      body: 'Dijital radyoloji hizmetlerimiz ile kemik kırıkları, organ büyüklükleri, tümörler ve gebelik durumu hızla değerlendirilebilir. Ultrasonografi özellikle karın organlarının incelenmesinde, yabancı cisim tespitinde ve hamilelik takibinde kritik öneme sahiptir. Tüm görüntüler dijital ortamda saklanır ve gerektiğinde uzman görüşüne iletilebilir.',
+      body: [
+        'Dijital radyoloji, evcil hayvanınızdaki kemik kırıkları, organ büyüklükleri, tümörler, yabancı cisimler ve gebelik durumunu hızla ve doğrulukla değerlendirmemizi sağlar. Kliniğimizde hem dijital röntgen hem de ultrasonografi imkânları bir arada sunulmakta; bu sayede geniş bir tanısal spektrum kısa sürede kapsanmaktadır.',
+        'Ultrasonografi özellikle karın organlarının (karaciğer, dalak, böbrekler, mesane, bağırsaklar) incelenmesinde, sıvı birikimi tespitinde ve hamilelik takibinde kritik bir araçtır. Tamamen radyasyon içermeyen bu yöntem, gerektiğinde sık aralıklı izleme için de güvenle kullanılabilir. Dijital röntgen ise iskelet sistemi ve göğüs boşluğunun değerlendirilmesinde vazgeçilmezdir.',
+        'Tüm görüntüler dijital ortamda arşivlenir; gerektiğinde uzman referans hekimlere iletilebilir veya siz talep ettiğinizde paylaşılabilir. Acil durumlarda radyoloji işlemleri bekletilmeksizin uygulanabilir; tanı süreci en kısa sürede tamamlanır.',
+        'Gönyeli / Lefkoşa\'daki Animare Veteriner Kliniği\'nde dijital röntgen ve ultrasonografi hizmetlerine ilişkin bilgi almak için +90 533 844 91 92 numaralı hattımızı arayabilirsiniz.',
+      ],
       bullets: [
         'Dijital röntgen (tüm vücut bölgeleri)',
         'Abdominal ultrasonografi',
@@ -390,6 +499,14 @@ export const services: ServiceData[] = [
           q: 'Ultrasonla hamilelik kontrolü yapılabilir mi?',
           a: 'Evet. Ultrasonografi ile köpek ve kedilerde gebelik tespiti ve yavru sayısı belirlenmesi güvenilir biçimde yapılabilmektedir.',
         },
+        {
+          q: 'Ultrasonografi için hayvanı aç bırakmak gerekiyor mu?',
+          a: 'Karın ultrasonografisi için genellikle 4–6 saatlik açlık önerilir; dolu mide görüntü kalitesini düşürebilir. Veteriner hekimimiz randevu öncesinde size bilgi verecektir.',
+        },
+        {
+          q: 'Görüntüleri paylaşabilir misiniz?',
+          a: 'Evet. Dijital arşivimizde saklanan görüntüler talep halinde size elektronik ortamda iletilir veya referans hekime gönderilebilir.',
+        },
       ],
     },
     en: {
@@ -407,7 +524,12 @@ export const services: ServiceData[] = [
           'cat X-ray Lefkoşa',
         ],
       },
-      body: "Our digital radiology services allow rapid assessment of bone fractures, organ sizes, tumours, and pregnancy. Ultrasonography is especially valuable for examining abdominal organs, detecting foreign bodies, and monitoring pregnancy. All images are stored digitally and can be forwarded to specialists when needed.",
+      body: [
+        "Our digital radiology services allow rapid and accurate assessment of bone fractures, organ sizes, tumours, foreign bodies, and pregnancy in your pet. Our clinic offers both digital X-ray and ultrasonography, covering a broad diagnostic spectrum in a single visit.",
+        "Ultrasonography is particularly valuable for examining abdominal organs (liver, spleen, kidneys, bladder, intestines), detecting fluid accumulation, and monitoring pregnancy. Completely radiation-free, it can safely be used for repeat imaging when needed. Digital X-ray is indispensable for evaluating the skeletal system and thoracic cavity.",
+        "All images are stored digitally and can be forwarded to specialist referral vets or shared with you on request. In emergency situations, radiology can be performed without delay, so diagnosis is completed as quickly as possible.",
+        "For information about digital X-ray and ultrasound services at Animare Veterinary Clinic in Gönyeli / Lefkoşa, call us on +90 533 844 91 92.",
+      ],
       bullets: [
         'Digital X-ray (all body regions)',
         'Abdominal ultrasonography',
@@ -427,6 +549,14 @@ export const services: ServiceData[] = [
         {
           q: 'Can you check pregnancy with ultrasound?',
           a: 'Yes. Ultrasound reliably confirms pregnancy and estimates litter size in dogs and cats.',
+        },
+        {
+          q: 'Should my pet fast before an ultrasound?',
+          a: 'For abdominal ultrasonography, fasting for 4–6 hours is generally recommended, as a full stomach reduces image quality. Our vet will advise you before the appointment.',
+        },
+        {
+          q: 'Can I get a copy of the images?',
+          a: 'Yes. Images stored in our digital archive can be sent to you electronically on request or forwarded directly to a referring specialist.',
         },
       ],
     },
@@ -451,7 +581,12 @@ export const services: ServiceData[] = [
           'veteriner acil hat',
         ],
       },
-      body: "Evcil hayvanınız ani bir sağlık kriziyle karşı karşıya kaldığında, her dakika önem taşır. Kliniğimiz 7 gün 24 saat acil vakalar için erişilebilir durumdadır. Zehirlenme, trafik kazası, nefes güçlüğü, bilinç kaybı veya şiddetli yaralanma durumlarında hemen arayın: +90 533 844 91 92.",
+      body: [
+        "Evcil hayvanınız ani bir sağlık kriziyle karşı karşıya kaldığında, her dakika önem taşır. Kliniğimiz 7 gün 24 saat acil vakalar için erişilebilir durumdadır. Zehirlenme, trafik kazası, nefes güçlüğü, bilinç kaybı veya şiddetli yaralanma gibi kritik durumlarda hemen arayın: +90 533 844 91 92.",
+        'Acil serviste hasta kliniğe ulaştığında öncelikli değerlendirme (triage) uygulanır: yaşamsal bulgular ölçülür, ağrı ve şok yönetimi başlatılır, gerekirse oksijen desteği ve intravenöz sıvı tedavisine geçilir. Tanıyı hızlandırmak için acil kan tahlili veya radyoloji görüntülemesi aynı anda devreye alınabilir.',
+        'Hayvanınıza kliniğe gelene kadar nasıl davranmanız gerektiği konusunda telefonda rehberlik sunabiliyoruz. Panik yapmadan hayvanı sakin bir yere alın ve bizi arayın; durumu kısaca tarif edin. Yolda kendinizi ve hayvanı ek tehlikeden koruyun; kesinlikle ilaç vermekten kaçının.',
+        'Gönyeli / Lefkoşa\'da 7/24 acil veteriner hizmeti arıyorsanız Animare Veteriner Kliniği\'ni arayın: +90 533 844 91 92. KKTC genelinde hizmet veren kliniğimiz, acil durumlarda yanınızda olmak için hazırdır.',
+      ],
       bullets: [
         '7/24 acil hat',
         'Zehirlenme & kaza',
@@ -472,6 +607,14 @@ export const services: ServiceData[] = [
           q: 'Kliniğe gelmeden önce ne yapmalıyım?',
           a: 'Hayvanı sakin bir yere alın ve bizi arayın. Telefonda durumu tarif edin; kliniğe ulaşmadan önce ilk yardım yönlendirmesi yapabiliriz.',
         },
+        {
+          q: 'Acil hatta bekleme süresi var mı?',
+          a: 'Gerçek acil vakalar öncelik sırasına göre değerlendirilir. Kliniği arayarak durumu kısaca tarif etmeniz triage sürecini hızlandırır.',
+        },
+        {
+          q: 'Zehirlenme şüphesinde ne yapmalıyım?',
+          a: 'Hayvanın yuttuğu maddeyi (ambalaj veya fotoğraf) kaydedin, kusmaya zorlamayın ve hemen kliniği arayın. Telefonda alacağınız yönlendirme ile klinik yolculuğu güvenle tamamlayın.',
+        },
       ],
     },
     en: {
@@ -490,7 +633,12 @@ export const services: ServiceData[] = [
           'vet emergency line',
         ],
       },
-      body: "When your pet faces a sudden health crisis, every minute counts. Our clinic is accessible 24/7 for emergency cases. Call immediately for poisoning, traffic accidents, breathing difficulties, loss of consciousness, or severe injuries: +90 533 844 91 92.",
+      body: [
+        "When your pet faces a sudden health crisis, every minute counts. Our clinic is accessible 24 hours a day, 7 days a week for emergency cases. Call immediately for poisoning, traffic accidents, breathing difficulties, loss of consciousness, or severe injuries: +90 533 844 91 92.",
+        "When a patient arrives at our emergency clinic, triage is applied immediately: vital signs are measured, pain and shock management is started, and oxygen support or intravenous fluid therapy is initiated where needed. Emergency blood tests and radiology imaging can be carried out at the same time to speed up diagnosis.",
+        "We can guide you by phone on how to handle your pet safely until you arrive. Stay calm, move your pet to a quiet place, and call us — briefly describe the situation. Protect both yourself and your pet from further harm on the way in, and avoid giving any medication.",
+        "If you need a 24/7 emergency vet in Gönyeli / Lefkoşa, call Animare Veterinary Clinic: +90 533 844 91 92. Our clinic is ready to be by your side in critical moments across North Cyprus.",
+      ],
       bullets: [
         '24/7 emergency line',
         'Poisoning & accidents',
@@ -510,6 +658,14 @@ export const services: ServiceData[] = [
         {
           q: 'What should I do before bringing my pet in?',
           a: 'Keep your pet calm and call us first. Describe the situation over the phone — we can provide initial guidance before you arrive.',
+        },
+        {
+          q: 'Is there a wait at the emergency line?',
+          a: 'Genuine emergency cases are triaged by priority. Calling ahead and briefly describing the situation helps speed up the triage process.',
+        },
+        {
+          q: 'What should I do if I suspect poisoning?',
+          a: 'Note or photograph the substance your pet may have ingested, do not induce vomiting, and call the clinic immediately. Follow our phone guidance safely on the way in.',
         },
       ],
     },
@@ -533,7 +689,12 @@ export const services: ServiceData[] = [
           'idrar analizi evcil hayvan',
         ],
       },
-      body: "Doğru teşhis için kapsamlı laboratuvar desteği sunuyoruz. Dr. Hazel Tamakan Yeşilovalı'nın mikrobiyoloji uzmanlığıyla desteklenen laboratuvarımızda kan sayımı, biyokimya, idrar analizi, parazit taraması ve enfeksiyöz hastalık testleri uygulanmaktadır. Sonuçlar hızla değerlendirilerek tedavi planı oluşturulur.",
+      body: [
+        "Doğru teşhis için kapsamlı laboratuvar desteği sunuyoruz. Dr. Hazel Tamakan Yeşilovalı'nın mikrobiyoloji uzmanlığıyla desteklenen kliniğimizde kan sayımı, biyokimya, idrar analizi, parazit taraması ve enfeksiyöz hastalık testleri uygulanmaktadır. Sonuçların büyük çoğunluğu aynı gün değerlendirilerek tedavi planı oluşturulur.",
+        'Tam kan sayımı (CBC) anemi, enfeksiyon ve bağışıklık sistemi bozukluklarını; biyokimya paneli karaciğer, böbrek ve pankreas işlevlerini ortaya koyar. İdrar analizi özellikle böbrek hastalığı ve idrar yolu enfeksiyonlarının erken tespitinde kritiktir. Parazit taraması ise dışkı muayenesiyle bağırsak parazitlerini saptamamızı sağlar.',
+        'Rutin check-up ziyaretlerinizde yapılan laboratuvar testleri, klinik belirtiler ortaya çıkmadan önce pek çok hastalığı tespit eder. Kronik hastalar için ise periyodik kan takibi, ilaç dozunun doğru ayarlanması ve organ fonksiyonlarının izlenmesi açısından vazgeçilmezdir.',
+        'Gönyeli / Lefkoşa\'daki Animare Veteriner Kliniği laboratuvar hizmetleri hakkında bilgi almak için +90 533 844 91 92 numaralı hattımızı arayabilirsiniz. Aynı gün sonuç alma imkânı, tanı sürecinizi hızlandırır ve tedaviye geç kalmadan başlanmasını sağlar.',
+      ],
       bullets: [
         'Tam kan sayımı (CBC)',
         'Biyokimya paneli',
@@ -554,6 +715,14 @@ export const services: ServiceData[] = [
           q: 'Hangi hastalıklar laboratuvar testleriyle tespit edilebilir?',
           a: 'Böbrek ve karaciğer yetmezliği, anemi, enfeksiyonlar, parazitler, tiroid sorunları ve pek çok enfeksiyöz hastalık laboratuvar testleriyle teşhis edilebilir.',
         },
+        {
+          q: 'Hangi testler için dışarıya referans gerekiyor?',
+          a: 'Bazı ileri mikrobiyoloji kültürleri veya nadir genetik testler için dış referans laboratuvarlarla çalışılabilir. Veteriner hekimimiz hangi testlerin klinik içinde, hangilerinin dışarıda yapılacağını bildirecektir.',
+        },
+        {
+          q: 'Kronik hastalıkta ne sıklıkla kan kontrolü yapılmalı?',
+          a: 'Böbrek veya karaciğer yetmezliği, diyabet, hipotiroidi gibi kronik hastalıklarda genellikle 3–6 ayda bir kan takibi önerilir. Kesin sıklık hastalığın evresi ve kullanılan ilaçlara göre belirlenir.',
+        },
       ],
     },
     en: {
@@ -571,7 +740,12 @@ export const services: ServiceData[] = [
           'urinalysis pet North Cyprus',
         ],
       },
-      body: "We offer comprehensive laboratory support for accurate diagnosis. Supported by Dr. Hazel Tamakan Yeşilovalı's microbiology expertise, our laboratory performs blood counts, biochemistry, urinalysis, parasite screening, and infectious disease tests. Results are evaluated promptly to guide the treatment plan.",
+      body: [
+        "We offer comprehensive laboratory support for accurate diagnosis. Supported by Dr. Hazel Tamakan Yeşilovalı's microbiology expertise, our clinic performs blood counts, biochemistry, urinalysis, parasite screening, and infectious disease tests. The majority of results are evaluated the same day, allowing treatment to begin without delay.",
+        "A complete blood count (CBC) reveals anaemia, infections, and immune system abnormalities; a biochemistry panel assesses liver, kidney, and pancreatic function. Urinalysis is particularly critical for early detection of kidney disease and urinary tract infections. Parasite screening via faecal examination identifies intestinal parasites accurately.",
+        "Laboratory tests performed during routine check-up visits detect many conditions before clinical signs appear. For patients with chronic illness, periodic blood monitoring is indispensable for correct medication dosing and tracking organ function over time.",
+        "For information about laboratory services at Animare Veterinary Clinic in Gönyeli / Lefkoşa, call us on +90 533 844 91 92. Same-day results speed up diagnosis and ensure treatment starts as quickly as possible.",
+      ],
       bullets: [
         'Complete blood count (CBC)',
         'Biochemistry panel',
@@ -591,6 +765,14 @@ export const services: ServiceData[] = [
         {
           q: 'What conditions can laboratory tests detect?',
           a: 'Kidney and liver disease, anaemia, infections, parasites, thyroid disorders, and many infectious diseases can all be identified through laboratory testing.',
+        },
+        {
+          q: 'Which tests require an external referral laboratory?',
+          a: 'Some advanced microbiological cultures or rare genetic tests may be sent to an external reference laboratory. Our vet will tell you which tests are performed in-house and which are referred out.',
+        },
+        {
+          q: 'How often should blood be monitored in a chronic patient?',
+          a: 'For chronic conditions such as kidney or liver disease, diabetes, or hypothyroidism, blood monitoring every 3–6 months is generally recommended. The exact frequency depends on disease stage and current medication.',
         },
       ],
     },
@@ -614,7 +796,12 @@ export const services: ServiceData[] = [
           'veteriner bünyesinde grooming KKTC',
         ],
       },
-      body: 'Kliniğimiz bünyesindeki pet kuaförü hizmetiyle evcil hayvanınız hem temizlenir hem de veteriner gözleminden geçer. Bu sayede bakım sırasında fark edilen cilt, kulak veya parazit sorunları anında ilgili hekime bildirilebilir.',
+      body: [
+        'Kliniğimiz bünyesindeki pet kuaförü hizmetiyle evcil hayvanınız hem kapsamlı bakımdan geçer hem de veteriner gözetiminde olur. Bakım sırasında fark edilen cilt sorunu, kulak iltihabı, parazit belirtisi veya anormal şişlik doğrudan veteriner hekimimize bildirilerek gerekirse aynı gün muayene planlanabilir.',
+        'Köpek ve kedilerin düzenli tıraş ve yıkama hizmetleri; deri altı parazitlerin (pire, kene) erken fark edilmesini, sıcak mevsimlerde ısı stresinin azaltılmasını ve tüy matlaşması ile deri tahrişinin önlenmesini sağlar. Tırnak kesimi ise yürüyüş bozukluklarını ve tırnak içe dönmesini önlemesi açısından ihmal edilmemesi gereken rutin bir bakımdır.',
+        'Kliniğimizde ırka özel tıraş teknikleri uygulanmaktadır. Golden Retriever, Poodle, Maltese gibi uzun tüylü ırklar ile kısa tüylü ırkların farklı bakım ihtiyaçları bireysel olarak değerlendirilir. Kedi bakımı da hizmetlerimizin ayrılmaz bir parçasıdır; stres minimize edilerek bakım gerçekleştirilir.',
+        'Gönyeli / Lefkoşa\'da veteriner bünyesinde profesyonel pet kuaförü hizmeti almak için Animare Veteriner Kliniği\'ni arayın: +90 533 844 91 92. Randevu alarak hayvanınızın bakımını en iyi koşullarda gerçekleştirin.',
+      ],
       bullets: [
         'Yıkama ve kurutma',
         'Irka özel tıraş ve şekillendirme',
@@ -635,6 +822,14 @@ export const services: ServiceData[] = [
           q: 'Bakım sırasında bir sağlık sorunu fark edilirse ne olur?',
           a: 'Grooming ekibimiz cilt, kulak veya parazit sorununu fark ettiğinde doğrudan veteriner hekimimize bildirir; gerekirse aynı gün muayene planlanabilir.',
         },
+        {
+          q: 'Saldırgan veya stresli hayvanlara da bakım yapılıyor mu?',
+          a: 'Evet, kliniğimizde veteriner desteğiyle stres yönetimi sağlanabilir. Gerektiğinde sakinleştirici önlem alınarak bakım güvenle gerçekleştirilebilir.',
+        },
+        {
+          q: 'Grooming ne sıklıkla yapılmalı?',
+          a: 'Uzun tüylü ırklarda 6–8 haftada bir, kısa tüylü ırklarda 8–12 haftada bir ya da sezona göre öneri yapılır. Veteriner hekimimiz ırk ve tüy yapısına göre en uygun sıklığı belirler.',
+        },
       ],
     },
     en: {
@@ -652,7 +847,12 @@ export const services: ServiceData[] = [
           'vet grooming service North Cyprus',
         ],
       },
-      body: 'Our in-clinic grooming service ensures your pet is cleaned and simultaneously observed by a veterinary professional. Skin, ear, or parasite issues noticed during grooming can be referred to our vet immediately.',
+      body: [
+        'Our in-clinic grooming service ensures your pet receives thorough care while remaining under veterinary supervision. Any skin issue, ear inflammation, parasite sign, or abnormal lump noticed during grooming is immediately reported to our vet — an examination can often be arranged the same day.',
+        'Regular trimming and bathing for dogs and cats allows early detection of subcutaneous parasites (fleas, ticks), reduces heat stress in warmer months, and prevents coat matting and skin irritation. Nail clipping is equally important as a routine procedure to prevent gait problems and ingrown nails.',
+        'We apply breed-specific grooming techniques at our clinic. Long-coated breeds such as Golden Retrievers, Poodles, and Maltese dogs have different care requirements from short-coated breeds, and each pet is assessed individually. Cat grooming is also an integral part of our service, carried out with minimal stress.',
+        'For professional pet grooming within a veterinary clinic in Gönyeli / Lefkoşa, call Animare Veterinary Clinic: +90 533 844 91 92. Book an appointment to give your pet the best possible care.',
+      ],
       bullets: [
         'Bathing and drying',
         'Breed-specific trimming and styling',
@@ -672,6 +872,14 @@ export const services: ServiceData[] = [
         {
           q: 'What happens if a health issue is spotted during grooming?',
           a: 'Our grooming team reports any skin, ear, or parasite concerns directly to our vet. An examination can often be arranged the same day.',
+        },
+        {
+          q: 'Can you groom aggressive or anxious pets?',
+          a: 'Yes. Veterinary support at our clinic means we can provide calming measures where needed, allowing grooming to be completed safely even for anxious pets.',
+        },
+        {
+          q: 'How often should my pet be groomed?',
+          a: 'Every 6–8 weeks for long-coated breeds and 8–12 weeks for short-coated breeds is a common starting point, adjusted by season and coat condition. Our vet can recommend the optimal frequency for your specific breed.',
         },
       ],
     },
@@ -695,7 +903,12 @@ export const services: ServiceData[] = [
           'N&D Farmina KKTC',
         ],
       },
-      body: "Doğru beslenme, evcil hayvanınızın uzun ve sağlıklı bir yaşam sürmesinin temel taşıdır. Kliniğimizde veteriner hekimimiz hayvanınızın yaşını, ırkını, kilo durumunu ve mevcut sağlık sorunlarını göz önüne alarak kişiselleştirilmiş bir beslenme planı hazırlar. Premium N&D Farmina ürünleri kliniğimizde mevcuttur.",
+      body: [
+        "Doğru beslenme, evcil hayvanınızın uzun ve sağlıklı bir yaşam sürmesinin temel taşıdır. Kliniğimizde veteriner hekimimiz hayvanınızın yaşını, ırkını, kilo durumunu, aktivite seviyesini ve mevcut sağlık sorunlarını göz önüne alarak kişiselleştirilmiş bir beslenme planı hazırlar.",
+        'Yanlış veya yetersiz beslenme birçok hastalığa zemin hazırlar: obezite, diyabet, böbrek yetmezliği, eklem hasarı ve alerjik deri reaksiyonları bunların başında gelir. Veteriner hekiminin önerdiği bilimsel formüllü mamalar, market ürünlerinin aksine hastalık riski ve sağlık gereksinimi gözetilerek üretilir.',
+        'Kliniğimizde bulundurduğumuz N&D Farmina premium mama serisi; tahılsız formüller, yaşa özel çeşitler ve veteriner diyet ürünleriyle hayvanınızın ihtiyacına yönelik doğru seçim yapmanızı kolaylaştırır. Obez hayvanlar için kontrollü diyet programları, kronik hastalar için destek diyetleri ve yavru beslenmesi konularında uzman desteği sunuyoruz.',
+        'Gönyeli / Lefkoşa\'daki Animare Veteriner Kliniği\'nde beslenme danışmanlığı hakkında bilgi almak için +90 533 844 91 92 numaralı hattımızı arayabilirsiniz. Hayvanınızın sağlıklı yaşam yolculuğu doğru bir beslenme planıyla başlar.',
+      ],
       bullets: [
         'Yaşa özel mama planlaması (yavru, yetişkin, yaşlı)',
         'Irka özel gereksinim değerlendirmesi',
@@ -716,6 +929,14 @@ export const services: ServiceData[] = [
           q: 'Şişman hayvanım için diyet programı hazırlanabilir mi?',
           a: 'Evet. Veteriner hekimimiz kilo yönetimi ve kontrollü diyet programları hazırlamakta, ilerleme takibi için düzenli kontrol randevuları planlamaktadır.',
         },
+        {
+          q: 'Ham beslenme (BARF) veya ev yapımı mama uygun mu?',
+          a: 'BARF diyeti, doğru hazırlanmadığında besin eksikliği ve bakteri riski taşır. Veteriner hekimimizle birlikte oluşturulan ev yapımı beslenme planları ise dengeli ve güvenli olabilir. Bu konuyu mutlaka bir uzmanla görüşerek karar vermeniz önerilir.',
+        },
+        {
+          q: 'Kısırlaştırma sonrası beslenme programı değişmeli mi?',
+          a: 'Evet. Kısırlaştırmanın ardından metabolizma yavaşladığından obezite riski artar. Veteriner hekimimiz kısırlaştırma sonrası dönem için uygun kalori ve besin içeriğini belirleyerek beslenme planını günceller.',
+        },
       ],
     },
     en: {
@@ -733,7 +954,12 @@ export const services: ServiceData[] = [
           'N&D Farmina North Cyprus',
         ],
       },
-      body: "Proper nutrition is the cornerstone of a long and healthy life for your pet. Our veterinarian prepares a personalised nutrition plan based on your pet's age, breed, weight, and existing health issues. Premium N&D Farmina products are available at our clinic.",
+      body: [
+        "Proper nutrition is the cornerstone of a long and healthy life for your pet. Our veterinarian prepares a personalised nutrition plan based on your pet's age, breed, weight, activity level, and existing health conditions.",
+        "Poor or inadequate nutrition lays the groundwork for many conditions: obesity, diabetes, kidney disease, joint damage, and allergic skin reactions are among the most common. Scientifically formulated foods recommended by a veterinarian are produced with specific health requirements and disease risk in mind — unlike most supermarket products.",
+        "The premium N&D Farmina range we stock at our clinic includes grain-free formulas, life-stage specific varieties, and veterinary diet products, making it easier to find the right choice for your pet's individual needs. We provide expert guidance on controlled weight-loss programmes for overweight pets, support diets for chronic patients, and correct puppy and kitten feeding.",
+        "For nutrition consulting at Animare Veterinary Clinic in Gönyeli / Lefkoşa, call us on +90 533 844 91 92. Your pet's healthy life journey begins with the right nutrition plan.",
+      ],
       bullets: [
         'Life-stage specific planning (puppy/kitten, adult, senior)',
         'Breed-specific requirement assessment',
@@ -753,6 +979,14 @@ export const services: ServiceData[] = [
         {
           q: 'Can you create a weight management plan?',
           a: 'Yes. Our vet designs controlled diet programmes for overweight pets and schedules regular weigh-ins to monitor progress.',
+        },
+        {
+          q: 'Is raw feeding (BARF) or home-cooked food appropriate?',
+          a: 'Raw diets carry risks of nutritional deficiency and bacterial contamination if not properly formulated. A home-cooked plan developed together with our vet can be balanced and safe. We strongly recommend discussing this with a specialist before making any changes.',
+        },
+        {
+          q: 'Should nutrition change after neutering?',
+          a: 'Yes. Metabolism slows after neutering, increasing the risk of obesity. Our vet will update the nutrition plan for the post-neutering period, specifying the appropriate calorie and nutrient profile.',
         },
       ],
     },

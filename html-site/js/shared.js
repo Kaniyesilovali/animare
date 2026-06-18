@@ -189,15 +189,47 @@ function renderNav(lang) {
 function renderFooter(lang) {
   const isTr = lang === 'tr';
   const T = (tr, en) => isTr ? tr : en;
+  const otherLang = isTr ? 'en' : 'tr';
+  const otherUrl = window.LANG_SWITCH_URL || `/${otherLang}/`;
+
+  const services = ANIMARE_SERVICES[lang];
+  const serviceLinks = services.map(s =>
+    `<li><a href="${PATHS[lang].serviceSlug(s.slug)}" class="text-sm text-white/70 hover:text-white transition-colors">${s.title}</a></li>`
+  ).join('');
+
+  const blogArticles = isTr ? [
+    { title: 'Yavru Kedi Aşı Takvimi',       slug: 'yavru-kedi-asi-takvimi' },
+    { title: 'Köpek Aşı Takvimi',            slug: 'kopek-asi-takvimi' },
+    { title: 'Kedilerde Diş Bakımı',         slug: 'kedilerde-dis-bakimi' },
+    { title: 'Acil Veteriner Belirtileri',   slug: 'acil-veteriner-belirtileri' },
+    { title: 'Yaz\'da Evcil Hayvan',         slug: 'yaz-sicaginda-evcil-hayvan' },
+    { title: 'Ektoparazit Koruması',         slug: 'yaz-aylarinda-ektoparazit-koruma' },
+  ] : [
+    { title: 'Kitten Vaccination Schedule',  slug: 'kitten-vaccination-schedule' },
+    { title: 'Dog Vaccination Schedule',     slug: 'dog-vaccination-schedule' },
+    { title: 'Cat Dental Care',              slug: 'cat-dental-care' },
+    { title: 'Pet Emergency Signs',          slug: 'pet-emergency-signs' },
+    { title: 'Summer Heat & Pets',           slug: 'summer-heat-pet-safety' },
+    { title: 'Ectoparasite Protection',      slug: 'ectoparasite-protection-summer' },
+  ];
+  const blogLinks = blogArticles.map(a =>
+    `<li><a href="${PATHS[lang].blogSlug(a.slug)}" class="text-sm text-white/70 hover:text-white transition-colors">${a.title}</a></li>`
+  ).join('');
 
   const html = `
 <footer class="bg-[var(--color-text)] text-white">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div>
-        <div class="mb-4"><img src="/images/AniMare.png" alt="Animare Veteriner" class="h-12 w-auto object-contain"></div>
-        <p class="text-sm text-white/70 leading-relaxed">${T('Dostlarınıza uzman ellerin sıcaklığıyla bakıyoruz.', 'We care for your companions with expert hands and warm hearts.')}</p>
-        <div class="flex gap-3 mt-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
+
+      <div class="sm:col-span-2 lg:col-span-1">
+        <div class="mb-3"><img src="/images/AniMare.png" alt="Animare Veteriner" class="h-12 w-auto object-contain"></div>
+        <p class="text-sm text-white/70 leading-relaxed mb-4">${T('Kuzey Kıbrıs, Gönyeli\'de profesyonel veteriner hizmetleri.', 'Professional veterinary care in Gönyeli, North Cyprus.')}</p>
+        <div class="flex items-center gap-1.5 text-sm text-white/50 mb-4">
+          <a href="/tr/" class="${isTr ? 'text-white font-medium' : 'hover:text-white transition-colors'}">Türkçe</a>
+          <span>·</span>
+          <a href="/en/" class="${!isTr ? 'text-white font-medium' : 'hover:text-white transition-colors'}">English</a>
+        </div>
+        <div class="flex gap-3">
           <a href="https://www.instagram.com/animare.vet/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
@@ -206,24 +238,47 @@ function renderFooter(lang) {
           </a>
         </div>
       </div>
+
       <div>
-        <h3 class="font-semibold mb-4 text-sm uppercase tracking-wide text-white/50">${T('Hızlı Bağlantılar', 'Quick Links')}</h3>
+        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white/50">${T('Hizmetler', 'Services')}</h3>
+        <ul class="space-y-2">${serviceLinks}</ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white/50">${T('Kurumsal', 'About')}</h3>
         <ul class="space-y-2">
           <li><a href="/${lang}/" class="text-sm text-white/70 hover:text-white transition-colors">${T('Ana Sayfa', 'Home')}</a></li>
-          <li><a href="${PATHS[lang].services}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hizmetler', 'Services')}</a></li>
-          <li><a href="${PATHS[lang].about}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hakkımızda', 'About')}</a></li>
+          <li><a href="${PATHS[lang].about}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Hakkımızda', 'About Us')}</a></li>
           <li><a href="${PATHS[lang].blog}" class="text-sm text-white/70 hover:text-white transition-colors">Blog</a></li>
           <li><a href="${PATHS[lang].contact}" class="text-sm text-white/70 hover:text-white transition-colors">${T('İletişim', 'Contact')}</a></li>
+          <li><a href="${PATHS[lang].privacy}" class="text-sm text-white/70 hover:text-white transition-colors">${T('Gizlilik Politikası', 'Privacy Policy')}</a></li>
+          <li><a href="${otherUrl}" class="text-sm text-white/70 hover:text-white transition-colors">${T('English', 'Türkçe')}</a></li>
         </ul>
       </div>
+
       <div>
-        <h3 class="font-semibold mb-4 text-sm uppercase tracking-wide text-white/50">${T('İletişim', 'Contact')}</h3>
-        <ul class="space-y-2 text-sm text-white/70">
-          <li>+90 533 844 91 92</li>
-          <li>info@animare.vet</li>
-          <li class="leading-relaxed">${T('ŞHT Hüseyin Amca Cad Mar 101 Dük : 1, Gönyeli / Lefkoşa, Kuzey Kıbrıs (KKTC)', 'ŞHT Hüseyin Amca Cad Mar 101 Dük : 1, Gönyeli / Lefkoşa, North Cyprus (TRNC)')}</li>
+        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white/50">${T('Bilgi Merkezi', 'Knowledge Hub')}</h3>
+        <ul class="space-y-2">${blogLinks}</ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-4 text-sm tracking-wide text-white/50">${T('İletişim', 'Contact')}</h3>
+        <ul class="space-y-3 text-sm text-white/70">
+          <li class="flex items-start gap-2">
+            <svg class="flex-shrink-0 mt-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>${T('Gönyeli / Lefkoşa, Kuzey Kıbrıs', 'Gönyeli / Lefkoşa, North Cyprus')}</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+905338449192" class="hover:text-white transition-colors">+90 533 844 91 92</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@animare.vet" class="hover:text-white transition-colors">info@animare.vet</a>
+          </li>
         </ul>
       </div>
+
     </div>
     <div class="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40">
       <span>© 2026 Animare Veteriner Kliniği. ${T('Tüm hakları saklıdır.', 'All rights reserved.')} 🐾 ${T('Sevgiyle', 'Made with love by')} <a href="https://raptordigital.net/" target="_blank" rel="noopener noreferrer" class="underline hover:text-white/70">Raptor Digital</a></span>

@@ -102,7 +102,11 @@ export default async function TrHizmetDetayPage({
             <span className="text-4xl" aria-hidden="true">{service.icon}</span>
             <p className="text-[var(--color-muted)] text-sm">{t.desc}</p>
           </div>
-          <p className="text-[var(--color-muted)] leading-relaxed text-lg mb-10">{t.body}</p>
+          <div className="space-y-4 mb-10">
+            {t.body.map((para, i) => (
+              <p key={i} className="text-[var(--color-muted)] leading-relaxed text-lg">{para}</p>
+            ))}
+          </div>
 
           {/* Included items */}
           <div className="rounded-2xl bg-[var(--color-surface)] border border-[var(--color-border)] p-6 mb-10">
