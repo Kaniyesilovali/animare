@@ -18,7 +18,7 @@ export async function generateMetadata({
     robots: { index: false, follow: false },
     alternates: {
       canonical: `/${lang}/privacy`,
-      languages: { tr: '/tr/gizlilik', en: '/en/privacy' },
+      languages: { tr: '/tr/gizlilik', en: '/en/privacy', 'x-default': '/tr/gizlilik' },
     },
   }
 }

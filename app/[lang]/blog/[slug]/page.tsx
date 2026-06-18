@@ -5,6 +5,7 @@ import { hasLocale, type Locale } from '../../dictionaries'
 import { getBlogPost, getAllBlogSlugs, blogPosts } from '@/app/lib/blog'
 import { lp } from '@/app/lib/paths'
 import JsonLd from '@/components/JsonLd'
+import BlogFaq from '@/components/BlogFaq'
 
 export async function generateStaticParams() {
   return getAllBlogSlugs('en').map((slug) => ({ slug }))
@@ -35,6 +36,7 @@ export async function generateMetadata({
       languages: {
         tr: `/tr/blog/${locale === 'tr' ? slug : pairSlug}`,
         en: `/en/blog/${locale === 'en' ? slug : pairSlug}`,
+        'x-default': `/tr/blog/${locale === 'tr' ? slug : pairSlug}`,
       },
     },
   }
@@ -109,6 +111,7 @@ export default async function BlogPostPage({
     headline: p.meta.title,
     description: p.meta.description,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       '@type': 'Organization',
       name: 'Animare Veteriner Kliniği',
@@ -118,7 +121,7 @@ export default async function BlogPostPage({
       '@type': 'Organization',
       name: 'Animare Veteriner Kliniği',
       url: 'https://animare.vet',
-      logo: { '@type': 'ImageObject', url: 'https://animare.vet/AniMare.png' },
+      logo: { '@type': 'ImageObject', url: 'https://animare.vet/animare_veteriner_logo.png' },
     },
     url: `https://animare.vet/${lang}/blog/${slug}`,
     inLanguage: isTr ? 'tr' : 'en',
@@ -134,11 +137,23 @@ export default async function BlogPostPage({
     ],
   }
 
+  const faqSchema = p.faqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: p.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.q,
+          acceptedAnswer: { '@type': 'Answer', text: faq.a },
+        })),
+      }
+    : null
+
   const otherPosts = blogPosts.filter((bp) => bp.slug[locale] !== slug).slice(0, 2)
 
   return (
     <div>
-      <JsonLd data={[articleSchema, breadcrumb]} />
+      <JsonLd data={faqSchema ? [articleSchema, breadcrumb, faqSchema] : [articleSchema, breadcrumb]} />
 
       {/* Hero */}
       <div className="bg-[var(--color-primary)] py-12">
@@ -193,6 +208,8 @@ export default async function BlogPostPage({
           </div>
         </div>
       </section>
+
+      <BlogFaq faqs={p.faqs} isTr={isTr} />
 
       {/* Related posts */}
       {otherPosts.length > 0 && (

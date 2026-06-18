@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/tr/hakkimizda',
-    languages: { tr: '/tr/hakkimizda', en: '/en/about' },
+    languages: { tr: '/tr/hakkimizda', en: '/en/about', 'x-default': '/tr/hakkimizda' },
   },
 }
 
@@ -86,7 +86,7 @@ export default async function TrHakkimizdaPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
               <Image
-                src="/animare veteriner kilinigi iletisim.jpg.jpeg"
+                src="/animare_veteriner_kilinik_iletisim.jpg"
                 alt="Animare Veteriner Kliniği hikayemiz"
                 fill
                 className="object-cover"

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/tr/hizmetler',
-    languages: { tr: '/tr/hizmetler', en: '/en/services' },
+    languages: { tr: '/tr/hizmetler', en: '/en/services', 'x-default': '/tr/hizmetler' },
   },
 }
 

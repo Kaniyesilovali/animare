@@ -34,7 +34,7 @@ export async function generateMetadata({
     openGraph: { title, description, url: `/${lang}/contact` },
     alternates: {
       canonical: `/${lang}/contact`,
-      languages: { tr: '/tr/iletisim', en: '/en/contact' },
+      languages: { tr: '/tr/iletisim', en: '/en/contact', 'x-default': '/tr/iletisim' },
     },
   }
 }

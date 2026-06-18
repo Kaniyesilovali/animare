@@ -80,9 +80,13 @@ export async function generateMetadata({
       languages: {
         'tr': '/tr',
         'en': '/en',
+        'x-default': '/tr',
       },
     },
     robots: { index: true, follow: true },
+    other: {
+      'content-language': isTr ? 'tr' : 'en',
+    },
   }
 }
 

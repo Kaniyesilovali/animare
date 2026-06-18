@@ -13,7 +13,14 @@ export const metadata: Metadata = {
     'Animare Veteriner Kliniği — Gönyeli / Lefkoşa, KKTC. Köpek, kedi, tavşan ve küçük hayvan muayenesi, aşılama, cerrahi, diş bakımı, röntgen, laboratuvar. 7/24 acil veteriner. Hemen randevu alın.',
   alternates: {
     canonical: '/tr',
-    languages: { tr: '/tr', en: '/en' },
+    languages: { tr: '/tr', en: '/en', 'x-default': '/tr' },
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/animare_veteriner_kilinik_iletisim.jpg'],
+  },
+  other: {
+    'content-language': 'tr',
   },
 }
 

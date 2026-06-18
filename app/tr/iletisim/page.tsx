@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/tr/iletisim',
-    languages: { tr: '/tr/iletisim', en: '/en/contact' },
+    languages: { tr: '/tr/iletisim', en: '/en/contact', 'x-default': '/tr/iletisim' },
   },
 }
 

@@ -1,3 +1,5 @@
+export type Faq = { q: string; a: string }
+
 export type BlogPost = {
   slug: { tr: string; en: string }
   date: string
@@ -8,12 +10,14 @@ export type BlogPost = {
     summary: string
     body: string
     meta: { title: string; description: string; keywords: string[] }
+    faqs: Faq[]
   }
   en: {
     title: string
     summary: string
     body: string
     meta: { title: string; description: string; keywords: string[] }
+    faqs: Faq[]
   }
 }
 
@@ -63,6 +67,24 @@ Düzenli aşı takibi hem köpeğinizin sağlığını hem de çevresindeki diğ
           'veteriner aşı Lefkoşa',
         ],
       },
+      faqs: [
+        {
+          q: 'Yavru köpeğime kaç yaşında ilk aşıyı yaptırmalıyım?',
+          a: 'İlk kombine aşı (DHPPi) genellikle 6–8. haftada uygulanır. Bu dönemde anneden alınan bağışıklık zayıflamaya başlar ve aşılama için en uygun pencere açılır.',
+        },
+        {
+          q: 'Köpeklerde hangi aşılar zorunludur?',
+          a: 'KKTC\'de kuduz aşısı yasal zorunluluktur. Bunun yanı sıra parvovirus, distemper ve hepatite karşı kombine aşı (DHPPi) temel koruyucu aşılar arasında yer alır.',
+        },
+        {
+          q: 'Aşı yaptırdıktan sonra köpeğim hasta gibi davranırsa ne yapmalıyım?',
+          a: 'Hafif yorgunluk veya iştahsızlık 1–2 gün sürebilir; bu normaldir. Ancak ciddi şişlik, solunum güçlüğü veya bilinç değişikliği varsa kliniğimizi hemen arayın.',
+        },
+        {
+          q: 'Yetişkin köpeğimde aşı takibini aksattım, ne yapmalıyım?',
+          a: 'Geç kalınmış aşılar için veteriner hekiminiz mevcut bağışıklık durumuna göre yeni bir takvim hazırlar. Gecikme ne kadar uzun olursa olsun aşılamaya yeniden başlamak mümkündür.',
+        },
+      ],
     },
     en: {
       title: "Everything You Need to Know About Your Dog's Vaccination Schedule",
@@ -104,6 +126,24 @@ Keeping vaccinations up to date protects your dog's health as well as other anim
           'vet vaccination Lefkoşa',
         ],
       },
+      faqs: [
+        {
+          q: 'At what age should I give my puppy its first vaccine?',
+          a: 'The first combination vaccine (DHPPi) is typically given at 6–8 weeks of age, when maternal immunity begins to wane and the vaccination window opens.',
+        },
+        {
+          q: 'Which vaccines are compulsory for dogs?',
+          a: 'Rabies vaccination is a legal requirement in the TRNC. The core combination vaccine (DHPPi) covering parvovirus, distemper, and hepatitis is also strongly recommended as standard preventive care.',
+        },
+        {
+          q: 'My dog seems unwell after a vaccine — what should I do?',
+          a: 'Mild lethargy or reduced appetite for a day or two is normal. However, if you notice severe swelling, breathing difficulties, or changes in consciousness, contact our clinic immediately.',
+        },
+        {
+          q: 'I missed my adult dog\'s booster — is it too late?',
+          a: 'It is never too late to restart vaccination. Your vet will assess the situation and draw up a new schedule based on your dog\'s current immunity status, regardless of how long ago the last vaccine was given.',
+        },
+      ],
     },
   },
   {
@@ -153,6 +193,24 @@ Yılda en az bir kez profesyonel temizlik önerilir. Diş taşına eğilimli ır
           'veteriner diş bakımı Gönyeli',
         ],
       },
+      faqs: [
+        {
+          q: 'Kedimde diş taşı olduğunu nasıl anlarım?',
+          a: 'Dişlerde sarı-kahverengi birikinti, ağız kokusu, diş etlerinde kızarıklık veya yemek yerken ağzını eğme gibi belirtiler diş taşına işaret eder. Bu durumda veteriner kontrolü önerilir.',
+        },
+        {
+          q: 'Kedi diş temizliği anestezi olmadan yapılabilir mi?',
+          a: 'Etkili bir ultrasonik diş taşı temizliği için kısa süreli anestezi gereklidir. Anestezi olmadan yapılan "bilinçli" temizlik yüzeysel kalır ve stres yaratabilir.',
+        },
+        {
+          q: 'Kedime kaç yılda bir diş temizliği yaptırmalıyım?',
+          a: 'Çoğu kedi için yılda bir kez önerilir. Diş taşına eğilimli ırklar veya kronik ağız problemleri olan kedilerde bu sıklık artabilir.',
+        },
+        {
+          q: 'Evde kedi dişi fırçalamak güvenli midir?',
+          a: 'Evet, kedilere özel enzimli macun ve yumuşak diş fırçası ile yapılan düzenli fırçalama güvenlidir. İnsan macunu kullanmayın — içindeki florür kediler için toksiktir.',
+        },
+      ],
     },
     en: {
       title: "Cat Dental Care: Why It Matters More Than You Think",
@@ -196,6 +254,24 @@ Professional cleaning at least once a year is recommended. Breeds prone to tarta
           'vet dental care TRNC',
         ],
       },
+      faqs: [
+        {
+          q: 'How do I know if my cat has dental disease?',
+          a: 'Yellow or brown tartar build-up on the teeth, bad breath, red gums, or difficulty eating are common signs. A veterinary examination is recommended if you notice any of these.',
+        },
+        {
+          q: 'Can cat teeth be cleaned without anaesthesia?',
+          a: 'Effective ultrasonic tartar removal requires short-acting anaesthesia. Conscious "non-anaesthetic" cleaning is superficial at best and can be stressful for the cat.',
+        },
+        {
+          q: 'How often should I have my cat\'s teeth professionally cleaned?',
+          a: 'Once a year is the standard recommendation for most cats. Breeds prone to tartar build-up or those with chronic oral conditions may need more frequent cleaning.',
+        },
+        {
+          q: 'Is it safe to brush my cat\'s teeth at home?',
+          a: 'Yes — using a soft cat-specific toothbrush and enzymatic toothpaste designed for cats is perfectly safe. Never use human toothpaste, as the fluoride content is toxic to cats.',
+        },
+      ],
     },
   },
   {
@@ -251,6 +327,24 @@ Sorularınız için [bize ulaşın](/tr/iletisim) ya da kliniğimizi arayın.`,
           'brakisefal ırk yaz Kuzey Kıbrıs',
         ],
       },
+      faqs: [
+        {
+          q: 'Köpeğimde sıcak çarpması olduğunu nasıl anlarım?',
+          a: 'Aşırı nefes nefese kalma, dilin ve diş etlerinin koyulaşması, halsizlik, kusma veya bilinç bulanıklığı sıcak çarpmasının belirtileridir. Bu durumda hayvanı serin bir yere alın ve acil olarak kliniğimizi arayın.',
+        },
+        {
+          q: 'Köpeğimi sıcakta yürüyüşe çıkarabilir miyim?',
+          a: 'Sabah 07:00\'den önce veya akşam 19:00\'dan sonra yürüyüşe çıkmanız güvenlidir. Gün ortasında asfaltta yürüyüş hem sıcak çarpması hem de pençe yanıklarına neden olabilir.',
+        },
+        {
+          q: 'Kısa burunlu ırklarda yaz dönemi neden daha riskli?',
+          a: 'Fransız Bulldog, Pug gibi brakisefal ırklar yapısal özellikleri nedeniyle solunumu zaten kısıtlıdır. Yüksek sıcaklıklarda bu durum belirginleşir; bu nedenle klimanın sürekli çalışması önerilir.',
+        },
+        {
+          q: 'Evcil hayvanımı arabada bırakabilir miyim?',
+          a: 'Hayır. Park halindeki bir araç, dış ortam 25°C iken bile birkaç dakika içinde 50°C\'yi aşabilir. Bu durum kısa sürede ölümcül sonuçlara yol açar.',
+        },
+      ],
     },
     en: {
       title: 'How to Keep Your Pet Safe in Summer Heat',
@@ -300,6 +394,24 @@ Flat-faced breeds such as French Bulldogs, Pugs, and Persian cats can struggle t
           'brachycephalic breed summer',
         ],
       },
+      faqs: [
+        {
+          q: 'How do I know if my dog has heatstroke?',
+          a: 'Signs include excessive panting, darkened tongue and gums, weakness, vomiting, or collapse. Move your pet to a cool area immediately and call our clinic for urgent advice.',
+        },
+        {
+          q: 'When is it safe to walk my dog in North Cyprus summer?',
+          a: 'Early morning (before 07:00) or evening (after 19:00) are the safest times. Midday walks on hot asphalt risk heatstroke and can burn paw pads.',
+        },
+        {
+          q: 'Why are flat-faced breeds at higher risk in summer?',
+          a: 'Brachycephalic breeds such as French Bulldogs and Pugs have structurally restricted airways that make breathing harder even at normal temperatures. Heat amplifies this significantly — air conditioning should run continuously.',
+        },
+        {
+          q: 'Can I leave my pet in a parked car briefly?',
+          a: 'No. A parked car can reach over 50 °C within minutes even when the outside temperature is only 25 °C. This can be fatal in a very short time.',
+        },
+      ],
     },
   },
   {
@@ -348,6 +460,24 @@ Koruma programı hakkında bilgi almak için [bize ulaşın](/tr/iletisim).`,
           'veteriner parazit koruması Lefkoşa',
         ],
       },
+      faqs: [
+        {
+          q: 'Kuzey Kıbrıs\'ta Leishmaniosis riski gerçekten var mı?',
+          a: 'Evet. Kum sinekleri (tatarcıklar) bölgemizde yaygındır ve Leishmaniosis\'i köpeklere bulaştırabilir. Hastalık deri lezyonları, kilo kaybı ve iç organ hasarına neden olabilir; koruyucu önlem almak kritik önem taşır.',
+        },
+        {
+          q: 'Kalp kurdu (Dirofilaria) nedir ve köpeğimi nasıl etkiler?',
+          a: 'Kalp kurdu, sivrisinekler aracılığıyla bulaşan ve köpeğin kalp ile akciğer damarlarında yerleşen bir parazittir. Erken dönemde belirti vermez; ilerledikçe öksürük, nefes darlığı ve kalp yetmezliğine yol açabilir.',
+        },
+        {
+          q: 'Ektoparazit koruması için hangi ürünler kullanılmalı?',
+          a: 'Spot-on (ense damlası), antiparaziter tasma veya ağızdan alınan tablet formları mevcuttur. Hangi ürünün uygun olduğunu evcil hayvanınızın yaşına, kilosuna ve sağlık durumuna göre veteriner hekiminiz belirlemelidir.',
+        },
+        {
+          q: 'Kedileri de ektoparazitlerden korumak gerekiyor mu?',
+          a: 'Evet, özellikle dışarı çıkan kediler pire ve kene riskiyle karşı karşıyadır. Kediler için bazı köpek antiparaziter ürünleri zehirli olabilir; mutlaka kedilere özel onaylı ürünler kullanılmalıdır.',
+        },
+      ],
     },
     en: {
       title: 'Why Ectoparasite Protection in Summer Is Vital for Your Pet',
@@ -390,6 +520,24 @@ Remember: the most effective way to fight parasites is prevention, not treatment
           'vet parasite prevention Lefkoşa',
         ],
       },
+      faqs: [
+        {
+          q: 'Is Leishmaniosis a real risk in North Cyprus?',
+          a: 'Yes. Sand flies are common in the region and can transmit Leishmaniosis to dogs. The disease can cause skin lesions, weight loss, and internal organ damage — preventive treatment is essential.',
+        },
+        {
+          q: 'What is heartworm and how does it affect my dog?',
+          a: 'Heartworm (Dirofilaria immitis) is a parasite transmitted by mosquitoes that settles in the dog\'s heart and pulmonary vessels. It shows no symptoms early on but progresses to coughing, breathing difficulties, and heart failure if untreated.',
+        },
+        {
+          q: 'What type of ectoparasite protection products are available?',
+          a: 'Options include spot-on (topical) treatments, antiparasitic collars, and oral tablets. Your vet will recommend the most appropriate product based on your pet\'s age, weight, and health status.',
+        },
+        {
+          q: 'Do cats also need ectoparasite protection?',
+          a: 'Yes, especially cats that go outdoors. Cats are at risk from fleas and ticks. Importantly, many dog antiparasitic products are toxic to cats — only use products specifically approved for cats.',
+        },
+      ],
     },
   },
 ]

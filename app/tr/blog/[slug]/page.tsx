@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getBlogPost, getAllBlogSlugs, blogPosts } from '@/app/lib/blog'
 import JsonLd from '@/components/JsonLd'
+import BlogFaq from '@/components/BlogFaq'
 
 export function generateStaticParams() {
   return getAllBlogSlugs('tr').map((slug) => ({ slug }))
@@ -31,6 +32,7 @@ export async function generateMetadata({
       languages: {
         tr: `/tr/blog/${slug}`,
         en: `/en/blog/${post.slug.en}`,
+        'x-default': `/tr/blog/${slug}`,
       },
     },
   }
@@ -99,6 +101,7 @@ export default async function TrBlogPostPage({
     headline: p.meta.title,
     description: p.meta.description,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       '@type': 'Organization',
       name: 'Animare Veteriner Kliniği',
@@ -108,7 +111,7 @@ export default async function TrBlogPostPage({
       '@type': 'Organization',
       name: 'Animare Veteriner Kliniği',
       url: 'https://animare.vet',
-      logo: { '@type': 'ImageObject', url: 'https://animare.vet/AniMare.png' },
+      logo: { '@type': 'ImageObject', url: 'https://animare.vet/animare_veteriner_logo.png' },
     },
     url: `https://animare.vet/tr/blog/${slug}`,
     inLanguage: 'tr',
@@ -124,11 +127,23 @@ export default async function TrBlogPostPage({
     ],
   }
 
+  const faqSchema = p.faqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: p.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.q,
+          acceptedAnswer: { '@type': 'Answer', text: faq.a },
+        })),
+      }
+    : null
+
   const otherPosts = blogPosts.filter((bp) => bp.slug.tr !== slug).slice(0, 2)
 
   return (
     <div>
-      <JsonLd data={[articleSchema, breadcrumb]} />
+      <JsonLd data={faqSchema ? [articleSchema, breadcrumb, faqSchema] : [articleSchema, breadcrumb]} />
 
       {/* Hero */}
       <div className="bg-[var(--color-primary)] py-12">
@@ -179,6 +194,8 @@ export default async function TrBlogPostPage({
           </div>
         </div>
       </section>
+
+      <BlogFaq faqs={p.faqs} isTr={true} />
 
       {/* Related posts */}
       {otherPosts.length > 0 && (

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Köpek ve kedi sağlığı, aşı takvimleri, beslenme ve mevsimsel bakım hakkında veteriner rehberleri. Animare Veteriner Kliniği, Gönyeli / Lefkoşa, KKTC.',
   alternates: {
     canonical: '/tr/blog',
-    languages: { tr: '/tr/blog', en: '/en/blog' },
+    languages: { tr: '/tr/blog', en: '/en/blog', 'x-default': '/tr/blog' },
   },
 }
 

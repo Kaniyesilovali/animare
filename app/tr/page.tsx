@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/tr',
-    languages: { tr: '/tr', en: '/en' },
+    languages: { tr: '/tr', en: '/en', 'x-default': '/tr' },
   },
   robots: { index: true, follow: true },
 }
@@ -48,8 +48,8 @@ const vetClinicSchema = {
   description:
     "Gönyeli / Lefkoşa, Kuzey Kıbrıs'ta (KKTC) profesyonel veteriner hizmetleri. Genel muayene, aşılama, cerrahi, diş bakımı, radyoloji ve 7/24 acil.",
   url: 'https://animare.vet',
-  logo: 'https://animare.vet/logo.jpg',
-  image: 'https://animare.vet/logo.jpg',
+  logo: 'https://animare.vet/animare_veteriner_logo.png',
+  image: 'https://animare.vet/animare_veteriner_logo.png',
   telephone: '+905338449192',
   email: 'info@animare.vet',
   foundingDate: '2026',
@@ -82,8 +82,7 @@ const vetClinicSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'MedicalProcedure', name: 'Acil Hizmet' } },
     ],
   },
-  aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '47', bestRating: '5', worstRating: '1' },
-  sameAs: ['https://animare.vet', 'https://www.instagram.com/animare.vet/', 'https://www.facebook.com/animare.vet'],
+  sameAs: ['https://www.instagram.com/animare.vet/', 'https://www.facebook.com/animare.vet'],
 }
 
 export default async function TrHomePage() {

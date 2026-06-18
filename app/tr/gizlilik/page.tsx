@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
   alternates: {
     canonical: '/tr/gizlilik',
-    languages: { tr: '/tr/gizlilik', en: '/en/privacy' },
+    languages: { tr: '/tr/gizlilik', en: '/en/privacy', 'x-default': '/tr/gizlilik' },
   },
 }
 

@@ -48,23 +48,25 @@ const staticPages = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = []
 
+  const SITE_LAUNCH = new Date('2026-05-01')
+
   // Static pages
   for (const page of staticPages) {
     const trUrl = `${BASE}/tr${page.tr}`
     const enUrl = `${BASE}/en${page.en}`
     entries.push({
       url: trUrl,
-      lastModified: new Date(),
+      lastModified: SITE_LAUNCH,
       changeFrequency: page.changeFrequency,
       priority: page.priority,
-      alternates: { languages: { tr: trUrl, en: enUrl } },
+      alternates: { languages: { tr: trUrl, en: enUrl, 'x-default': trUrl } },
     })
     entries.push({
       url: enUrl,
-      lastModified: new Date(),
+      lastModified: SITE_LAUNCH,
       changeFrequency: page.changeFrequency,
       priority: page.priority,
-      alternates: { languages: { tr: trUrl, en: enUrl } },
+      alternates: { languages: { tr: trUrl, en: enUrl, 'x-default': trUrl } },
     })
   }
 
@@ -77,17 +79,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const enUrl = `${BASE}/en/${PATHS.en.services}/${enSlugs[i]}`
     entries.push({
       url: trUrl,
-      lastModified: new Date(),
+      lastModified: SITE_LAUNCH,
       changeFrequency: 'monthly',
       priority: 0.8,
-      alternates: { languages: { tr: trUrl, en: enUrl } },
+      alternates: { languages: { tr: trUrl, en: enUrl, 'x-default': trUrl } },
     })
     entries.push({
       url: enUrl,
-      lastModified: new Date(),
+      lastModified: SITE_LAUNCH,
       changeFrequency: 'monthly',
       priority: 0.8,
-      alternates: { languages: { tr: trUrl, en: enUrl } },
+      alternates: { languages: { tr: trUrl, en: enUrl, 'x-default': trUrl } },
     })
   }
 
@@ -104,14 +106,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(post.date),
       changeFrequency: 'monthly',
       priority: 0.6,
-      alternates: { languages: { tr: trUrl, en: enUrl } },
+      alternates: { languages: { tr: trUrl, en: enUrl, 'x-default': trUrl } },
     })
     entries.push({
       url: enUrl,
       lastModified: new Date(post.date),
       changeFrequency: 'monthly',
       priority: 0.6,
-      alternates: { languages: { tr: trUrl, en: enUrl } },
+      alternates: { languages: { tr: trUrl, en: enUrl, 'x-default': trUrl } },
     })
   }
 

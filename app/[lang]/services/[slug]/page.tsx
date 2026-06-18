@@ -37,6 +37,7 @@ export async function generateMetadata({
       languages: {
         tr: `/tr/hizmetler/${service.slugs.tr}`,
         en: `/en/services/${service.slugs.en}`,
+        'x-default': `/tr/hizmetler/${service.slugs.tr}`,
       },
     },
   }
