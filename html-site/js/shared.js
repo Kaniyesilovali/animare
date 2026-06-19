@@ -223,7 +223,6 @@ function renderFooter(lang) {
 
       <div class="sm:col-span-2 lg:col-span-1">
         <div class="flex items-center gap-3 mb-3">
-          <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-white/15 text-white font-semibold text-lg">A</div>
           <span class="font-semibold text-white leading-tight text-base">Animare<br>Veteriner Kliniği</span>
         </div>
         <p class="text-sm text-white/70 leading-relaxed mb-4">${T('Kuzey Kıbrıs, Gönyeli\'de profesyonel veteriner hizmetleri.', 'Professional veterinary care in Gönyeli, North Cyprus.')}</p>
