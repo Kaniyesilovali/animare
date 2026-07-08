@@ -396,4 +396,22 @@
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
+<url>
+<loc>https://animare.vet/tr/blog/kedilerde-idrar-tikanikligi/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kedilerde-idrar-tikanikligi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/cat-urinary-blockage/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kedilerde-idrar-tikanikligi/" />
+<lastmod>2026-07-08</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/cat-urinary-blockage/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kedilerde-idrar-tikanikligi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/cat-urinary-blockage/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kedilerde-idrar-tikanikligi/" />
+<lastmod>2026-07-08</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
