@@ -432,5 +432,23 @@
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
+<url>
+<loc>https://animare.vet/tr/blog/kedi-kopek-otitis-eksterna/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kedi-kopek-otitis-eksterna/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/otitis-externa-cats-dogs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kedi-kopek-otitis-eksterna/" />
+<lastmod>2026-07-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/otitis-externa-cats-dogs/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kedi-kopek-otitis-eksterna/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/otitis-externa-cats-dogs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kedi-kopek-otitis-eksterna/" />
+<lastmod>2026-07-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
 
