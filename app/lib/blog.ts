@@ -540,6 +540,164 @@ Remember: the most effective way to fight parasites is prevention, not treatment
       ],
     },
   },
+  {
+    slug: { tr: 'kedi-kopek-otitis-eksterna', en: 'otitis-externa-cats-dogs' },
+    date: '2026-07-15',
+    category: { tr: 'Kulak Sağlığı', en: 'Ear Health' },
+    icon: '👂',
+    tr: {
+      title: 'Kedi ve Köpeklerde Otitis Eksterna (Dış Kulak İltihabı) Neden Oluşur?',
+      summary: 'Kedi ve köpeklerde dış kulak yolu iltihabının en sık nedenleri, belirtileri ve ne zaman veterinere başvurmanız gerektiği.',
+      body: `## Otitis Eksterna Nedir?
+
+Otitis eksterna, dış kulak yolunun iltihaplanmasıdır. Kedi ve köpeklerde en sık görülen kulak problemidir ve tek başına bir hastalık değil, altta yatan bir sorunun sonucudur. Sürekli kaşıma, başını sallama ve kötü kokan akıntı çoğu hayvan sahibinin ilk fark ettiği belirtilerdir.
+
+Peki bu iltihap neden oluşur? Cevap genellikle tek bir nedene değil, birkaç faktörün birleşimine dayanır.
+
+## En Sık Görülen Nedenler
+
+**Kulak uyuzu (parazitler):** Özellikle yavru kedilerde ve köpeklerde *Otodectes* kulak akarı yaygındır. Yoğun kaşıntıya ve kahverengi-siyah, kahve telvesini andıran kir birikimine yol açar.
+
+**Nem ve su:** Kuzey Kıbrıs'ın sıcak ve nemli iklimi, kulak yolunda nemin uzun süre kalmasına neden olur. Banyo veya denizde yüzme sonrası kuru bırakılmayan kulaklar, maya ve bakteri üremesi için ideal ortam oluşturur.
+
+**Alerjiler:** Besin alerjileri ve atopik dermatit (çevresel alerji), köpeklerde tekrarlayan kulak iltihaplarının en sık gözden kaçan nedenidir. Kulak, çoğu zaman alerjinin ilk belirti verdiği yerdir.
+
+**Maya ve bakteri üremesi:** *Malassezia* mayası ve çeşitli bakteriler sağlıklı kulakta da bulunur; ancak nem, alerji veya kir birikimi dengeyi bozunca aşırı çoğalarak iltihaba yol açar.
+
+**Kulak yapısı ve ırk:** Cocker Spaniel, Basset Hound gibi sarkık kulaklı ırklar ile kulak kanalında yoğun tüy bulunan ırklarda hava dolaşımı azdır; bu da riski artırır.
+
+**Yabancı cisimler:** Özellikle ilkbahar ve yaz aylarında ot tohumları (arpa başağı) kulak kanalına kaçarak ani, tek taraflı ve şiddetli bir iltihaba neden olabilir.
+
+**Kulak kiri birikimi ve altta yatan hastalıklar:** Aşırı kir üretimi, hormonal bozukluklar veya bağışıklık sistemi sorunları da kronik kulak iltihaplarını tetikleyebilir.
+
+## Hangi Belirtilere Dikkat Etmelisiniz?
+
+- Kulağını sık sık kaşıma veya yere/eşyaya sürtme
+- Başını tek yöne eğme veya sürekli sallama
+- Kulaktan gelen kötü koku
+- Kahverengi, sarı veya iltihaplı akıntı
+- Kulak kepçesinde kızarıklık, şişlik veya sıcaklık
+- Kulağına dokunulduğunda acı belirtisi göstermesi
+
+## Kulağı Evde Kendiniz Temizlemeyin
+
+Birçok hayvan sahibi kulağı pamuklu çubukla temizlemeye çalışır. Bu, kiri kanalın derinine iterek durumu kötüleştirebilir ve kulak zarına zarar verebilir. Kulak zarının sağlam olup olmadığı bilinmeden kullanılan damlalar da kalıcı işitme kaybına yol açabilir.
+
+Doğru yaklaşım, otoskopla kulak kanalını ve kulak zarını değerlendirmek, gerekirse akıntıdan alınan örneği mikroskopla incelemektir. Bu sayede sorunun parazit mi, maya mı yoksa bakteri kaynaklı mı olduğu belirlenir ve tedavi buna göre planlanır.
+
+## Lefkoşa ve Gönyeli'de Kulak Sağlığı
+
+Gönyeli / Lefkoşa'daki kliniğimizde kedi ve köpeklerde otitis eksterna sık karşılaştığımız şikâyetlerden biridir. Bölgemizin sıcak ve nemli iklimi, özellikle yaz aylarında kulak iltihaplarını artırır. Erken müdahale, tekrarlayan ve kronikleşen kulak problemlerinin önüne geçmenin en etkili yoludur.
+
+Evcil dostunuzda yukarıdaki belirtilerden birini fark ettiyseniz, kulağın kendi kendine geçmesini beklemeyin. [Randevu almak için bize ulaşın.](/tr/iletisim)`,
+      meta: {
+        title: 'Kedi ve Köpeklerde Otitis Eksterna Nedenleri | Lefkoşa Veteriner — Animare',
+        description:
+          'Kedi ve köpeklerde otitis eksterna (dış kulak iltihabı) neden oluşur? Kulak uyuzu, nem, alerji ve maya kaynaklı kulak iltihabının belirtileri ve tedavisi — Animare Veteriner Kliniği, Gönyeli / Lefkoşa, KKTC.',
+        keywords: [
+          'kedi köpek kulak iltihabı Lefkoşa',
+          'otitis eksterna köpek kedi',
+          'dış kulak iltihabı belirtileri',
+          'kulak uyuzu tedavisi Gönyeli',
+          'veteriner Lefkoşa Gönyeli',
+        ],
+      },
+      faqs: [
+        {
+          q: 'Köpeğimin kulağı sürekli kaşınıyor ve kötü kokuyor, ne yapmalıyım?',
+          a: 'Bu belirtiler dış kulak iltihabına (otitis eksterna) işaret eder. Evde temizlik yapmadan veteriner hekiminize başvurun; kulak kanalının otoskopla değerlendirilmesi ve akıntının mikroskopla incelenmesi doğru tedavi için gereklidir.',
+        },
+        {
+          q: 'Kulak iltihabı bulaşıcı mıdır?',
+          a: 'Nedenine göre değişir. Alerji veya maya kaynaklı iltihaplar bulaşıcı değildir; ancak kulak uyuzu (Otodectes akarı) diğer kedi ve köpeklere kolayca bulaşır. Bu nedenle evde birden fazla hayvan varsa hepsinin kontrol edilmesi önerilir.',
+        },
+        {
+          q: 'Kulağı pamuklu çubukla temizleyebilir miyim?',
+          a: 'Hayır. Pamuklu çubuk kiri kanalın derinine iterek durumu kötüleştirir ve kulak zarına zarar verebilir. Kulak temizliği, kulak zarının sağlam olduğu doğrulandıktan sonra uygun bir solüsyonla yapılmalıdır.',
+        },
+        {
+          q: 'Kulak iltihabı neden tekrarlıyor?',
+          a: 'Tekrarlayan kulak iltihaplarının arkasında çoğu zaman besin alerjisi, atopik dermatit veya kulak yapısı gibi altta yatan bir neden vardır. Sadece belirtiyi tedavi etmek yeterli olmaz; asıl nedenin belirlenmesi gerekir.',
+        },
+      ],
+    },
+    en: {
+      title: 'Why Do Cats and Dogs Get Otitis Externa (Outer Ear Infection)?',
+      summary: 'The most common causes of outer ear inflammation in cats and dogs, warning signs, and when to see your vet.',
+      body: `## What Is Otitis Externa?
+
+Otitis externa is inflammation of the outer ear canal. It is the most common ear problem in cats and dogs, and it is not a disease in itself but the result of an underlying issue. Constant scratching, head shaking, and foul-smelling discharge are usually the first signs owners notice.
+
+So why does this inflammation develop? The answer is rarely a single cause — it is usually a combination of factors.
+
+## The Most Common Causes
+
+**Ear mites (parasites):** *Otodectes* ear mites are common, especially in kittens and puppies. They cause intense itching and a dark, coffee-ground-like build-up of debris.
+
+**Moisture and water:** The warm, humid climate of North Cyprus keeps moisture trapped in the ear canal. Ears left damp after bathing or swimming create the ideal environment for yeast and bacteria to grow.
+
+**Allergies:** Food allergies and atopic dermatitis (environmental allergy) are the most frequently overlooked cause of recurring ear infections in dogs. The ear is often the first place an allergy shows itself.
+
+**Yeast and bacterial overgrowth:** *Malassezia* yeast and various bacteria live in healthy ears too — but when moisture, allergy, or debris upset the balance, they multiply and cause inflammation.
+
+**Ear anatomy and breed:** Breeds with floppy ears such as Cocker Spaniels and Basset Hounds, or those with heavy hair in the canal, have poor airflow, which raises the risk.
+
+**Foreign bodies:** Especially in spring and summer, grass seeds (awns) can lodge in the ear canal, causing a sudden, one-sided, and severe inflammation.
+
+**Wax build-up and underlying conditions:** Excessive wax production, hormonal disorders, or immune problems can also trigger chronic ear infections.
+
+## Signs to Watch For
+
+- Frequent scratching or rubbing the ear against furniture or the floor
+- Tilting the head to one side or persistent head shaking
+- A bad smell coming from the ear
+- Brown, yellow, or infected discharge
+- Redness, swelling, or warmth in the ear flap
+- Signs of pain when the ear is touched
+
+## Do Not Clean the Ear at Home
+
+Many owners reach for a cotton bud. This can push debris deeper into the canal, worsening the problem and risking damage to the eardrum. Drops used without knowing whether the eardrum is intact can even cause permanent hearing loss.
+
+The correct approach is to examine the ear canal and eardrum with an otoscope and, where needed, to examine a sample of the discharge under a microscope. This determines whether the cause is parasitic, yeast, or bacterial, so treatment can be planned accordingly.
+
+## Ear Health in Lefkoşa and Gönyeli
+
+At our clinic in Gönyeli / Lefkoşa, otitis externa is one of the complaints we see most often in cats and dogs. The region's warm, humid climate increases ear infections, particularly in summer. Early intervention is the most effective way to prevent recurring and chronic ear problems.
+
+If you notice any of the signs above in your pet, do not wait for the ear to heal on its own. [Contact us to book an appointment.](/en/contact)`,
+      meta: {
+        title: 'Otitis Externa in Cats and Dogs — Causes | Lefkoşa Vet — Animare',
+        description:
+          'Why do cats and dogs get otitis externa (outer ear infection)? Signs and treatment of ear infections caused by mites, moisture, allergy, and yeast — Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus.',
+        keywords: [
+          'cat dog ear infection Lefkoşa',
+          'otitis externa dog cat',
+          'outer ear inflammation signs',
+          'ear mite treatment Gönyeli',
+          'vet Lefkoşa Nicosia',
+        ],
+      },
+      faqs: [
+        {
+          q: 'My dog keeps scratching its ear and it smells bad — what should I do?',
+          a: 'These signs point to outer ear inflammation (otitis externa). Do not clean it at home first; see your vet. Examining the ear canal with an otoscope and the discharge under a microscope is essential for correct treatment.',
+        },
+        {
+          q: 'Is an ear infection contagious?',
+          a: 'It depends on the cause. Allergy- or yeast-related infections are not contagious, but ear mites (Otodectes) spread easily between cats and dogs. If you have more than one pet at home, all of them should be checked.',
+        },
+        {
+          q: 'Can I clean the ear with a cotton bud?',
+          a: 'No. A cotton bud pushes debris deeper into the canal, worsens the problem, and can damage the eardrum. Ear cleaning should be done with a suitable solution only after the eardrum is confirmed to be intact.',
+        },
+        {
+          q: 'Why does the ear infection keep coming back?',
+          a: 'Recurring ear infections usually have an underlying cause such as a food allergy, atopic dermatitis, or ear anatomy. Treating the symptom alone is not enough — the root cause must be identified.',
+        },
+      ],
+    },
+  },
 ]
 
 export function getBlogPost(slug: string, lang: 'tr' | 'en'): BlogPost | undefined {
