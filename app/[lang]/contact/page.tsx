@@ -14,8 +14,8 @@ export async function generateMetadata({
     ? 'Veteriner Randevu Gönyeli & Lefkoşa | İletişim — Animare'
     : 'Book a Vet Appointment Gönyeli & Lefkoşa | Contact — Animare'
   const description = isTr
-    ? 'Animare Veteriner Kliniği iletişim bilgileri. Gönyeli / Lefkoşa, KKTC. ☎ +90 533 844 91 92 • Pzt–Cum 09:00–19:00, Cmt 09:00–15:00, Pazar acil.'
-    : 'Contact Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus. ☎ +90 533 844 91 92 • Mon–Fri 09:00–19:00, Sat 09:00–15:00, Sun emergency.'
+    ? 'Animare Veteriner Kliniği iletişim bilgileri. Gönyeli / Lefkoşa, KKTC. ☎ +90 533 844 91 92 • Pzt–Cum 09:30–18:30, Cmt 10:00–15:00, Pazar acil.'
+    : 'Contact Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus. ☎ +90 533 844 91 92 • Mon–Fri 09:30–18:30, Sat 10:00–15:00, Sun emergency.'
   return {
     title,
     description,

@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd'
 export const metadata: Metadata = {
   title: 'Veteriner Randevu Gönyeli & Lefkoşa | İletişim — Animare',
   description:
-    'Animare Veteriner Kliniği iletişim bilgileri. Gönyeli / Lefkoşa, KKTC. ☎ +90 533 844 91 92 • Pzt–Cum 09:00–19:00, Cmt 09:00–15:00, Pazar acil.',
+    'Animare Veteriner Kliniği iletişim bilgileri. Gönyeli / Lefkoşa, KKTC. ☎ +90 533 844 91 92 • Pzt–Cum 09:30–18:30, Cmt 10:00–15:00, Pazar acil.',
   keywords: [
     'veteriner randevu Lefkoşa', 'veteriner randevu Gönyeli', 'veteriner randevu KKTC',
     'online veteriner randevu', 'veteriner telefon Lefkoşa', 'köpek randevu veteriner',

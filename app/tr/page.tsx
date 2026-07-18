@@ -62,8 +62,8 @@ const vetClinicSchema = {
   },
   geo: { '@type': 'GeoCoordinates', latitude: '35.2154', longitude: '33.3361' },
   openingHoursSpecification: [
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '19:00' },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '15:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:30', closes: '18:30' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '10:00', closes: '15:00' },
     { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Sunday', opens: '00:00', closes: '00:00' },
   ],
   medicalSpecialty: ['Small Animal Surgery', 'Vaccination', 'Dental Care', 'Radiology', 'Laboratory Diagnostics', 'Emergency Veterinary Care', 'Pet Grooming', 'Nutrition Consulting'],

@@ -106,8 +106,8 @@
     "emailLabel": "E-posta",
     "emailValue": "info@animare.vet",
     "hours": "Çalışma Saatleri",
-    "hoursWeekday": "Pazartesi – Cuma: 09:00 – 19:00",
-    "hoursSat": "Cumartesi: 09:00 – 15:00",
+    "hoursWeekday": "Pazartesi – Cuma: 09:30 – 18:30",
+    "hoursSat": "Cumartesi: 10:00 – 15:00",
     "hoursSun": "Pazar: Acil Hizmet",
     "services": []
   },

@@ -106,8 +106,8 @@
     "emailLabel": "Email",
     "emailValue": "info@animare.vet",
     "hours": "Working Hours",
-    "hoursWeekday": "Monday – Friday: 09:00 – 19:00",
-    "hoursSat": "Saturday: 09:00 – 15:00",
+    "hoursWeekday": "Monday – Friday: 09:30 – 18:30",
+    "hoursSat": "Saturday: 10:00 – 15:00",
     "hoursSun": "Sunday: Emergency Service",
     "services": []
   },
