@@ -450,5 +450,41 @@
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
+<url>
+<loc>https://animare.vet/tr/blog/kopeklerde-leishmaniasis/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kopeklerde-leishmaniasis/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/leishmaniasis-in-dogs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kopeklerde-leishmaniasis/" />
+<lastmod>2026-07-18</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/leishmaniasis-in-dogs/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kopeklerde-leishmaniasis/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/leishmaniasis-in-dogs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kopeklerde-leishmaniasis/" />
+<lastmod>2026-07-18</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/tr/blog/kopeklerde-kene-hastaliklari/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kopeklerde-kene-hastaliklari/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/tick-borne-diseases-in-dogs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kopeklerde-kene-hastaliklari/" />
+<lastmod>2026-07-18</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/tick-borne-diseases-in-dogs/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kopeklerde-kene-hastaliklari/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/tick-borne-diseases-in-dogs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kopeklerde-kene-hastaliklari/" />
+<lastmod>2026-07-18</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
 
