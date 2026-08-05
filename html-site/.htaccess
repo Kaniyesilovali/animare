@@ -1,0 +1,21 @@
+# Animare — eski/İngilizce slug'lardan kalıcı yönlendirmeler (301)
+# Bu sayfalar daha önce meta refresh + noindex ile yönlendiriliyordu;
+# Search Console'da "noindex etiketi tarafından hariç tutuldu" olarak listeleniyordu.
+# Gerçek 301 ile Google bunları "Yönlendirmeli sayfa" olarak işler ve
+# sinyalleri kanonik TR adreslerinde birleştirir.
+
+# Ana sayfa → TR
+RedirectMatch 301 ^/$ /tr/
+
+# Tekil TR sayfaları
+RedirectMatch 301 ^/tr/about/?$   /tr/hakkimizda/
+RedirectMatch 301 ^/tr/contact/?$ /tr/iletisim/
+RedirectMatch 301 ^/tr/privacy/?$ /tr/gizlilik/
+
+# /tr/services/... → /tr/hizmetler/...  (alt slug'lar aynı)
+RedirectMatch 301 ^/tr/services/?$          /tr/hizmetler/
+RedirectMatch 301 ^/tr/services/(.+)$       /tr/hizmetler/$1
+
+# Eski kök dizindeki görsel yolları → /images/
+RedirectMatch 301 ^/AniMare\.png$                 /images/AniMare.png
+RedirectMatch 301 ^/animare_veteriner_logo\.png$  /images/animare_veteriner_logo.png
