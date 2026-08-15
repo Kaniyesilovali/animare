@@ -1,5 +1,9 @@
 (function(){var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href='/images/AniMare.png';document.head.appendChild(l);})();
 
+// Google İşletme Profili — schema.org sameAs / hasMap değerleriyle aynı kalmalı
+const GOOGLE_BUSINESS_URL = 'https://share.google/nvHIGsZmGgzv5uOaV';
+const GOOGLE_DIRECTIONS_URL = 'https://www.google.com/maps/dir/?api=1&destination=35.214722%2C33.293000';
+
 const PATHS = {
   tr: {
     services:    '/tr/hizmetler/',
@@ -238,6 +242,9 @@ function renderFooter(lang) {
           <a href="https://www.facebook.com/animare.vet" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
+          <a href="${GOOGLE_BUSINESS_URL}" target="_blank" rel="noopener noreferrer" aria-label="${T('Google İşletme Profili', 'Google Business Profile')}" title="${T('Google İşletme Profili', 'Google Business Profile')}" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.344-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"/></svg>
+          </a>
         </div>
       </div>
 
@@ -268,7 +275,7 @@ function renderFooter(lang) {
         <ul class="space-y-3 text-sm text-white/70">
           <li class="flex items-start gap-2">
             <svg class="flex-shrink-0 mt-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>${T('Gönyeli / Lefkoşa, Kuzey Kıbrıs', 'Gönyeli / Lefkoşa, North Cyprus')}</span>
+            <a href="${GOOGLE_DIRECTIONS_URL}" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">${T('Gönyeli / Lefkoşa, Kuzey Kıbrıs', 'Gönyeli / Lefkoşa, North Cyprus')}</a>
           </li>
           <li class="flex items-center gap-2">
             <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -277,6 +284,10 @@ function renderFooter(lang) {
           <li class="flex items-center gap-2">
             <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <a href="mailto:info@animare.vet" class="hover:text-white transition-colors">info@animare.vet</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.344-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"/></svg>
+            <a href="${GOOGLE_BUSINESS_URL}" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">${T('Google\'da bizi bulun', 'Find us on Google')}</a>
           </li>
         </ul>
       </div>
