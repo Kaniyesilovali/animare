@@ -108,6 +108,7 @@ export default async function BlogPostPage({
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
+    image: { '@type': 'ImageObject', url: 'https://animare.vet/AniMare.png', width: 2048, height: 2048 },
     headline: p.meta.title,
     description: p.meta.description,
     datePublished: post.date,
