@@ -88,7 +88,7 @@ export const services: ServiceData[] = [
       meta: {
         title: 'General Check-up Lefkoşa — Dog & Cat Health Screening | Animare',
         description:
-          'Comprehensive dog and cat check-up in Gönyeli / Lefkoşa. Early diagnosis, physical examination, vaccination scheduling, and nutrition advice. Animare Veterinary Clinic, North Cyprus.',
+          'Comprehensive dog and cat check-up in Gönyeli / Lefkoşa. Early diagnosis, physical exam, vaccine scheduling and nutrition advice at Animare, North Cyprus.',
         keywords: [
           'general checkup vet Lefkoşa',
           'dog examination North Cyprus',
@@ -144,7 +144,7 @@ export const services: ServiceData[] = [
       meta: {
         title: 'Köpek & Kedi Aşısı Lefkoşa — Aşı Takvimi KKTC | Animare',
         description:
-          "Gönyeli / Lefkoşa'da köpek ve kedi aşı hizmetleri. Karma aşı, kuduz, parvovirus ve yıllık hatırlatma. Animare Veteriner Kliniği — KKTC'nin güvenilir aşı merkezi.",
+          "Gönyeli / Lefkoşa'da köpek ve kedi aşısı. Karma aşı, kuduz, parvovirus ve yıllık hatırlatma takibi. Animare Veteriner Kliniği, KKTC.",
         keywords: [
           'köpek aşısı Lefkoşa',
           'kedi aşısı KKTC',
@@ -196,7 +196,7 @@ export const services: ServiceData[] = [
       meta: {
         title: 'Dog & Cat Vaccination Lefkoşa — Vaccine Schedule North Cyprus | Animare',
         description:
-          'Dog and cat vaccination services in Gönyeli / Lefkoşa. Core vaccines, rabies, parvovirus, and annual boosters. Animare Veterinary Clinic — trusted vaccination centre in North Cyprus.',
+          'Dog and cat vaccination in Gönyeli / Lefkoşa. Core vaccines, rabies, parvovirus and annual boosters at Animare Veterinary Clinic, North Cyprus.',
         keywords: [
           'dog vaccination Lefkoşa',
           'cat vaccine North Cyprus',
@@ -252,7 +252,7 @@ export const services: ServiceData[] = [
       meta: {
         title: 'Veteriner Cerrahi Lefkoşa — Kısırlaştırma & Operasyon KKTC | Animare',
         description:
-          "Gönyeli / Lefkoşa'da küçük hayvan cerrahisi. Kısırlaştırma, yumuşak doku cerrahisi ve ortopedik operasyonlar. Uzman cerrah Dr. Gökay Yeşilovalı — Animare Veteriner Kliniği, KKTC.",
+          "Gönyeli / Lefkoşa'da küçük hayvan cerrahisi: kısırlaştırma, yumuşak doku ve ortopedi. Uzman cerrah Dr. Gökay Yeşilovalı — Animare, KKTC.",
         keywords: [
           'veteriner cerrah Lefkoşa',
           'kısırlaştırma KKTC',
@@ -303,7 +303,7 @@ export const services: ServiceData[] = [
       meta: {
         title: 'Veterinary Surgery Lefkoşa — Neutering & Operations North Cyprus | Animare',
         description:
-          'Small animal surgery in Gönyeli / Lefkoşa. Neutering, soft tissue surgery, and orthopaedic procedures. Specialist surgeon Dr. Gökay Yeşilovalı — Animare Veterinary Clinic, North Cyprus.',
+          'Small animal surgery in Gönyeli / Lefkoşa: neutering, soft tissue and orthopaedic procedures. Specialist surgeon Dr. Gökay Yeşilovalı — Animare, North Cyprus.',
         keywords: [
           'vet surgeon Lefkoşa',
           'neutering North Cyprus',

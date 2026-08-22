@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | Animare Veteriner',
   },
   description:
-    'Animare Veteriner Kliniği — Gönyeli / Lefkoşa, KKTC. Köpek, kedi, tavşan ve küçük hayvan muayenesi, aşılama, cerrahi, diş bakımı, röntgen, laboratuvar. 7/24 acil veteriner. Hemen randevu alın.',
+    "Gönyeli / Lefkoşa'da köpek ve kedi veterineri. Muayene, aşılama, cerrahi, diş bakımı ve 7/24 acil. Animare Veteriner Kliniği'nden hemen randevu alın.",
   alternates: {
     canonical: '/tr',
     languages: { tr: '/tr', en: '/en', 'x-default': '/tr' },

@@ -7,7 +7,7 @@ import JsonLd from '@/components/JsonLd'
 export const metadata: Metadata = {
   title: 'Hakkımızda — Lefkoşa Veteriner Hekimleri | Animare',
   description:
-    "2026'dan bu yana Gönyeli / Lefkoşa'da güvenilir veteriner kliniği. Küçük hayvan cerrahisi uzmanı Dr. Gökay Yeşilovalı ve mikrobiyoloji uzmanı Dr. Hazel Tamakan Yeşilovalı ile tanışın.",
+    "Lefkoşa / Gönyeli'nin güvenilir veteriner kliniği Animare. Küçük hayvan cerrahisi uzmanı Dr. Gökay Yeşilovalı ve Dr. Hazel Tamakan Yeşilovalı ile tanışın.",
   keywords: [
     'veteriner hekim Lefkoşa', 'Dr. Gökay Yeşilovalı', 'Dr. Hazel Tamakan Yeşilovalı',
     'küçük hayvan cerrahisi KKTC', 'veteriner mikrobiyoloji', 'Animare hikayesi',

@@ -22,8 +22,8 @@ export async function generateMetadata({
     : 'Vet Clinic Gönyeli, Lefkoşa | Dog & Cat Doctor North Cyprus — Animare'
 
   const description = isTr
-    ? "Animare Veteriner Kliniği — Gönyeli / Lefkoşa, KKTC. Köpek, kedi, tavşan ve küçük hayvan muayenesi, aşılama, cerrahi, diş bakımı, röntgen, laboratuvar. 7/24 acil veteriner. Hemen randevu alın."
-    : 'Animare Veterinary Clinic — Gönyeli / Lefkoşa, North Cyprus (TRNC). Dog, cat, rabbit & small animal check-up, vaccination, surgery, dental care, X-ray, lab. 24/7 emergency vet. Book now.'
+    ? "Gönyeli / Lefkoşa'da köpek ve kedi veterineri. Muayene, aşılama, cerrahi, diş bakımı ve 7/24 acil. Animare Veteriner Kliniği'nden hemen randevu alın."
+    : 'Dog and cat vet in Gönyeli / Lefkoşa, North Cyprus. Check-ups, vaccination, surgery, dental care and 24/7 emergency. Book your appointment at Animare.'
 
   return {
     title: { absolute: title },
