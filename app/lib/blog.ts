@@ -58,7 +58,7 @@ Düzenli aşı takibi hem köpeğinizin sağlığını hem de çevresindeki diğ
       meta: {
         title: 'Köpek Aşı Takvimi — Yavru & Yetişkin Aşı Rehberi | Animare',
         description:
-          "Köpeğinizin aşı takvimi hakkında kapsamlı rehber. Parvovirus, distemper, kuduz aşıları ve yıllık hatırlatma programı — Animare Veteriner Kliniği, Gönyeli / Lefkoşa, KKTC.",
+          'Köpeğinizin aşı takvimi hakkında kapsamlı rehber. Parvovirus, distemper, kuduz aşıları ve yıllık hatırlatma programı — Animare Veteriner Kliniği, Gönyeli / Lefkoşa, KKTC.',
         keywords: [
           'köpek aşı takvimi',
           'yavru köpek aşı programı',
@@ -115,9 +115,9 @@ Mild lethargy or reduced appetite for a day or two after vaccination is normal. 
 
 Keeping vaccinations up to date protects your dog's health as well as other animals in the community. [Contact us](/en/contact) to book an appointment.`,
       meta: {
-        title: "Dog Vaccination Schedule — Puppy & Adult Vaccine Guide | Animare",
+        title: 'Dog Vaccination Schedule — Puppy & Adult Guide | Animare',
         description:
-          'Comprehensive guide to your dog\'s vaccination schedule. Parvovirus, distemper, rabies vaccines and annual boosters — Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus.',
+          "Comprehensive guide to your dog's vaccination schedule. Parvovirus, distemper, rabies vaccines and annual boosters — Animare Veterinary Clinic, Gönyeli / Lefkoşa, Nicosia.",
         keywords: [
           'dog vaccination schedule Lefkoşa',
           'puppy vaccine Nicosia',
@@ -243,9 +243,9 @@ At our clinic, ultrasonic tartar cleaning is performed under short-acting anaest
 
 Professional cleaning at least once a year is recommended. Breeds prone to tartar may benefit from more frequent appointments. [Contact us to book.](/en/contact)`,
       meta: {
-        title: "Cat Dental Care — Oral Health Guide | Animare",
+        title: 'Cat Dental Care — Oral Health Guide | Animare',
         description:
-          "Comprehensive guide to cat dental disease, tartar, and gum health. Home care tips and professional cleaning — Animare Veterinary Clinic, Lefkoşa, North Cyprus.",
+          'Comprehensive guide to cat dental disease, tartar, and gum health. Home care tips and professional cleaning — Animare Veterinary Clinic, Gönyeli / Lefkoşa, Nicosia.',
         keywords: [
           'cat dental care',
           'cat tartar cleaning Lefkoşa',
@@ -316,9 +316,9 @@ Fransız Bulldog, Pug ve Pers kedisi gibi kısa burunlu ırklar düşük sıcakl
 
 Sorularınız için [bize ulaşın](/tr/iletisim) ya da kliniğimizi arayın.`,
       meta: {
-        title: 'Yaz Sıcağında Evcil Hayvan Bakımı — Sıcak Çarpması Rehberi | Animare',
+        title: 'Yaz Sıcağında Evcil Hayvan — Sıcak Çarpması | Animare',
         description:
-          "Kuzey Kıbrıs yazında köpek ve kedi sağlığını koruma rehberi. Sıcak çarpması belirtileri, korunma yöntemleri ve acil müdahale — Animare Veteriner Kliniği, Lefkoşa, KKTC.",
+          'Kuzey Kıbrıs yazında köpek ve kedi sağlığını koruma rehberi. Sıcak çarpması belirtileri, korunma yöntemleri ve acil müdahale — Animare Veteriner Kliniği, Lefkoşa, KKTC.',
         keywords: [
           'yaz sıcağında evcil hayvan',
           'köpek sıcak çarpması',
@@ -383,9 +383,9 @@ Flat-faced breeds such as French Bulldogs, Pugs, and Persian cats can struggle t
 
 [Contact us](/en/contact) with any questions or call our clinic directly.`,
       meta: {
-        title: "Summer Pet Safety — Heatstroke Guide | Animare",
+        title: 'Summer Pet Safety — Heatstroke Guide | Animare',
         description:
-          "Guide to protecting your dog and cat during North Cyprus summers. Heatstroke signs, prevention tips, and emergency response — Animare Veterinary Clinic, Lefkoşa.",
+          'Guide to protecting your dog and cat during Lefkoşa / Nicosia summers. Heatstroke signs, prevention tips, and emergency response — Animare Veterinary Clinic, Gönyeli.',
         keywords: [
           'summer pet safety Lefkoşa',
           'dog heatstroke Nicosia',
@@ -449,7 +449,7 @@ Unutmayın, parazitlerle mücadelede en etkili yöntem tedavi değil, korumadır
 
 Koruma programı hakkında bilgi almak için [bize ulaşın](/tr/iletisim).`,
       meta: {
-        title: 'Yaz Aylarında Ektoparazit Koruması — Pire, Kene, Leishmaniosis | Animare',
+        title: 'Yaz Ektoparazit Koruması — Pire, Kene & Leishmania | Animare',
         description:
           'Yaz aylarında pire, kene, sivrisinek ve kum sineğinin taşıdığı hastalıklar ve ektoparazit korumasının önemi — Animare Veteriner Kliniği, Gönyeli / Lefkoşa, KKTC.',
         keywords: [
@@ -509,9 +509,9 @@ Remember: the most effective way to fight parasites is prevention, not treatment
 
 [Contact us](/en/contact) to learn more about parasite prevention programmes.`,
       meta: {
-        title: 'Summer Ectoparasite Protection — Fleas, Ticks & Leishmaniosis | Animare',
+        title: 'Ectoparasite Protection Summer — Fleas & Ticks | Animare',
         description:
-          'Diseases carried by fleas, ticks, mosquitoes, and sand flies in summer — and why ectoparasite prevention is essential. Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus.',
+          'Diseases carried by fleas, ticks, mosquitoes, and sand flies in summer — and why ectoparasite prevention is essential. Animare Veterinary Clinic, Gönyeli / Lefkoşa, Nicosia.',
         keywords: [
           'ectoparasite protection dog cat',
           'tick babesiosis Lefkoşa',
@@ -591,7 +591,7 @@ Gönyeli / Lefkoşa'daki kliniğimizde kedi ve köpeklerde otitis eksterna sık 
 
 Evcil dostunuzda yukarıdaki belirtilerden birini fark ettiyseniz, kulağın kendi kendine geçmesini beklemeyin. [Randevu almak için bize ulaşın.](/tr/iletisim)`,
       meta: {
-        title: 'Kedi ve Köpeklerde Otitis Eksterna Nedenleri | Lefkoşa Veteriner — Animare',
+        title: 'Kulak İltihabı: Kedi ve Köpekte Otitis Eksterna | Animare',
         description:
           'Kedi ve köpeklerde otitis eksterna (dış kulak iltihabı) neden oluşur? Kulak uyuzu, nem, alerji ve maya kaynaklı kulak iltihabının belirtileri ve tedavisi — Animare Veteriner Kliniği, Gönyeli / Lefkoşa, KKTC.',
         keywords: [
@@ -667,7 +667,7 @@ At our clinic in Gönyeli / Lefkoşa, otitis externa is one of the complaints we
 
 If you notice any of the signs above in your pet, do not wait for the ear to heal on its own. [Contact us to book an appointment.](/en/contact)`,
       meta: {
-        title: 'Otitis Externa in Cats and Dogs — Causes | Lefkoşa Vet — Animare',
+        title: 'Otitis Externa in Dogs and Cats — Ear Infection | Animare',
         description:
           'Why do cats and dogs get otitis externa (outer ear infection)? Signs and treatment of ear infections caused by mites, moisture, allergy, and yeast — Animare Veterinary Clinic, Gönyeli / Lefkoşa, North Cyprus.',
         keywords: [
