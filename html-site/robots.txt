@@ -1,4 +1,6 @@
 User-Agent: *
 Allow: /
 Disallow: /cdn-cgi/
+
 Sitemap: https://animare.vet/sitemap.xml
+# llms.txt: https://animare.vet/llms.txt
