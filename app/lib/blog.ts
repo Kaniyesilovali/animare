@@ -449,7 +449,7 @@ Unutmayın, parazitlerle mücadelede en etkili yöntem tedavi değil, korumadır
 
 Koruma programı hakkında bilgi almak için [bize ulaşın](/tr/iletisim).`,
       meta: {
-        title: 'Yaz Ektoparazit Koruması — Pire, Kene & Leishmania | Animare',
+        title: 'Yazın Pire, Kene ve Leishmaniasis Koruması | Animare',
         description:
           'Yaz aylarında pire, kene, sivrisinek ve kum sineğinin taşıdığı hastalıklar ve ektoparazit korumasının önemi — Animare Veteriner Kliniği, Gönyeli / Lefkoşa, KKTC.',
         keywords: [
@@ -509,7 +509,7 @@ Remember: the most effective way to fight parasites is prevention, not treatment
 
 [Contact us](/en/contact) to learn more about parasite prevention programmes.`,
       meta: {
-        title: 'Ectoparasite Protection Summer — Fleas & Ticks | Animare',
+        title: 'Flea, Tick & Leishmaniasis Protection in Summer | Animare',
         description:
           'Diseases carried by fleas, ticks, mosquitoes, and sand flies in summer — and why ectoparasite prevention is essential. Animare Veterinary Clinic, Gönyeli / Lefkoşa, Nicosia.',
         keywords: [
