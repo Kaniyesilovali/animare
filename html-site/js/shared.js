@@ -1,4 +1,4 @@
-(function(){var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href='/images/AniMare.png';document.head.appendChild(l);})();
+(function(){var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href='/images/favicon-96.png';document.head.appendChild(l);})();
 
 // Google İşletme Profili — schema.org sameAs / hasMap değerleriyle aynı kalmalı
 const GOOGLE_BUSINESS_URL = 'https://share.google/nvHIGsZmGgzv5uOaV';

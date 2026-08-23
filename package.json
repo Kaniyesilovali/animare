@@ -1,0 +1,9 @@
+{
+  "name": "animare-vet",
+  "private": true,
+  "description": "animare.vet statik sitesi. Tek npm isi: Tailwind CSS'i derlemek.",
+  "scripts": {
+    "css": "npx -y tailwindcss@3.4.17 -c tailwind.config.js -i tailwind-input.css -o html-site/css/tw.css --minify",
+    "css:watch": "npx -y tailwindcss@3.4.17 -c tailwind.config.js -i tailwind-input.css -o html-site/css/tw.css --watch"
+  }
+}
