@@ -46,7 +46,7 @@ Klinik bilgileri / Clinic details:
 - [Yaz aylarında ektoparazit koruması](https://animare.vet/tr/blog/yaz-aylarinda-ektoparazit-koruma/): Pire, kene, sivrisinek ve küpdüşen sineğinin taşıdığı hastalıklar ve korunma.
 - [Yaz sıcağında evcil hayvan bakımı](https://animare.vet/tr/blog/yaz-sicaginda-evcil-hayvan/): Sıcak çarpması belirtileri, korunma yöntemleri ve acil müdahale.
 - [Kedi ve köpeklerde otitis eksterna](https://animare.vet/tr/blog/kedi-kopek-otitis-eksterna/): Dış kulak iltihabının nedenleri (uyuz, nem, alerji, maya), belirtileri ve tedavisi.
-- [Kedilerde diş bakımı](https://animare.vet/tr/blog/kedilerde-dis-bakimi/): Diş taşı, diş eti iltihabı, evde bakım ve profesyonel temizlik.
+- [Kedilerde diş bakımı](https://animare.vet/tr/blog/kedilerde-dis-bakimi/): Plaktan periodontitise süreç, belirtiler, rezorptif lezyon ve gingivostomatitis, evde diş fırçalama adımları, anestezi altında profesyonel diş temizliği.
 - [Zehirli yiyecekler ve bitkiler](https://animare.vet/tr/blog/zehirli-yiyecekler-ve-bitkiler/): Çikolata, üzüm, soğan, ksilitol, zambak ve zakkum — zehirlenme belirtileri ve ilk müdahale.
 - [Farmina N&D mama rehberi](https://animare.vet/tr/blog/farmina-nd-mama-rehberi/): Prime, Ancestral Grain, Pumpkin, Quinoa ve Ocean serileri; seçim ve mama geçişi.
 - [Kedi ve köpek mama çeşitleri](https://animare.vet/tr/blog/kedi-kopek-mama-cesitleri/): Klinikte bulunan mamalar — Farmina N&D, Vet Life diyetleri, konserve, dental ödül, Matisse, Cibau, Ecopet, Fun.
@@ -84,7 +84,7 @@ Klinik bilgileri / Clinic details:
 - [Ectoparasite protection in summer](https://animare.vet/en/blog/ectoparasite-protection-summer/): Diseases carried by fleas, ticks, mosquitoes and sandflies, and how to prevent them.
 - [Summer heat and pet safety](https://animare.vet/en/blog/summer-heat-pet-safety/): Heatstroke signs, prevention and emergency response in Cyprus summers.
 - [Otitis externa in cats and dogs](https://animare.vet/en/blog/otitis-externa-cats-dogs/): Outer ear infection caused by mites, moisture, allergy and yeast — signs and treatment.
-- [Cat dental care](https://animare.vet/en/blog/cat-dental-care/): Dental disease, tartar and gum health; home care and professional cleaning.
+- [Cat dental care](https://animare.vet/en/blog/cat-dental-care/): How plaque becomes periodontitis, signs to look for, tooth resorption and gingivostomatitis, how to start brushing, and what a professional cleaning under anaesthesia involves.
 - [Toxic foods and plants for pets](https://animare.vet/en/blog/toxic-foods-and-plants-for-pets/): Chocolate, grapes, onion, xylitol, lilies and oleander — poisoning symptoms and first response.
 - [Farmina N&D pet food guide](https://animare.vet/en/blog/farmina-nd-pet-food-guide/): Prime, Ancestral Grain, Pumpkin, Quinoa and Ocean lines; choosing and transitioning food.
 - [Cat and dog food range](https://animare.vet/en/blog/cat-and-dog-food-range/): Food stocked at the clinic — Farmina N&D, Vet Life diets, wet food, dental treats, Matisse, Cibau, Ecopet, Fun.
