@@ -51,6 +51,7 @@ Klinik bilgileri / Clinic details:
 - [Farmina N&D mama rehberi](https://animare.vet/tr/blog/farmina-nd-mama-rehberi/): Prime, Ancestral Grain, Pumpkin, Quinoa ve Ocean serileri; seçim ve mama geçişi.
 - [Kedi ve köpek mama çeşitleri](https://animare.vet/tr/blog/kedi-kopek-mama-cesitleri/): Klinikte bulunan mamalar — Farmina N&D, Vet Life diyetleri, konserve, dental ödül, Matisse, Cibau, Ecopet, Fun.
 - [Kıbrıs veteriner kliniği seçimi](https://animare.vet/tr/blog/kibris-veteriner-klinigi-secimi/): Klinik seçerken bakılacaklar — yerinde laboratuvar ve röntgen, mesai dışı acil düzeni, ada koşullarındaki parazit riski (Leishmaniasis, kene), dil desteği.
+- [Kedi ve köpekte kan tahlili](https://animare.vet/tr/blog/kan-tahlili-neden-gerekli/): Hemogram, biyokimya, idrar tahlili ve hızlı testler neyi gösterir; ameliyat öncesi tetkik ve anestezi güvenliği.
 
 ## English — Main pages
 
@@ -90,6 +91,7 @@ Klinik bilgileri / Clinic details:
 - [Farmina N&D pet food guide](https://animare.vet/en/blog/farmina-nd-pet-food-guide/): Prime, Ancestral Grain, Pumpkin, Quinoa and Ocean lines; choosing and transitioning food.
 - [Cat and dog food range](https://animare.vet/en/blog/cat-and-dog-food-range/): Food stocked at the clinic — Farmina N&D, Vet Life diets, wet food, dental treats, Matisse, Cibau, Ecopet, Fun.
 - [Choosing a vet clinic in Cyprus](https://animare.vet/en/blog/choosing-a-vet-clinic-cyprus/): What to look for — in-house laboratory and X-ray, out-of-hours emergency cover, island parasite risk (Leishmaniasis, ticks), language support.
+- [Blood tests for cats and dogs](https://animare.vet/en/blog/blood-tests-for-cats-and-dogs/): What a blood count, biochemistry panel, urinalysis and rapid tests show; pre-anaesthetic screening and anaesthetic safety.
 
 ## Optional
 
