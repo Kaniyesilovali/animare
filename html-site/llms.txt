@@ -11,6 +11,8 @@ Klinik bilgileri / Clinic details:
 - E-posta / Email: info@animare.vet
 - Çalışma saatleri / Hours: Pzt–Cum 09:30–18:30, Cmt 10:00–15:00, Pazar kapalı / Mon–Fri 09:30–18:30, Sat 10:00–15:00, Sun closed
 - Hekimler / Veterinarians: Dr. Gökay Yeşilovalı (küçük hayvan cerrahisi / small animal surgery), Dr. Hazel Tamakan Yeşilovalı (mikrobiyoloji / microbiology)
+- Son güncelleme / Last updated: 2026-08-29
+- Blog yazarı / Blog author: Dr. Gökay Yeşilovalı, Veteriner Hekim (https://animare.vet/tr/hakkimizda/ · https://animare.vet/en/about/)
 - Blog içerikleri veteriner hekimler tarafından hazırlanır ve genel bilgilendirme amaçlıdır; teşhis ve tedavi için muayene gereklidir. / Blog content is written by veterinarians for general information only; diagnosis and treatment require an examination.
 
 ## Türkçe — Ana sayfalar
