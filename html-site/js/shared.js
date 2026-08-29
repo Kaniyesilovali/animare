@@ -205,14 +205,14 @@ function renderFooter(lang) {
     { title: 'Yavru Kedi Aşı Takvimi',       slug: 'yavru-kedi-asi-takvimi' },
     { title: 'Köpek Aşı Takvimi',            slug: 'kopek-asi-takvimi' },
     { title: 'Kedilerde Diş Bakımı',         slug: 'kedilerde-dis-bakimi' },
-    { title: 'Acil Veteriner Belirtileri',   slug: 'acil-veteriner-belirtileri' },
+    { title: 'Veteriner Kliniği Seçimi',     slug: 'kibris-veteriner-klinigi-secimi' },
     { title: 'Yaz\'da Evcil Hayvan',         slug: 'yaz-sicaginda-evcil-hayvan' },
     { title: 'Ektoparazit Koruması',         slug: 'yaz-aylarinda-ektoparazit-koruma' },
   ] : [
     { title: 'Kitten Vaccination Schedule',  slug: 'kitten-vaccination-schedule' },
     { title: 'Dog Vaccination Schedule',     slug: 'dog-vaccination-schedule' },
     { title: 'Cat Dental Care',              slug: 'cat-dental-care' },
-    { title: 'Pet Emergency Signs',          slug: 'pet-emergency-signs' },
+    { title: 'Choosing a Vet Clinic',        slug: 'choosing-a-vet-clinic-cyprus' },
     { title: 'Summer Heat & Pets',           slug: 'summer-heat-pet-safety' },
     { title: 'Ectoparasite Protection',      slug: 'ectoparasite-protection-summer' },
   ];
