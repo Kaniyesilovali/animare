@@ -55,6 +55,7 @@ Klinik bilgileri / Clinic details:
 - [Kıbrıs veteriner kliniği seçimi](https://animare.vet/tr/blog/kibris-veteriner-klinigi-secimi/): Klinik seçerken bakılacaklar — yerinde laboratuvar ve röntgen, mesai dışı acil düzeni, ada koşullarındaki parazit riski (Leishmaniasis, kene), dil desteği.
 - [Kedi ve köpekte kan tahlili](https://animare.vet/tr/blog/kan-tahlili-neden-gerekli/): Hemogram, biyokimya, idrar tahlili ve hızlı testler neyi gösterir; ameliyat öncesi tetkik ve anestezi güvenliği.
 - [Kedi ve köpekte topallama](https://animare.vet/tr/blog/topallama-rontgen-ne-zaman/): Topallamanın yaşa göre nedenleri, beklemeyen belirtiler, röntgenin neyi gösterip neyi göstermediği.
+- [Kısırlaştırılmış köpekler için mama](https://animare.vet/tr/blog/nd-quinoa-neutered-kopek-mamasi/): N&D Quinoa Neutered’in içeriği ve analiz değerleri, kime uygun olmadığı, porsiyon hesabı ve mama geçişi.
 
 ## English — Main pages
 
@@ -96,6 +97,7 @@ Klinik bilgileri / Clinic details:
 - [Choosing a vet clinic in Cyprus](https://animare.vet/en/blog/choosing-a-vet-clinic-cyprus/): What to look for — in-house laboratory and X-ray, out-of-hours emergency cover, island parasite risk (Leishmaniasis, ticks), language support.
 - [Blood tests for cats and dogs](https://animare.vet/en/blog/blood-tests-for-cats-and-dogs/): What a blood count, biochemistry panel, urinalysis and rapid tests show; pre-anaesthetic screening and anaesthetic safety.
 - [Limping in dogs and cats](https://animare.vet/en/blog/limping-in-dogs-and-cats/): Causes of limping by age, signs that cannot wait, what an X-ray shows and what it misses.
+- [Food for neutered dogs](https://animare.vet/en/blog/nd-quinoa-neutered-dog-food/): What is in N&D Quinoa Neutered, how it differs from a standard adult formula, who it does not suit, portions and a safe food change.
 
 ## Optional
 
