@@ -57,6 +57,7 @@ Klinik bilgileri / Clinic details:
 - [Kedi ve köpekte topallama](https://animare.vet/tr/blog/topallama-rontgen-ne-zaman/): Topallamanın yaşa göre nedenleri, beklemeyen belirtiler, röntgenin neyi gösterip neyi göstermediği.
 - [Kısırlaştırılmış köpekler için mama](https://animare.vet/tr/blog/nd-quinoa-neutered-kopek-mamasi/): N&D Quinoa Neutered’in içeriği ve analiz değerleri, kime uygun olmadığı, porsiyon hesabı ve mama geçişi.
 - [N&D Prime: tahılsız temel seri](https://animare.vet/tr/blog/nd-prime-tahilsiz-mama/): Tahılsız beslenmenin ne anlama geldiği, Prime'ın hangi kedi ve köpeğe uyduğu, kime uygun olmadığı, porsiyon ve mama geçişi.
+- [N&D Az Tahıllı (Ancestral Grain)](https://animare.vet/tr/blog/nd-ancestral-grain-az-tahilli-mama/): Ata tahılı ve düşük glisemik indeksin ne anlama geldiği, Ancestral Grain'in hangi kedi ve köpeğe uyduğu, Prime'dan farkı, porsiyon ve mama geçişi.
 
 ## English — Main pages
 
@@ -100,6 +101,7 @@ Klinik bilgileri / Clinic details:
 - [Limping in dogs and cats](https://animare.vet/en/blog/limping-in-dogs-and-cats/): Causes of limping by age, signs that cannot wait, what an X-ray shows and what it misses.
 - [Food for neutered dogs](https://animare.vet/en/blog/nd-quinoa-neutered-dog-food/): What is in N&D Quinoa Neutered, how it differs from a standard adult formula, who it does not suit, portions and a safe food change.
 - [N&D Prime: the grain-free core range](https://animare.vet/en/blog/nd-prime-grain-free-pet-food/): What grain-free actually means, which cats and dogs Prime suits, who it does not suit, portions and a safe food change.
+- [N&D Ancestral Grain: the low-grain range](https://animare.vet/en/blog/nd-ancestral-grain-pet-food/): What ancestral grain and low glycaemic index mean, which cats and dogs it suits, how it differs from Prime, portions and a safe food change.
 
 ## Optional
 
