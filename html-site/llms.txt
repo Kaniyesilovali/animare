@@ -60,6 +60,7 @@ Klinik bilgileri / Clinic details:
 - [N&D Az Tahıllı (Ancestral Grain)](https://animare.vet/tr/blog/nd-ancestral-grain-az-tahilli-mama/): Ata tahılı ve düşük glisemik indeksin ne anlama geldiği, Ancestral Grain'in hangi kedi ve köpeğe uyduğu, Prime'dan farkı, porsiyon ve mama geçişi.
 - [N&D Pumpkin (balkabaklı)](https://animare.vet/tr/blog/nd-pumpkin-balkabakli-mama/): Balkabağının çözünür lifinin dışkı kıvamına etkisi, Pumpkin'in hangi kedi ve köpeğe uyduğu, Prime ve Ancestral Grain'den farkı, porsiyon ve mama geçişi.
 - [N&D Tropical (tropikal meyveli)](https://animare.vet/tr/blog/nd-tropical-meyveli-mama/): Tropical'ın az tahıllı yapısı (spelt ve yulaf), beş tropikal meyvenin ne kattığı, serinin hangi kedi ve köpeğe uyduğu, Ancestral Grain ve Prime'dan farkı, porsiyon ve mama geçişi.
+- [Küçük hayvan cerrahisi](https://animare.vet/tr/blog/kucuk-hayvan-cerrahisi/): Kedi ve köpeklerde planlı ve zorunlu operasyonlar, ameliyat öncesi muayene, kan tahlili ve görüntüleme, 8 saat açlık, anestezi ve vital takip, aynı gün taburcu, ağrı kontrolü, yara ve yaka bakımı, dikkat edilecek belirtiler.
 
 ## English — Main pages
 
@@ -106,6 +107,7 @@ Klinik bilgileri / Clinic details:
 - [N&D Ancestral Grain: the low-grain range](https://animare.vet/en/blog/nd-ancestral-grain-pet-food/): What ancestral grain and low glycaemic index mean, which cats and dogs it suits, how it differs from Prime, portions and a safe food change.
 - [N&D Pumpkin: the grain-free range with pumpkin](https://animare.vet/en/blog/nd-pumpkin-pet-food/): What the soluble fibre in pumpkin does to stool consistency, which cats and dogs it suits, how it differs from Prime and Ancestral Grain, portions and a safe food change.
 - [N&D Tropical: the low-grain range with tropical fruits](https://animare.vet/en/blog/nd-tropical-pet-food/): How spelt and oats make Tropical low-grain rather than grain-free, what the five tropical fruits add, which cats and dogs it suits, how it differs from Ancestral Grain and Prime, portions and a safe food change.
+- [Small animal surgery](https://animare.vet/en/blog/small-animal-surgery/): Planned and urgent operations in cats and dogs, pre-operative examination, blood tests and imaging, 8-hour fasting, anaesthesia and monitoring, same-day discharge, pain control, wound and cone care, warning signs.
 
 ## Optional
 

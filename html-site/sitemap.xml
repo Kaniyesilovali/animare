@@ -684,4 +684,22 @@
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
+<url>
+<loc>https://animare.vet/tr/blog/kucuk-hayvan-cerrahisi/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kucuk-hayvan-cerrahisi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/small-animal-surgery/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kucuk-hayvan-cerrahisi/" />
+<lastmod>2026-09-24</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/small-animal-surgery/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kucuk-hayvan-cerrahisi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/small-animal-surgery/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kucuk-hayvan-cerrahisi/" />
+<lastmod>2026-09-24</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
