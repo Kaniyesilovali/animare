@@ -63,6 +63,7 @@ Klinik bilgileri / Clinic details:
 - [Küçük hayvan cerrahisi](https://animare.vet/tr/blog/kucuk-hayvan-cerrahisi/): Kedi ve köpeklerde planlı ve zorunlu operasyonlar, ameliyat öncesi muayene, kan tahlili ve görüntüleme, 8 saat açlık, anestezi ve vital takip, aynı gün taburcu, ağrı kontrolü, yara ve yaka bakımı, dikkat edilecek belirtiler.
 - [N&D Ocean (balıklı)](https://animare.vet/tr/blog/nd-ocean-balikli-mama/): Balık ve deniz ürünü proteininin yeri, omega-3 katkısı, tavuk hassasiyeti şüphesinde neden ilk alternatiflerden biri olduğu, serinin hangi kedi ve köpeğe uyduğu ve uymadığı, diğer N&D serilerinden farkı, mama geçişi.
 - [Mesane taşı ve sistotomi](https://animare.vet/tr/blog/mesane-tasi-sistotomi/): Kedi ve köpeklerde struvit ve kalsiyum oksalat taşları, belirtiler, idrar ve kan tahlili ile röntgen ve ultrasonla tanı, hangi taşın diyetle eridiği ve ne zaman sistotomi gerektiği, ameliyat ve iyileşme süreci, tekrarın önlenmesi.
+- [Kedi ve köpekte kusma ve ishal](https://animare.vet/tr/blog/kedi-kopek-kusma-ishal/): Kusma ve ishalin sık nedenleri, kusma ile geri çıkarmanın farkı, kusma ve ishalde acil işaretler, aşısız yavru köpekte parvovirüs riski, evde izleme ve verilmemesi gereken insan ilaçları, klinikte kan tahlili, dışkı muayenesi ve röntgenle tanı.
 
 ## English — Main pages
 
@@ -112,6 +113,7 @@ Klinik bilgileri / Clinic details:
 - [Small animal surgery](https://animare.vet/en/blog/small-animal-surgery/): Planned and urgent operations in cats and dogs, pre-operative examination, blood tests and imaging, 8-hour fasting, anaesthesia and monitoring, same-day discharge, pain control, wound and cone care, warning signs.
 - [N&D Ocean: the fish-based range](https://animare.vet/en/blog/nd-ocean-fish-pet-food/): Where fish and seafood protein sits in the range, what omega-3 adds, why it is a first alternative when chicken sensitivity is suspected, which cats and dogs it suits and does not suit, how it differs from the other N&D ranges, and a safe food change.
 - [Bladder stones and cystotomy](https://animare.vet/en/blog/bladder-stones-cystotomy/): Struvite and calcium oxalate stones in cats and dogs, signs, diagnosis with urine and blood tests, X-ray and ultrasound, which stones dissolve with diet and when cystotomy is needed, the operation and recovery, preventing recurrence.
+- [Vomiting and diarrhoea in cats and dogs](https://animare.vet/en/blog/vomiting-diarrhoea-cats-dogs/): Common causes, vomiting versus regurgitation, emergency signs with vomiting and diarrhoea, parvovirus risk in unvaccinated puppies, watching at home and human medicines to avoid, diagnosis with blood tests, stool examination and X-ray.
 
 ## Optional
 

@@ -738,4 +738,22 @@
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
+<url>
+<loc>https://animare.vet/tr/blog/kedi-kopek-kusma-ishal/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kedi-kopek-kusma-ishal/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/vomiting-diarrhoea-cats-dogs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kedi-kopek-kusma-ishal/" />
+<lastmod>2026-10-26</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://animare.vet/en/blog/vomiting-diarrhoea-cats-dogs/</loc>
+<xhtml:link rel="alternate" hreflang="tr" href="https://animare.vet/tr/blog/kedi-kopek-kusma-ishal/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://animare.vet/en/blog/vomiting-diarrhoea-cats-dogs/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://animare.vet/tr/blog/kedi-kopek-kusma-ishal/" />
+<lastmod>2026-10-26</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
